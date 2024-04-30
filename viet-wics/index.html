@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+<div class="post-header">
+  <h1 class="post-title">{{ site.blog_name }}</h1>
+  <p class="post-meta">{{ site.blog_description }}</p>
+</div>
+
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    <li>
+      <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <p class="post-meta">Retrospective written by: {{ post.retrospective_author}}</p>
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>{{ post.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include pagination.html %}

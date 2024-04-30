@@ -17,14 +17,14 @@ social: true
     <td style="text-align: left; font-size: 18px; border: none; font-family: 'Sacramento', fantasy;">
       Hi there! 👋
       <br> Whether you're a junior student seeking inspiration... 🎓
-      <br> Or a senior researcher, seeking collaboration opportunities... 🤝
+      <br> Or a senior researcher seeking collaboration opportunities... 🤝
       <br> I hope this page can be a reference for <strong>you</strong> (or for any Vietnamese woman) who wants to pursue a career in Computer Science.
       <br> Good luck!
       <br> ❀❀❀
     </td>
   </tr>
   <tr>
-    <td style="border:none;text-align: center;" colspan="2"><i>📩 Submit a new entry via <a href="https://forms.gle/98zNTRNujsDfGzui9">this Google Forms</a> <a href="https://github.com/viet-wics/viet-wics.github.io/issues"> an GitHub issue</a>.
+    <td style="border:none;text-align: center;" colspan="2"><i>📩 Submit a new entry via <a href="https://forms.gle/98zNTRNujsDfGzui9">this Google Forms</a> or create<a href="https://github.com/viet-wics/viet-wics.github.io/issues"> an GitHub issue</a>.
     <br>More questions? Please check <a href="https://viet-wics.github.io/faq/">FAQ</a> or drop us an email at vietwics@gmail.com. Thank you!</i>
   </td>
   </tr>
@@ -186,7 +186,7 @@ social: true
 </div>
 
 <center>
-Bloom at your own pace! 🌸 You'll be there soon (.❛ ᴗ ❛.)
+<i>Bloom at your own pace! 🌸 You'll be there soon! (.❛ ᴗ ❛.)</i>
 </center>
 
 <!-- #### *.* -->

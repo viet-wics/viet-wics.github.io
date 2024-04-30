@@ -11,8 +11,8 @@ description: Frequently asked questions
 A: There are currently three (03) ways to submit an entry:
 
 1. **Create a GitHub [issue](https://github.com/viet-wics/viet-wics.github.io/issues) or [pull request](https://github.com/viet-wics/viet-wics.github.io/pulls)**: This is the fastest way and usually takes from a few hours to a few days for processing.
-2. **Fill out [this Google Form](https://forms.gle/98zNTRNujsDfGzui9)**: This is the most convenient option, although it may take approximately ~7 days for me to update the information.
-3. **Via email**: Simply send us an email with the nominee's name (and links to their personal page or LinkedIn, if applicable). Please note that this method may take longer, around 7-10 days, as I do not check our email regularly.
+2. **Fill out [this Google Forms](https://forms.gle/98zNTRNujsDfGzui9)**: This is the most convenient option, although it may take ~7 days for me to update the information.
+3. **Via email**: Simply send us an email with the nominee's name (and links to their personal page or LinkedIn, if applicable). Please note that this method may take longer (around 7-10 days), as I do not check our email regularly.
 
 ### Q: What are the criteria for entry? 🤔
 
@@ -43,7 +43,9 @@ A: Please either create a GitHub issue or email me at *vietwics@gmail.com*. I wi
 
 ### Q: Who is involved with this project? 🪴
 
-A: The idea for this project originally popped into my head in 2019 when I was searching for a valid reason, external affirmation, or self-affirmation to apply for a Computer Science PhD program. No surprise, **I couldn't find any role models online**.
+A: This project is currently maintained by a single student. It is non-profit and purely for educational purposes. I am not affiliated with any organization or institution.
+
+<!-- The idea for this project originally popped into my head in 2019 when I was searching for a valid reason, external affirmation, or self-affirmation to apply for a Computer Science PhD program. No surprise, **I couldn't find any role models online**.
 
 However, I wouldn't have been brave enough to create this project without the awesome *Education Psychology 506 Course (Stereotypes, Discrimination, and Education)*, where I learned about the importance of representation and the power of role models.
 
@@ -52,7 +54,7 @@ So yes, the issues exist, the invisible barriers (e.g., social norms, cultural n
 So here I am, trying to make a small contribution to the community. I hope during my minor study (hopefully in Education Psychology), I continue to learn more and gradually extend this project.
 
 Thank you!
-
+ -->
 ---
 
 <center>

@@ -30,6 +30,7 @@ social: true
   </tr>
 </table>
 </center>
+
 <br>
 
 👉🏻 Jump to: [🏛️ Academic Position](#Academic-Positions) | [🎓 Graduate Student](#Graduate-Students) | [💼 Industrial Positions](#Industrial-Positions)
@@ -145,6 +146,7 @@ social: true
       Hanoi University of Science and Technology
     </td>
   </tr>
+  <tr>
     <td style="text-align:center">
       <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/PGS.TS-Nguy%E1%BB%85n-Th%E1%BB%8B-Ho%C3%A0ng-Lan.jpg" height="200">
       <br>
@@ -210,10 +212,13 @@ social: true
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <td>
-    </td><td></td><td></td>
   </tr>
-  <tr><td></td><td></td><td></td><td></td></tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 ### 🎓 Graduate Students <a name="Graduate-Students"></a>

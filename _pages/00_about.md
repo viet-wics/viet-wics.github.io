@@ -311,6 +311,13 @@ social: true
       <br> Max Planck Institutes
     </td>
     <td style="text-align:center">
+      <img src="https://anhthai1997.com/wp-content/uploads/2024/02/img_5121-converted-2-edited.jpg?w=240" height="200">
+      <br>
+      <a href="https://anhthai1997.com/">Anh N. Thai</a>
+      <br> PhD Student,
+      <br> Georgia Institute of Technology
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>

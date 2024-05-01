@@ -26,12 +26,14 @@ social: true
   <tr>
     <td style="border:none;text-align: center;" colspan="2"><i>📩 Submit a new entry via <a href="https://forms.gle/98zNTRNujsDfGzui9">this Google Forms</a> or create<a href="https://github.com/viet-wics/viet-wics.github.io/issues"> an GitHub issue</a>.
     <br>More questions? Please check <a href="https://viet-wics.github.io/faq/">FAQ</a> or drop us an email at vietwics@gmail.com. Thank you!</i>
-  </td>
+    </td>
   </tr>
 </table>
 </center>
 <br>
+
 👉🏻 Jump to: [🏛️ Academic Position](#Academic-Positions) | [🎓 Graduate Student](#Graduate-Students) | [💼 Industrial Positions](#Industrial-Positions)
+
 
 ### 🏛️ Academic Positions <a name="Academic-Positions"></a>
 
@@ -76,14 +78,142 @@ social: true
       <a href="https://blogs.uww.edu/nguyenh/">Hien Nguyen</a><br>Professor,<br> University of Wisconsin-Whitewater
     </td>
     <td style="text-align:center">
+      <img src="https://uet.vnu.edu.vn/~thanhntn/CV-NguyenThiNhatThanh-03082022_files/image001.jpg" height="200">
+      <br>
+      <a href="https://uet.vnu.edu.vn/~thanhntn/">Thanh T.N. Nguyen</a>
+      <br>Lecturer,<br>
+      University of Engineering and Technology, VNU
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="https://users.soict.hust.edu.vn/binhht/images/HuynhThiThanhBinh6.jpg" height="200">
+      <br>
+      <a href="https://users.soict.hust.edu.vn/binhht/">Huynh Thi Thanh Binh</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/V%C5%A9-Tuy%E1%BA%BFt-Trinh.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-vu-tuyet-trinh.html">Tuyet-Trinh Vu</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/08/Nguy%E1%BB%85n-Th%E1%BB%8B-Thanh-Nga.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-nguyen-thi-thanh-nga.html">Nga, Nguyen Thi Thanh</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/DinhThiHaLy-3.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-dinh-thi-ha-ly.html">Thi Ha Dinh Ly</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5878.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/pgs-ts-truong-thi-dieu-linh.html">D. L. Truong</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5536.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/pgs-ts-ngo-quynh-thu.html">Thu Ngo-Quynh</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5783.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-nguyen-thi-thu-huong.html">Nguyen Thi Thu Huong</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/Nguy%E1%BB%85n-Th%E1%BB%8B-Kim-Anh.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/pgs-ts-nguyen-thi-kim-anh.html">Nguyen Thi Kim Anh</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+  </tr>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/PGS.TS-Nguy%E1%BB%85n-Th%E1%BB%8B-Ho%C3%A0ng-Lan.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/pgs-ts-nguyen-thi-hoang-lan.html">Nguyen Thi Hoang Lan</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/B%C3%B9i-Th%E1%BB%8B-Mai-Anh.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-bui-thi-mai-anh.html">Bui Thi Mai Anh</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/Nguynthithutrang.png" height="200">
+      <br>
+      <a href="https://users.soict.hust.edu.vn/trangntt/">Trang Nguyen</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://users.soict.hust.edu.vn/lenp/aodai_2.jpg" height="200">
+      <br>
+      <a href="https://users.soict.hust.edu.vn/lenp/">Phi Le Nguyen</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5231.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-nguyen-khanh-phuong.html">Phuong Khanh Nguyen</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5827.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-nguyen-thi-oanh.html">Thi-Oanh Nguyen</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5526.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/pgs-ts-le-thanh-huong.html">Huong Le Thanh</a>
+      <br>Professor,<br>
+      Hanoi University of Science and Technology
+    </td>
+    <td style="text-align:center">
+      <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/08/V%C5%A9-Th%E1%BB%8B-H%C6%B0%C6%A1ng-Giang.jpg" height="200">
+      <br>
+      <a href="https://soict.hust.edu.vn/ts-vu-thi-huong-giang.html">Vu Thi Huong Giang</a>
+      <br>Lecturer,<br>
+      Hanoi University of Science and Technology
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+    <td>
+    </td><td></td><td></td>
   </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-  </tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
 </table>
 
 ### 🎓 Graduate Students <a name="Graduate-Students"></a>
@@ -106,9 +236,11 @@ social: true
       <a href="https://maihoangdao.github.io/">Mai Hoang Dao</a> <br> PhD Student,<br> University of Edinburgh
     </td>
     <td style="text-align:center">
-      <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4" height="200">
+      <!-- <img src="https://thaoshibe.github.io/images/thao-badger.jpeg" height="200"> -->
+      <img src='/assets/img/thao.png' height="200">
       <br>
-      <a href="https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en">Van-Anh Nguyen</a> <br> PhD Student,<br> University of Monash
+      <a href="https://thaoshibe.github.io/">Thao Nguyen</a>
+      <br>PhD Student,<br> University of Wisconsin-Madison
     </td>
   </tr>
   <tr>
@@ -116,11 +248,6 @@ social: true
       <img src="https://huonghld.github.io/huong-hoang/assets/img/profile-img.png" height="200">
       <br>
       <a href="https://huonghld.github.io/huong-hoang/">Huong LD Hoang</a> <br> PhD Student,<br> University of California, San Diego
-    </td>
-    <td style="text-align:center">
-      <img src="https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000" height="200">
-      <br>
-      <a href="https://ori.ox.ac.uk/people/kim-tien-ly/">Kim Tien Ly</a> <br> PhD Student,<br> University of Oxford
     </td>
     <td style="text-align:center">
       <img src="https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=18549&s=300" height="200">
@@ -132,6 +259,11 @@ social: true
       <br>
       <a href="https://uclouvain.be/fr/repertoires/thi.doanudents/huyentn2">Doan Van Thao</a> <br> PhD Student,<br> UCLouvain
     </td>
+    <td style="text-align:center">
+      <img src="https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000" height="200">
+      <br>
+      <a href="https://ori.ox.ac.uk/people/kim-tien-ly/">Kim Tien Ly</a> <br> PhD Student,<br> University of Oxford
+    </td>
   </tr>
   <tr>
       <td style="text-align:center">
@@ -140,10 +272,45 @@ social: true
       <a href="https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg">Thi Phuong Le</a> <br> PhD Student,<br> Singapore Management University
     </td>
     <td style="text-align:center">
+      <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4" height="200">
+      <br>
+      <a href="https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en">Van-Anh Nguyen</a> <br> PhD Student,<br> University of Monash
+    </td>
+    <td style="text-align:center">
+      <!-- <img src="https://thaoshibe.github.io/images/thao-badger.jpeg" height="200"> -->
+      <img src='https://tamnguyen9520.github.io/tam_profile.jpeg' height="200">
+      <br>
+      <a href="https://tamnguyen9520.github.io/">Minh Tam Nguyen</a>
+      <br>PhD Student,<br> Rice University
+    </td>
+    <td style="text-align:center">
+      <!-- <img src="https://thaoshibe.github.io/images/thao-badger.jpeg" height="200"> -->
+      <img src='https://media.licdn.com/dms/image/C4E03AQFq3w8KoxS0mA/profile-displayphoto-shrink_200_200/0/1610680905048?e=1720051200&v=beta&t=rGYTyGz4HrhNeT5m9IUtEtydMOaTIoH7B7LJxhPgbnU' height="200">
+      <br>
+      <a href="https://www.linkedin.com/in/trangnnp/">Trang Nguyen</a>
+      <br>PhD Student,<br> Stanford University
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+    <img src="https://qqphung.github.io/img/avatar_350x350.png" height="200">
+    <a href="https://qqphung.github.io/">Quynh Phung</a>
+    <br> PhD Student,
+    <br> University of Maryland, College Park
+    </td>
+    <td style="text-align:center">
+      <img src="https://vothuckhanhhuyen.github.io/images/portrait.jpg" height="200">
+      <br>
+      <a href="https://vothuckhanhhuyen.github.io/">Huyen K. Vo</a>
+      <br> PhD Student,
+      <br> Max Planck Institutes
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+    <td></td><td></td>
   </tr>
   <tr>
     <td></td><td></td><td></td><td></td>
@@ -155,15 +322,17 @@ social: true
 <table style="width:75%">
   <tr>
     <td style="text-align:center">
-      <img src="https://huyenchip.com/assets/profile.jpeg" height="200">
+      <img src="https://images.squarespace-cdn.com/content/v1/570a63ac5559863dc7622dd3/1460299278859-MCAX7O5X41NRVX24QZ4Y/image-asset.jpeg" height="200">
       <br>
-      <a href="https://huyenchip.com/">Chip Huyen</a> <br> Co-founder,<br>Claypot AI
+      <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a> <br> Research Scientist,<br>Meta
     </td>
     <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td></td><td></td><td></td><td></td>

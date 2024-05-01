@@ -32,7 +32,6 @@ social: true
 </center>
 
 <br>
-
 👉🏻 Jump to: [🏛️ Academic Position](#Academic-Positions) | [🎓 Graduate Student](#Graduate-Students) | [💼 Industrial Positions](#Industrial-Positions)
 
 

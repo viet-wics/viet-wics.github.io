@@ -27,8 +27,7 @@ orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 
-contact_note: >
-  To reach us please open a Github issue!
+contact_note:
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 

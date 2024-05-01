@@ -52,7 +52,7 @@ participation of girls:
 
 #### 🔎 According to a survey by the International Labour Organization (ILO, 2016) and 'National Programme on Educational Technology and Science, 2018':
 
-> "Vietnamese students choose to study economics fields compared to engineering fields. <text style="color:#000099;"> STEM occupations are selected by only 23% of male students and </text><text style="color:#db3a34;">9% of female students</text>. This is <b>lower than the ASEAN country average</b>, where 28% of male students and 17% of female students select STEM occupations."
+> "Vietnamese students choose to study economics fields compared to engineering fields. <text style="color:#000099;"> STEM occupations are selected by only 23% of male students and </text><text style="color:#db3a34;"><b>9% of female students></b></text>. This is <b>lower than the ASEAN country average</b>, where 28% of male students and 17% of female students select STEM occupations."
 <div style="text-align: right;">(p. 32)</div>
 
 ---

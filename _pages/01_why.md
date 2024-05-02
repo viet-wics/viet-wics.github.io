@@ -31,7 +31,7 @@ HUST is commonly regarded as the top technical university in Vietnam, often nick
 
 ---
 
-#### 🔎 According to the [STEM education for girls and women: breaking barriers and exploring gender inequality in Asia](https://elibrary.worldbank.org/doi/abs/10.1596/978-1-4648-1966-7) (UNESCO Office Bangkok and Regional Bureau for Education in Asia and the Pacific, 2020):
+#### 🔎 According to the [STEM education for girls and women: breaking barriers and exploring gender inequality in Asia](https://unesdoc.unesco.org/ark:/48223/pf0000375106) (UNESCO Office Bangkok and Regional Bureau for Education in Asia and the Pacific, 2020):
 
 > "Perceptions of self, interest, and difficulty are key factors that influence the extent to which students engage with subjects. When students lack interest, confidence, and success in a subject, they are less likely to continue their studies in that area. <text style="color:#db3a34;"><b>Negative stereotypes</b> around girls’ and women’s capabilities in STEM <b>create learning environments that do not encourage success or interest</b></text>. A study of <text style="color:#000099;">female students in STEM programs</text> at RMIT International University in Vietnam found that they <text style="color:#000099;"><b>often experience anxiety when entering the program due to the perception that IT is traditionally a male choice.</b></text>"
 <div style="text-align: right;">(p. 9)</div>

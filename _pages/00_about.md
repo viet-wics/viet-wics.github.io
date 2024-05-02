@@ -339,10 +339,22 @@ social: true
       <br> Georgia Institute of Technology
     </td>
     <td style="text-align:center">
+      <img src="https://judydnguyen.github.io/assets/img/prof_pic-480.webp" height="200">
+      <br>
+      <a href="https://judydnguyen.github.io/">Dung (Judy) Nguyen</a>
+      <br> PhD Student,
+      <br> Vanderbilt University
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td></td>
@@ -350,12 +362,6 @@ social: true
     <td></td>
     <td></td>
   </tr>
-<!--   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr> -->
 </table>
 
 ### 💼 Industrial Positions <a name="Industrial-Positions"></a>

@@ -25,8 +25,7 @@ Fortunately, I was bold enough to (still) apply and (also) fortunate enough to g
 
 ☾⋆｡𖦹 °✩
 
-Over the last two years, I kept wondering if it was just me -- like maybe women usually don't go for PhDs in Computer Science? 💭
-Maybe it's just a fact.
+Over the last two years, I kept wondering if it was just me -- maybe it's a fact that women usually don't go for PhDs in Computer Science? 💭
 
 But I couldn’t help but ask: Am I the only one? Are there really these "invisible" barriers that keep women from chasing after STEM careers, especially in higher education? (Like the self-doubt and craving for role models that I experienced?) 💭
 
@@ -38,7 +37,7 @@ These "invisible" barriers are real and are found everywhere (proven by actual r
 
 Thus, I officially launched this project and strive to maintain it as long as I can.
 
-I hope this might inspire a younger version of myself to pursue a PhD in CS 🌱.
+I hope this might inspire "a younger version of myself" to pursue a PhD in CS 🌱.
 
 No worries, we got this! ✨
 

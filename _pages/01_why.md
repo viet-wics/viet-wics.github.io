@@ -25,7 +25,7 @@ In contrast, about **41.2%** of PhD holders in the US are women, according to th
 > The number of female faculty is 35%, while the <text style="color:#db3a34;">number of female students is <b>21%</b></text> (reported in 2021)
 
 
-HUST is commonly regarded as the top technical university in Vietnam, often nicknamed "MIT Đại Cồ Việt". In comparison ["actual" MIT](https://registrar.mit.edu/stats-reports/enrollment-statistics-year/all#:~:text=Year%2C%202022%2D2023%2C%202021%2D2022%2C%202020%2D2021%2C%202019%2D2020%2C%20Undergraduate%2C%204%2C657%2C,4%2C530%2C%20All%20MIT%2C%2011%2C858%2C%2011%2C934%2C%2011%2C254%2C%2011%2C520%2C) reported that 48% of its undergraduate enrollment in 2021 (same year) were women.(🍎)
+HUST is commonly regarded as the top technical university in Vietnam, often nicknamed "MIT Đại Cồ Việt". In comparison ["actual" MIT](https://registrar.mit.edu/stats-reports/enrollment-statistics-year/all#:~:text=Year%2C%202022%2D2023%2C%202021%2D2022%2C%202020%2D2021%2C%202019%2D2020%2C%20Undergraduate%2C%204%2C657%2C,4%2C530%2C%20All%20MIT%2C%2011%2C858%2C%2011%2C934%2C%2011%2C254%2C%2011%2C520%2C) reported that <b>48%</b> of its undergraduate enrollment in 2021 (same year) were women.(🍎)
 
 <div style="text-align: left;"><i>(🍎) While this is not an apples-to-apples comparison, I hope it can spark some thinking...</i></div>
 
@@ -52,7 +52,7 @@ participation of girls:
 
 #### 🔎 According to a survey by the International Labour Organization (ILO, 2016) and 'National Programme on Educational Technology and Science, 2018':
 
-> "Vietnamese students choose to study economics fields compared to engineering fields. <text style="color:#000099;"> STEM occupations are selected by only 23% of male students and </text><text style="color:#db3a34;"><b>9% of female students></b></text>. This is <b>lower than the ASEAN country average</b>, where 28% of male students and 17% of female students select STEM occupations."
+> "Vietnamese students choose to study economics fields compared to engineering fields. <text style="color:#000099;"> STEM occupations are selected by only <b>23%</b> of male students and </text><text style="color:#db3a34;"><b>9% of female students</b></text>. This is <b>lower than the ASEAN country average</b>, where 28% of male students and 17% of female students select STEM occupations."
 <div style="text-align: right;">(p. 32)</div>
 
 ---

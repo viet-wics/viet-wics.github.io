@@ -16,19 +16,20 @@ A: There are currently three (03) ways to submit an entry:
 
 ### Q: What are the criteria for entry? 🤔
 
-A: Currently, this project is focused on individuals in higher education (e.g., PhD and above).
+A: Currently, this project is focused on individuals in higher education (PhD).
+
 While I recognize the abundance of talents in the field, I may not be able to cover everyone due to potential volume constraints (This project is also run by a single student, so please be patient!)
 
-Our current criteria include: 
+Our current criteria are: 
 
 1. Women or self-identifying **Vietnamese women**.
 2. Holding or pursuing a **Computer Science PhD**.
 
-In the future, I may expand current criteria to encompass a more diverse group of individuals. Unfortunately, at this moment, I do not have a timeline for this expansion.
+In the future, I may expand current criteria to encompass a more diverse group of individuals. Unfortunately, at this moment, I do not have a timeline for this expansion (sorry!).
 
 ### Q: Is there something wrong with the information? Or do you want to remove your information? 🤦🏼‍♀️
 
-A: Please either <a href="https://github.com/viet-wics/viet-wics.github.io/issues">create a GitHub issue/pull request</a> or email me at vietwics@gmail.com to correct the information.
+A: Please either <a href="https://github.com/viet-wics/viet-wics.github.io/issues">create a GitHub issue/pull request</a> or email me at **vietwics@gmail.com** to correct the information.
 
 If you don't want your information to be shown here, feel free to drop me an email as well; I will remove it as soon as possible. Thank you!
 
@@ -39,7 +40,7 @@ A: To my knowledge, the most similar project is [Vietnamese Professor in US](htt
 
 ### Q: I have an idea for making this even better! What should I do? 💡
 
-A: Please either create a GitHub issue or email me at *vietwics@gmail.com*. I will do my best to get back to you within a few days. If you don't hear back after 7 days, please feel free to email me again.
+A: Please either <a href="https://github.com/viet-wics/viet-wics.github.io/issues">create a GitHub issue</a> or email me at **vietwics@gmail.com**. I will do my best to get back to you within a few days. If you don't hear back after 7 days, please feel free to email me again.
 
 ### Q: Who is involved with this project? 🪴
 

@@ -16,7 +16,7 @@ social: true
     <td style="text-align: right; border: none;"><image src="https://avatars.githubusercontent.com/u/166851392?v=4" height="150"></image></td>
     <td style="text-align: left; font-size: 18px; border: none; font-family: 'Sacramento', fantasy;">
       Hi there! 👋
-      <br> Whether you're a junior student seeking inspiration... 🎓
+      <br> Whether you're a junior student looking for inspiration... 🎓
       <br> Or a senior researcher seeking collaboration opportunities... 🤝
       <br> I hope this page can be a reference for <strong>you</strong> (or for any Vietnamese woman) who wants to pursue a career in Computer Science.
       <br> Good luck!
@@ -207,6 +207,26 @@ social: true
   </tr>
   <tr>
     <td style="text-align:center">
+      <img src="https://huyennguyen.com/assets/img/huyen.jpg" height="200">
+      <br>
+      <a href="https://huyennguyen.com/">Huyen Nguyen</a> <br> Postdoc,<br>Harvard University
+    </td>
+    <td style="text-align:center">
+      <img src="https://www.cise.ufl.edu/~mythai/images/thai.png" height="200">
+      <br>
+      <a href="https://www.cise.ufl.edu/~mythai/">My T. Thai</a> <br> Professor,<br>University of Florida
+    </td>
+    <td style="text-align:center">
+      <img src="https://mcyphi.org/anhnguyen/images/avatar/AN_Headshot_2.jpg" height="200">
+      <br>
+      <a href="https://mcyphi.org/anhnguyen/">Anh Nguyen</a> <br> Professor,<br>University of Montana
+    </td>
+<!--     <td style="text-align:center">
+      <img src="image_link" height="200">
+      <br>
+      <a href="web_link">Name</a> <br> Title,<br>University
+    </td> -->
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
@@ -225,11 +245,6 @@ social: true
 <table style="width:75%">
   <tr>
     <td style="text-align:center">
-      <img src="https://huyennguyen.com/assets/img/huyen.jpg" height="200">
-      <br>
-      <a href="https://huyennguyen.com/">Huyen Nguyen</a> <br> Postdoc,<br>Harvard University
-    </td>
-    <td style="text-align:center">
       <img src="https://thaonguyen19.github.io/me3.jpg" height="200">
       <br>
       <a href="https://thaonguyen19.github.io/">Thao Nguyen</a> <br> PhD Student,<br> University of Washington
@@ -245,6 +260,13 @@ social: true
       <br>
       <a href="https://thaoshibe.github.io/">Thao Nguyen</a>
       <br>PhD Student,<br> University of Wisconsin-Madison
+    </td>
+    <td style="text-align:center">
+      <img src="https://media.licdn.com/dms/image/D4D03AQGQUcI-pBWqLQ/profile-displayphoto-shrink_200_200/0/1714578506599?e=1720051200&v=beta&t=WaDiyRxM97XDW4G6O0-2C3C41SetKbeohuYS5tVFvU0" height="200">
+      <br>
+      <a href="https://www.linkedin.com/in/hathunguyen24967/">Ha Thu Nguyen</a>
+      <br> PhD Student,
+      <br> Norwegian University of Science and Technology
     </td>
   </tr>
   <tr>
@@ -321,11 +343,19 @@ social: true
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <td></td><td></td>
   </tr>
   <tr>
-    <td></td><td></td><td></td><td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
+<!--   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr> -->
 </table>
 
 ### 💼 Industrial Positions <a name="Industrial-Positions"></a>

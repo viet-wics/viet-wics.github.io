@@ -348,11 +348,17 @@ social: true
   </tr>
   <tr>
     <td style="text-align:center">
+      <img src="https://media.licdn.com/dms/image/C5103AQFSPo_6yQSU0g/profile-displayphoto-shrink_200_200/0/1516876847128?e=1720051200&v=beta&t=_7xYjDIHo36DmTSg3D-ocNGuidfwONcgLw0IuEp_jLY" height="200">
+      <br>
+      <a href="https://www.linkedin.com/in/dung-thai/">Dung (June) Thai</a>
+      <br> PhD Student,
+      <br> University of Massachusetts Amherst
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <td></td>
     <td></td>
     <td></td>
   </tr>

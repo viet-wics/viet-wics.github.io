@@ -13,9 +13,9 @@ social: true
 <center>
 <table style="border:none;width:85%;">
   <tr>
-    <td style="text-align: right; border: none;"><image src="https://avatars.githubusercontent.com/u/166851392?v=4" height="150"></image></td>
+    <td style="text-align: right; border: none;"><image src="https://avatars.githubusercontent.com/u/166851392?v=4" height="170"></image></td>
     <td style="text-align: left; font-size: 18px; border: none; font-family: 'Sacramento', fantasy;">
-      Hi there! 👋
+      <image src="/assets/img/favicon.ico" height="30"></image>  Hi there!
       <br> Whether you're a junior student looking for inspiration... 🎓
       <br> Or a senior researcher seeking collaboration opportunities... 🤝
       <br> I hope this page can be a reference for <strong>you</strong> (or for any Vietnamese woman) who wants to pursue a career in Computer Science.
@@ -258,7 +258,7 @@ social: true
       <!-- <img src="https://thaoshibe.github.io/images/thao-badger.jpeg" height="200"> -->
       <img src='/assets/img/thao.png' height="200">
       <br>
-      <a href="https://thaoshibe.github.io/">Thao Nguyen</a>
+      <image src="/assets/img/favicon.ico" height="20"></image> <a href="https://thaoshibe.github.io/">Thao Nguyen</a> 
       <br>PhD Student,<br> University of Wisconsin-Madison
     </td>
     <td style="text-align:center">

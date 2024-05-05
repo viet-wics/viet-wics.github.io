@@ -355,6 +355,13 @@ social: true
       <br> University of Massachusetts Amherst
     </td>
     <td style="text-align:center">
+      <img src="https://thao-nguyen-ai.github.io/images/thao.jpg" height="200">
+      <br>
+      <a href="https://thao-nguyen-ai.github.io/">Thao Nguyen</a>
+      <br> PhD Student,
+      <br> Brown University
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>

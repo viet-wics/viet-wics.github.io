@@ -250,7 +250,7 @@ social: true
       <a href="https://thaonguyen19.github.io/">Thao Nguyen</a> <br> PhD Student,<br> University of Washington
     </td>
     <td style="text-align:center">
-      <img src="https://maihoangdao.github.io/authors/admin/avatar_hua4decc6e8d4ddd6bdc09ad2e8c935cc1_1251282_270x270_fill_q75_lanczos_center.jpg" height="200">
+      <img src="https://avatars.githubusercontent.com/u/42550670?v=4" height="200">
       <br>
       <a href="https://maihoangdao.github.io/">Mai Hoang Dao</a> <br> PhD Student,<br> University of Edinburgh
     </td>

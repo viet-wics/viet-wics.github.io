@@ -55,7 +55,7 @@ social: true
       <a href="https://www.cis.upenn.edu/~linhphan/">Linh Thi Xuan PHAN</a> <br> Professor,<br> University of Pennsylvania
     </td>
     <td style="text-align:center">
-      <img src="https://cas.uoregon.edu/sites/default/files/uo_profiles/tnguye115e28ab.jpg" height="200">
+      <img src="/profile-images/thanh-h-nguyen.jpg" height="200">
       <br>
       <a href="https://ix.cs.uoregon.edu/~thanhhng/">Thanh H. Nguyen</a> <br> Professor,<br> University of Oregon
     </td>
@@ -227,6 +227,15 @@ social: true
       <a href="web_link">Name</a> <br> Title,<br>University
     </td> -->
     <td style="text-align:center">
+      <img src="https://thao-nguyen-ai.github.io/images/thao.jpg" height="200">
+      <br>
+      <a href="https://thao-nguyen-ai.github.io/">Thao Nguyen</a>
+      <br> Professor,
+      <br> Haverford College
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
@@ -264,7 +273,7 @@ social: true
     <td style="text-align:center">
       <img src="https://media.licdn.com/dms/image/D4D03AQGQUcI-pBWqLQ/profile-displayphoto-shrink_200_200/0/1714578506599?e=1720051200&v=beta&t=WaDiyRxM97XDW4G6O0-2C3C41SetKbeohuYS5tVFvU0" height="200">
       <br>
-      <a href="https://www.linkedin.com/in/hathunguyen24967/">Ha Thu Nguyen</a>
+      <a href="/profile-images/ha-thu-nguyen.jpg">Ha Thu Nguyen</a>
       <br> PhD Student,
       <br> Norwegian University of Science and Technology
     </td>
@@ -311,7 +320,7 @@ social: true
     </td>
     <td style="text-align:center">
       <!-- <img src="https://thaoshibe.github.io/images/thao-badger.jpeg" height="200"> -->
-      <img src='https://media.licdn.com/dms/image/C4E03AQFq3w8KoxS0mA/profile-displayphoto-shrink_200_200/0/1610680905048?e=1720051200&v=beta&t=rGYTyGz4HrhNeT5m9IUtEtydMOaTIoH7B7LJxhPgbnU' height="200">
+      <img src='/profile-images/trang-nguyen.jpeg' height="200">
       <br>
       <a href="https://www.linkedin.com/in/trangnnp/">Trang Nguyen</a>
       <br>PhD Student,<br> Stanford University
@@ -348,18 +357,18 @@ social: true
   </tr>
   <tr>
     <td style="text-align:center">
-      <img src="https://media.licdn.com/dms/image/C5103AQFSPo_6yQSU0g/profile-displayphoto-shrink_200_200/0/1516876847128?e=1720051200&v=beta&t=_7xYjDIHo36DmTSg3D-ocNGuidfwONcgLw0IuEp_jLY" height="200">
+      <img src="/profile-images/june-thai.jpg" height="200">
       <br>
       <a href="https://www.linkedin.com/in/dung-thai/">Dung (June) Thai</a>
       <br> PhD Student,
       <br> University of Massachusetts Amherst
     </td>
     <td style="text-align:center">
-      <img src="https://thao-nguyen-ai.github.io/images/thao.jpg" height="200">
+      <img src="/profile-images/tran-huynh.png" height="200">
       <br>
-      <a href="https://thao-nguyen-ai.github.io/">Thao Nguyen</a>
+      <a href="https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en">Tran Huynh</a>
       <br> PhD Student,
-      <br> Brown University
+      <br> Virginia Tech
     </td>
     <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">

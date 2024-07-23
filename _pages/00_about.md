@@ -271,9 +271,9 @@ social: true
       <br>PhD Student,<br> University of Wisconsin-Madison
     </td>
     <td style="text-align:center">
-      <img src="https://media.licdn.com/dms/image/D4D03AQGQUcI-pBWqLQ/profile-displayphoto-shrink_200_200/0/1714578506599?e=1720051200&v=beta&t=WaDiyRxM97XDW4G6O0-2C3C41SetKbeohuYS5tVFvU0" height="200">
+      <img src="/profile-images/ha-thu-nguyen.jpg" height="200">
       <br>
-      <a href="/profile-images/ha-thu-nguyen.jpg">Ha Thu Nguyen</a>
+      <a href="https://scholar.google.com/citations?user=I2qs4EUAAAAJ&hl=en">Ha Thu Nguyen</a>
       <br> PhD Student,
       <br> Norwegian University of Science and Technology
     </td>

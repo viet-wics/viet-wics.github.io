@@ -236,6 +236,13 @@ social: true
   </tr>
   <tr>
     <td style="text-align:center">
+      <img src="https://nhungcnc.com/IMAGE.jpg" height="200">
+      <br>
+      <a href="https://nhungcnc.com/index.html#">Hong Nhung Nguyen</a>
+      <br> Professor,
+      <br> Gachon University
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
@@ -371,10 +378,27 @@ social: true
       <br> Virginia Tech
     </td>
     <td style="text-align:center">
+      <img src="/profile-images/thaonguyen-uiuc.jpg" height="200">
+      <br>
+      <a href="https://thaonguyen217.github.io/">Thao Nguyen</a>
+      <br> PhD Student,
+      <br> University of Illinois Urbana-Champaign
+    </td>
+    <td style="text-align:center">
+      <img src="/profile-images/trinhvuong-korea.jpeg" height="200">
+      <br>
+      <a href="https://scholar.google.ca/citations?hl=en&user=trFdwLkAAAAJ">Trinh Vuong</a>
+      <br> PhD Student,
+      <br> Korea University
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+    <td></td>
     <td></td>
     <td></td>
   </tr>

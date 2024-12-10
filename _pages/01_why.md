@@ -2,6 +2,7 @@
 layout: page
 permalink: /stat/
 title: Statistics
+description: 
 ---
 
 <!-- <a style='color:red;'>TODO: Explain why I create this -->

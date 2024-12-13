@@ -57,10 +57,10 @@ This post is dedicated to young girls, especially Vietnamese junior students, ye
 
 *Table of content*
 1. [The Doubts I Used to Have… And is it normal to have these doubts?](#the-doubts-i-used-to-have-and-is-it-normal-to-have-these-doubts)<br>
-   - [Computer Science is for men](#Computer-Science-is-for-Men)<br>
-   - [Computer Science is for geniues](#Computer-Science-is-Reserved-for-Geniuses)<br>
-   - [Computer Science makes you unattractive, undesirable](#Women-Studying-Computer-Science-Are-Unattractive-or-Will-Stay-Single)<br>
-1. [Reflecting on the Reasons I Kept Going](#reflecting-on-the-reasons-i-kept-going)
+   - [Computer Science is for men](#computer-science-is-for-men)<br>
+   - [Computer Science is for geniues](#computer-science-is-reserved-for-geniuses)<br>
+   - [Computer Science makes you unattractive, undesirable](#women-studying-computer-science-are-unattractive-or-will-stay-single)<br>
+<!-- 1. [Reflecting on the Reasons I Kept Going](#reflecting-on-the-reasons-i-kept-going) -->
 <!-- 2. <br> -->
 
 <!--    - Resilient: Rejection, rejection, rejection
@@ -342,7 +342,7 @@ Research supports that women often face a societal conflict between pursuing STE
       </em>
     </td>
     <td align="center">
-      <img src="http://chenlab.ece.cornell.edu/images/devi_dhruv_1.jpg" height="200">
+      <img src="/profile-images/devi_dhruv_1.jpg" height="200">
       <br>
       <em>Prof. Dhruv Batra & Prof. Devi Parikh @ Georgia Tech<br>
          <a href="http://chenlab.ece.cornell.edu/news.html#:~:text=AMP%20alumni%20Dhruv%20Batra%20got,Prof.">AMP alums Dhruv Batra and Devi Parikh get married</a>

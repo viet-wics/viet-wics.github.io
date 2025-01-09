@@ -15,3 +15,7 @@ description:
 *Opportunity to do research (and get publication) during your undergrad!*
 - [VinAI Residency Program](https://news.vinai.io/ai-residency/)
 - [FPT Software AI Residency](https://ai.fpt-software.com/ai-residency/)
+
+**Scholarships**
+- [Scholarships for Women in STEM](https://www.madisontrust.com/client-resources/articles/scholarships-for-women-in-stem/)
+- [Resources -- Applying to PhD program](https://www.wigraph.org/resources/applying-to-grad-school/)

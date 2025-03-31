@@ -11,7 +11,7 @@ news: false
 social: true
 ---
 
-<a href='./vn/'><i>[Click here to switch to Vietnamese/ Nhấn vào đây để đổi sang tiếng Việt]</i></a>
+<!-- <a href='./vn/'><i>[Click here to switch to Vietnamese/ Nhấn vào đây để đổi sang tiếng Việt]</i></a> -->
 <center>
 <table style="border:none;width:85%;">
   <tr>
@@ -26,8 +26,8 @@ social: true
     </td>
   </tr>
   <tr>
-    <td style="border:none;text-align: center;" colspan="2"><i>📩 Submit a new entry via <a href="https://forms.gle/98zNTRNujsDfGzui9">this Google Forms</a> or create<a href="https://github.com/viet-wics/viet-wics.github.io/issues"> an GitHub issue</a>.
-    <br>More questions? Please check <a href="https://viet-wics.github.io/faq/">FAQ</a> or drop us an email at vietwics@gmail.com. Thank you!</i>
+    <td style="border:none;text-align: center;" colspan="2"><i>📩 Submit a new entry via <a href="https://forms.gle/98zNTRNujsDfGzui9">this Google Forms (slow)</a> or create<a href="https://github.com/viet-wics/viet-wics.github.io/issues"> an GitHub issue (faster)</a>.
+    <br>More questions? Please check <a href="https://viet-wics.github.io/faq/">FAQ</a> or drop us an email at <b>vietwics@gmail.com (fastest)</b>. Thank you!</i>
     </td>
   </tr>
 </table>
@@ -357,7 +357,7 @@ social: true
       <br> Georgia Institute of Technology
     </td>
     <td style="text-align:center">
-      <img src="https://judydnguyen.github.io/assets/img/prof_pic-480.webp" height="200">
+      <img src="/profile-images/dung-june-thai.jpg" height="200">
       <br>
       <a href="https://judydnguyen.github.io/">Dung (Judy) Nguyen</a>
       <br> PhD Student,
@@ -392,6 +392,36 @@ social: true
       <a href="https://scholar.google.ca/citations?hl=en&user=trFdwLkAAAAJ">Trinh Vuong</a>
       <br> PhD Student,
       <br> Korea University
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="https://avatars.githubusercontent.com/u/137878202?v=4" height="200">
+      <br>
+      <a href="https://minhhuyenle.github.io/">Huyen Le</a>
+      <br> PhD Student,
+      <br> VinUniversity
+    </td>
+    <td style="text-align:center">
+      <img src="https://nguyenvuthientrang.github.io/images/pfp_vinai.jpg" height="200">
+      <br>
+      <a href="https://nguyenvuthientrang.github.io/">Trang Nguyen</a>
+      <br> PhD Student,
+      <br> Carnegie Mellon University
+    </td>
+    <td style="text-align:center">
+      <img src="https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg" height="200">
+      <br>
+      <a href="https://phamvuhuyentrang.github.io/">Huyen Trang</a>
+      <br> PhD Student,
+      <br> The University of Texas at Austin
+    </td>
+    <td style="text-align:center">
+      <img src="https://tranquyenbk173.github.io/assets/img/sky.png?2af9cb1fdc117ef5e52c1a68d1d8bb50" height="200">
+      <br>
+      <a href="https://tranquyenbk173.github.io/">Quyen Tran</a>
+      <br> PhD Student,
+      <br> University of Illinois Chicago
     </td>
   </tr>
   <tr>

@@ -249,6 +249,8 @@ social: true
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td></td>

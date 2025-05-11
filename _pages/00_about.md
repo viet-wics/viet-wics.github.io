@@ -303,7 +303,7 @@ social: true
     <td style="text-align:center">
       <img src="https://scholarships.vinuni.edu.vn/wp-content/uploads/2020/06/Doan-Thi-Van-Thao-400x761.jpg" height="200">
       <br>
-      <a href="https://uclouvain.be/fr/repertoires/thi.doanudents/huyentn2">Doan Van Thao</a> <br> PhD Student,<br> UCLouvain
+      <a href="https://scholar.google.co.uk/citations?user=H5zZgaIAAAAJ&hl=en">Doan Van Thao</a> <br> PhD Student,<br> UCLouvain
     </td>
     <td style="text-align:center">
       <img src="https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000" height="200">
@@ -352,11 +352,11 @@ social: true
       <br> Max Planck Institutes
     </td>
     <td style="text-align:center">
-      <img src="https://anhthai1997.com/wp-content/uploads/2024/02/img_5121-converted-2-edited.jpg?w=240" height="200">
+      <img src="https://raw.githubusercontent.com/tranquyenbk173/tranquyenbk173.github.io/refs/heads/main/assets/img/sky.png" height="200">
       <br>
-      <a href="https://anhthai1997.com/">Anh N. Thai</a>
+      <a href="https://tranquyenbk173.github.io/">Quyen Tran</a>
       <br> PhD Student,
-      <br> Georgia Institute of Technology
+      <br> University of Illinois Chicago
     </td>
     <td style="text-align:center">
       <img src="/profile-images/dung-june-thai.jpg" height="200">
@@ -418,23 +418,16 @@ social: true
       <br> PhD Student,
       <br> The University of Texas at Austin
     </td>
-    <td style="text-align:center">
-      <img src="https://tranquyenbk173.github.io/assets/img/sky.png?2af9cb1fdc117ef5e52c1a68d1d8bb50" height="200">
-      <br>
-      <a href="https://tranquyenbk173.github.io/">Quyen Tran</a>
-      <br> PhD Student,
-      <br> University of Illinois Chicago
-    </td>
-  </tr>
-  <tr>
+<!--   </tr>
+  <tr> -->
     <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
+<!--     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td></td> -->
   </tr>
   <tr>
     <td></td>
@@ -454,11 +447,18 @@ social: true
       <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a> <br> Research Scientist,<br>Meta
     </td>
     <td style="text-align:center">
+      <img src="https://anhthai1997.com/wp-content/uploads/2024/02/img_5121-converted-2-edited.jpg?w=240" height="200">
+      <br>
+      <a href="https://anhthai1997.com/">Anh N. Thai</a>
+      <br> AI Researcher,
+      <br> Dolby Laboratories
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <td></td>
+    <!-- <td></td> -->
     <td></td>
   </tr>
   <tr>

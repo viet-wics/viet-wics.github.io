@@ -418,19 +418,20 @@ social: true
       <br> PhD Student,
       <br> The University of Texas at Austin
     </td>
-<!--   </tr>
-  <tr> -->
     <td style="text-align:center">
-      <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+      <img src="https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg" height="200">
+      <br>
+      <a href="https://www.linkedin.com/in/dgtr/">Duong Tran</a>
+      <br> PhD Student,
+      <br> Bosch Center for AI
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEDIQasIwhvsQ/profile-displayphoto-crop_800_800/B4EZii1JbsGwAI-/0/1755078498580?e=1762992000&v=beta&t=H3vCBexG4toIKeiIpoqTtlLmHUJHdw4mQIjxg0CiQZo" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-<!--     <td></td>
-    <td></td>
-    <td></td> -->
-  </tr>
-  <tr>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>

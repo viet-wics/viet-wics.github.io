@@ -419,7 +419,7 @@ social: true
       <br> The University of Texas at Austin
     </td>
     <td style="text-align:center">
-      <img src="https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg" height="200">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEDIQasIwhvsQ/profile-displayphoto-scale_200_200/B4EZii1JbsGwAY-/0/1755078498666?e=1762992000&v=beta&t=z2unAiUbFBeqDhBNz393fIs_CDyY8htwdfiy3psY5nE" height="200">
       <br>
       <a href="https://www.linkedin.com/in/dgtr/">Duong Tran</a>
       <br> PhD Student,

@@ -19,3 +19,5 @@ description:
 **Scholarships**
 - [Scholarships for Women in STEM](https://www.madisontrust.com/client-resources/articles/scholarships-for-women-in-stem/)
 - [Resources -- Applying to PhD program](https://www.wigraph.org/resources/applying-to-grad-school/)
+- [Financial Resources and Programs for Women in STEM](https://couponfollow.com/research/financial-resources-for-women-in-stem) (thanks Payton and Amanda for amazing suggestions!)
+

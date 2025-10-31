@@ -448,7 +448,7 @@ social: true
       <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a> <br> Research Scientist,<br>Meta
     </td>
     <td style="text-align:center">
-      <img src="https://anhthai1997.com/wp-content/uploads/2024/02/img_5121-converted-2-edited.jpg?w=240" height="200">
+      <img src="https://anhthai1997.com/img/me.jpg" height="200">
       <br>
       <a href="https://anhthai1997.com/">Anh N. Thai</a>
       <br> AI Researcher,

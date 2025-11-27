@@ -64,7 +64,7 @@ social: true
   </tr>
   <tr>
     <td style="text-align:center">
-      <img src="https://trangvu.github.io/assets/img/prof_pic-480.webp" height="200">
+      <img src="https://raw.githubusercontent.com/trangvu/trangvu.github.io/refs/heads/master/assets/img/prof_pic.jpg" height="200">
       <br>
       <a href="https://trangvu.github.io/">Trang Vu</a> <br> Lecturer,<br> Monash University
     </td>
@@ -419,7 +419,7 @@ social: true
       <br> The University of Texas at Austin
     </td>
     <td style="text-align:center">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEDIQasIwhvsQ/profile-displayphoto-scale_200_200/B4EZii1JbsGwAY-/0/1755078498666?e=1762992000&v=beta&t=z2unAiUbFBeqDhBNz393fIs_CDyY8htwdfiy3psY5nE" height="200">
+      <img src="../profile-images/duong-tran.jpeg" height="200">
       <br>
       <a href="https://www.linkedin.com/in/dgtr/">Duong Tran</a>
       <br> PhD Student,
@@ -428,11 +428,17 @@ social: true
   </tr>
   <tr>
     <td style="text-align:center">
+      <img src="https://chtmp223.github.io/assets/img/home.jpg" height="200">
+      <br>
+      <a href="https://chtmp223.github.io/">Chau Minh Pham</a>
+      <br> PhD Student,
+      <br> University of Maryland, College Park
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <td></td>
     <td></td>
     <td></td>
   </tr>

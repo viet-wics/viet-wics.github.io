@@ -435,11 +435,17 @@ social: true
       <br> University of Maryland, College Park
     </td>
     <td style="text-align:center">
+      <img src="https://raw.githubusercontent.com/iam-nhi-nguyen/iam-nhi-nguyen.github.io/main/assets/images/photo_of_nhi.jpg" height="200">
+      <br>
+      <a href="https://iam-nhi-nguyen.github.io/">Nhi Nguyen</a>
+      <br> PhD Student,
+      <br> New York University
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <td></td>
     <td></td>
   </tr>
 </table>

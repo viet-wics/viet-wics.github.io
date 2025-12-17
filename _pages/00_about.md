@@ -448,6 +448,7 @@ social: true
     </td>
     <td></td>
   </tr>
+  <tr></tr>
 </table>
 
 ### 💼 Industrial Positions <a name="Industrial-Positions"></a>
@@ -467,16 +468,43 @@ social: true
       <br> Dolby Laboratories
     </td>
     <td style="text-align:center">
+      <img src="../profile-images/tam-nguyen-virginia-tech.jpeg" height="200">
+      <br>
+      <a href="https://www.linkedin.com/in/tam-nguyen-945b50135/">Tam Nguyen</a>
+      <br> Data Scientist,
+      <br> Virginia Tech
+    </td>
+    <td style="text-align:center">
+      <img src="https://vyaivo.github.io/images/Vo_square_small.jpg" height="200">
+      <br>
+      <a href="https://vyaivo.github.io/">Vy Ai Vo</a>
+      <br> Research Scientist,
+      <br> ---
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="../profile-images/thu-le-amz.webp" height="200">
+      <br>
+      <a href="https://www.amazon.science/author/dieu-thu-le">Thu Le</a>
+      <br> Applied Scientist,
+      <br> ---
+    </td>
+    <td style="text-align:center">
+      <img src="../profile-images/thu-le-amz.webp" height="200">
+      <br>
+      <a href="https://www.linkedin.com/in/lanvu/">Lan Vu</a>
+      <br> Principal Software Engineer,
+      <br> Broadcom
+    </td>
+    <td style="text-align:center">
       <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
       <br>
       <a href="">This could be YOU!</a><br>
     </td>
-    <!-- <td></td> -->
     <td></td>
   </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-  </tr>
+  <tr></tr>
 </table>
 <!-- #### Start writing your retrospective [here](https://ml-retrospectives.github.io/how/)! See some published retrospectives from our [NeurIPS 2019 workshop](https://ml-retrospectives.github.io/neurips2019/accepted_retrospectives/index.html). -->
 

@@ -448,7 +448,9 @@ social: true
     </td>
     <td></td>
   </tr>
-  <tr></tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+  </tr>
 </table>
 
 ### 💼 Industrial Positions <a name="Industrial-Positions"></a>
@@ -491,7 +493,7 @@ social: true
       <br> ---
     </td>
     <td style="text-align:center">
-      <img src="../profile-images/thu-le-amz.webp" height="200">
+      <img src="../profile-images/lan-vu.webp" height="200">
       <br>
       <a href="https://www.linkedin.com/in/lanvu/">Lan Vu</a>
       <br> Principal Software Engineer,
@@ -504,7 +506,12 @@ social: true
     </td>
     <td></td>
   </tr>
-  <tr></tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 <!-- #### Start writing your retrospective [here](https://ml-retrospectives.github.io/how/)! See some published retrospectives from our [NeurIPS 2019 workshop](https://ml-retrospectives.github.io/neurips2019/accepted_retrospectives/index.html). -->
 

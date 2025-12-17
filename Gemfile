@@ -10,3 +10,8 @@ group :jekyll_plugins do
 end
 
 gem "webrick", "~> 1.8"
+
+# Ruby 3.4+ requires these standard libraries to be added explicitly
+gem 'observer'
+gem 'base64'
+gem 'csv'

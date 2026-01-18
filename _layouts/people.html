@@ -1,0 +1,208 @@
+---
+layout: default
+---
+
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ t.site_title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article class="post-content">
+
+    <!-- Greeting Section -->
+    <center>
+    <table style="border:none;width:85%;">
+      <tr>
+        <td style="text-align: right; border: none;">
+          <image src="https://avatars.githubusercontent.com/u/166851392?v=4" height="170"></image>
+        </td>
+        <td style="text-align: left; font-size: 18px; border: none; font-family: 'Sacramento', fantasy;">
+          <image src="/assets/img/favicon.ico" height="30"></image> {{ t.greeting }}
+          <br>{{ t.greeting_junior }}
+          <br>{{ t.greeting_senior }}
+          <br>{{ t.greeting_purpose }}
+          <br>{{ t.greeting_luck }}
+          <br>❀❀❀
+        </td>
+      </tr>
+      <tr>
+        <td style="border:none;text-align: center;" colspan="2">
+          <i>{{ t.submit_intro }} <a href="https://forms.gle/98zNTRNujsDfGzui9">{{ t.submit_form }}</a> {{ t.submit_github | prepend: 'or create<a href="https://github.com/viet-wics/viet-wics.github.io/issues"> ' | append: '</a>.' }}
+          <br>{{ t.faq_text }} <a href="https://viet-wics.github.io/faq/">{{ t.faq_link }}</a> {{ t.contact_text }} <b>{{ t.contact_email }}</b>. {{ t.contact_thanks }}</i>
+        </td>
+      </tr>
+    </table>
+    </center>
+
+    <br>
+    {{ t.jump_to }} <a href="#Academic-Positions">{{ t.academic_nav }}</a> | <a href="#Graduate-Students">{{ t.graduate_nav }}</a> | <a href="#Industrial-Positions">{{ t.industry_nav }}</a>
+
+    <!-- Academic Positions Section -->
+    <h3 id="Academic-Positions">{{ t.academic_heading }}</h3>
+
+    <table style="width:75%">
+      {% assign counter = 0 %}
+      {% for person in site.data.people.academic %}
+        {% assign mod = counter | modulo: 4 %}
+        {% if mod == 0 %}
+          <tr>
+        {% endif %}
+        
+        <td style="text-align:center">
+          <img src="{{ person.image }}" height="200">
+          <br>
+          <a href="{{ person.url }}">{{ person.name }}</a>
+          {% if person.featured %}
+            <br><image src="/assets/img/favicon.ico" height="20"></image>
+          {% endif %}
+          <br>{{ person.title[lang] }},<br>{{ person.institution[lang] }}
+        </td>
+        
+        {% assign counter = counter | plus: 1 %}
+        {% assign mod_next = counter | modulo: 4 %}
+        {% if mod_next == 0 %}
+          </tr>
+        {% endif %}
+      {% endfor %}
+      
+      <!-- Add "This could be YOU!" placeholder -->
+      {% assign mod = counter | modulo: 4 %}
+      {% if mod == 0 %}
+        <tr>
+      {% endif %}
+      
+      <td style="text-align:center">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+        <br>
+        <a href="">{{ t.this_could_be_you }}</a><br>
+      </td>
+      
+      {% assign counter = counter | plus: 1 %}
+      {% assign remaining = 4 | minus: mod %}
+      {% if remaining > 1 %}
+        {% for i in (2..remaining) %}
+          <td></td>
+        {% endfor %}
+      {% endif %}
+      </tr>
+      
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- Graduate Students Section -->
+    <h3 id="Graduate-Students">{{ t.graduate_heading }}</h3>
+
+    <table style="width:75%">
+      {% assign counter = 0 %}
+      {% for person in site.data.people.graduate %}
+        {% assign mod = counter | modulo: 4 %}
+        {% if mod == 0 %}
+          <tr>
+        {% endif %}
+        
+        <td style="text-align:center">
+          <img src="{{ person.image }}" height="200">
+          <br>
+          {% if person.featured %}
+            <image src="/assets/img/favicon.ico" height="20"></image>
+          {% endif %}
+          <a href="{{ person.url }}">{{ person.name }}</a>
+          <br>{{ person.title[lang] }},<br>{{ person.institution[lang] }}
+        </td>
+        
+        {% assign counter = counter | plus: 1 %}
+        {% assign mod_next = counter | modulo: 4 %}
+        {% if mod_next == 0 %}
+          </tr>
+        {% endif %}
+      {% endfor %}
+      
+      <!-- Add "This could be YOU!" placeholder -->
+      {% assign mod = counter | modulo: 4 %}
+      {% if mod == 0 %}
+        <tr>
+      {% endif %}
+      
+      <td style="text-align:center">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+        <br>
+        <a href="">{{ t.this_could_be_you }}</a><br>
+      </td>
+      
+      {% assign counter = counter | plus: 1 %}
+      {% assign remaining = 4 | minus: mod %}
+      {% if remaining > 1 %}
+        {% for i in (2..remaining) %}
+          <td></td>
+        {% endfor %}
+      {% endif %}
+      </tr>
+      
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- Industrial Positions Section -->
+    <h3 id="Industrial-Positions">{{ t.industry_heading }}</h3>
+
+    <table style="width:75%">
+      {% assign counter = 0 %}
+      {% for person in site.data.people.industry %}
+        {% assign mod = counter | modulo: 4 %}
+        {% if mod == 0 %}
+          <tr>
+        {% endif %}
+        
+        <td style="text-align:center">
+          <img src="{{ person.image }}" height="200">
+          <br>
+          <a href="{{ person.url }}">{{ person.name }}</a>
+          <br>{{ person.title[lang] }},<br>{{ person.institution[lang] }}
+        </td>
+        
+        {% assign counter = counter | plus: 1 %}
+        {% assign mod_next = counter | modulo: 4 %}
+        {% if mod_next == 0 %}
+          </tr>
+        {% endif %}
+      {% endfor %}
+      
+      <!-- Add "This could be YOU!" placeholder -->
+      {% assign mod = counter | modulo: 4 %}
+      {% if mod == 0 %}
+        <tr>
+      {% endif %}
+      
+      <td style="text-align:center">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+        <br>
+        <a href="">{{ t.this_could_be_you }}</a><br>
+      </td>
+      
+      {% assign counter = counter | plus: 1 %}
+      {% assign remaining = 4 | minus: mod %}
+      {% if remaining > 1 %}
+        {% for i in (2..remaining) %}
+          <td></td>
+        {% endfor %}
+      {% endif %}
+      </tr>
+      
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- Footer Message -->
+    <div style="line-height:60%;"><br></div>
+    <center><i>{{ t.footer_message }}</i></center>
+    <div style="line-height:70%;"><br></div>
+
+  </article>
+
+</div>
+

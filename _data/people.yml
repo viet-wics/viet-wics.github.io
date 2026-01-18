@@ -1,0 +1,617 @@
+# Vietnamese Women in Computer Science
+# All people data in one place - easy to maintain!
+
+academic:
+  - name: Ni Trieu
+    url: https://nitrieu.github.io/
+    image: https://nitrieu.github.io/images/profile.png
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Arizona State University
+      vn: Arizona State University
+
+  - name: Ngan Le
+    url: https://uark-aicv.github.io/team/ngan_le.html
+    image: https://uark-aicv.github.io/images/teampic/ngan_le.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Arkansas
+      vn: University of Arkansas
+
+  - name: Linh Thi Xuan PHAN
+    url: https://www.cis.upenn.edu/~linhphan/
+    image: https://www.cis.upenn.edu/~linhphan/pics/linh.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Pennsylvania
+      vn: University of Pennsylvania
+
+  - name: Thanh H. Nguyen
+    url: https://ix.cs.uoregon.edu/~thanhhng/
+    image: /profile-images/thanh-h-nguyen.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Oregon
+      vn: University of Oregon
+
+  - name: Trang Vu
+    url: https://trangvu.github.io/
+    image: https://raw.githubusercontent.com/trangvu/trangvu.github.io/refs/heads/master/assets/img/prof_pic.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Monash University
+      vn: Monash University
+
+  - name: Phung Lai
+    url: https://www.albany.edu/cehc/faculty/phung-lai
+    image: https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2024-04/image001_20240424112255.jpg?h=052569ad&itok=RnKvO7Zh
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Albany
+      vn: University of Albany
+
+  - name: Hien Nguyen
+    url: https://blogs.uww.edu/nguyenh/
+    image: https://blogs.uww.edu/nguyenh/files/2016/05/hienpic.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Wisconsin-Whitewater
+      vn: University of Wisconsin-Whitewater
+
+  - name: Thanh T.N. Nguyen
+    url: https://uet.vnu.edu.vn/~thanhntn/
+    image: https://uet.vnu.edu.vn/~thanhntn/CV-NguyenThiNhatThanh-03082022_files/image001.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: University of Engineering and Technology, VNU
+      vn: Đại học Công nghệ, ĐH Quốc gia Hà Nội
+
+  - name: Huynh Thi Thanh Binh
+    url: https://users.soict.hust.edu.vn/binhht/
+    image: https://users.soict.hust.edu.vn/binhht/images/HuynhThiThanhBinh6.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Tuyet-Trinh Vu
+    url: https://soict.hust.edu.vn/ts-vu-tuyet-trinh.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/06/V%C5%A9-Tuy%E1%BA%BFt-Trinh.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Nga, Nguyen Thi Thanh
+    url: https://soict.hust.edu.vn/ts-nguyen-thi-thanh-nga.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/08/Nguy%E1%BB%85n-Th%E1%BB%8B-Thanh-Nga.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Thi Ha Dinh Ly
+    url: https://soict.hust.edu.vn/ts-dinh-thi-ha-ly.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/DinhThiHaLy-3.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: D. L. Truong
+    url: https://soict.hust.edu.vn/pgs-ts-truong-thi-dieu-linh.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5878.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Thu Ngo-Quynh
+    url: https://soict.hust.edu.vn/pgs-ts-ngo-quynh-thu.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5536.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Nguyen Thi Thu Huong
+    url: https://soict.hust.edu.vn/ts-nguyen-thi-thu-huong.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5783.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Nguyen Thi Kim Anh
+    url: https://soict.hust.edu.vn/pgs-ts-nguyen-thi-kim-anh.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/06/Nguy%E1%BB%85n-Th%E1%BB%8B-Kim-Anh.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Nguyen Thi Hoang Lan
+    url: https://soict.hust.edu.vn/pgs-ts-nguyen-thi-hoang-lan.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2017/03/PGS.TS-Nguy%E1%BB%85n-Th%E1%BB%8B-Ho%C3%A0ng-Lan.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Bui Thi Mai Anh
+    url: https://soict.hust.edu.vn/ts-bui-thi-mai-anh.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/06/B%C3%B9i-Th%E1%BB%8B-Mai-Anh.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Trang Nguyen
+    url: https://users.soict.hust.edu.vn/trangntt/
+    image: https://soict.hust.edu.vn/wp-content/uploads/2017/03/Nguynthithutrang.png
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Phi Le Nguyen
+    url: https://users.soict.hust.edu.vn/lenp/
+    image: https://users.soict.hust.edu.vn/lenp/aodai_2.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Phuong Khanh Nguyen
+    url: https://soict.hust.edu.vn/ts-nguyen-khanh-phuong.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5231.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Thi-Oanh Nguyen
+    url: https://soict.hust.edu.vn/ts-nguyen-thi-oanh.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5827.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Huong Le Thanh
+    url: https://soict.hust.edu.vn/pgs-ts-le-thanh-huong.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5526.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Vu Thi Huong Giang
+    url: https://soict.hust.edu.vn/ts-vu-thi-huong-giang.html
+    image: https://soict.hust.edu.vn/wp-content/uploads/2019/08/V%C5%A9-Th%E1%BB%8B-H%C6%B0%C6%A1ng-Giang.jpg
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
+
+  - name: Huyen Nguyen
+    url: https://huyennguyen.com/
+    image: https://huyennguyen.com/assets/img/huyen.jpg
+    title:
+      en: Postdoc
+      vn: Postdoc
+    institution:
+      en: Harvard University
+      vn: Harvard University
+
+  - name: My T. Thai
+    url: https://www.cise.ufl.edu/~mythai/
+    image: https://www.cise.ufl.edu/~mythai/images/thai.png
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Florida
+      vn: University of Florida
+
+  - name: Anh Nguyen
+    url: https://mcyphi.org/anhnguyen/
+    image: https://mcyphi.org/anhnguyen/images/avatar/AN_Headshot_2.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Montana
+      vn: University of Montana
+
+  - name: Thao Nguyen
+    url: https://thao-nguyen-ai.github.io/
+    image: https://thao-nguyen-ai.github.io/images/thao.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Haverford College
+      vn: Haverford College
+
+  - name: Hong Nhung Nguyen
+    url: https://nhungcnc.com/index.html#
+    image: https://nhungcnc.com/IMAGE.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Gachon University
+      vn: Gachon University
+
+graduate:
+  - name: Thao Nguyen
+    url: https://thaonguyen19.github.io/
+    image: https://thaonguyen19.github.io/me3.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Washington
+      vn: University of Washington
+
+  - name: Mai Hoang Dao
+    url: https://maihoangdao.github.io/
+    image: https://avatars.githubusercontent.com/u/42550670?v=4
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Edinburgh
+      vn: University of Edinburgh
+
+  - name: Thao Nguyen
+    url: https://thaoshibe.github.io/
+    image: /assets/img/thao.png
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Wisconsin-Madison
+      vn: University of Wisconsin-Madison
+    featured: true
+
+  - name: Ha Thu Nguyen
+    url: https://scholar.google.com/citations?user=I2qs4EUAAAAJ&hl=en
+    image: /profile-images/ha-thu-nguyen.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Norwegian University of Science and Technology
+      vn: Norwegian University of Science and Technology
+
+  - name: Huong LD Hoang
+    url: https://huonghld.github.io/huong-hoang/
+    image: https://huonghld.github.io/huong-hoang/assets/img/profile-img.png
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of California, San Diego
+      vn: University of California, San Diego
+
+  - name: Huyen Thi Ngoc Nguyen
+    url: https://ece.illinois.edu/about/directory/grad-students/huyentn2
+    image: https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=18549&s=300
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Illinois Urbana-Champaign
+      vn: University of Illinois Urbana-Champaign
+
+  - name: Doan Van Thao
+    url: https://scholar.google.co.uk/citations?user=H5zZgaIAAAAJ&hl=en
+    image: https://scholarships.vinuni.edu.vn/wp-content/uploads/2020/06/Doan-Thi-Van-Thao-400x761.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: UCLouvain
+      vn: UCLouvain
+
+  - name: Kim Tien Ly
+    url: https://ori.ox.ac.uk/people/kim-tien-ly/
+    image: https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Oxford
+      vn: University of Oxford
+
+  - name: Thi Phuong Le
+    url: https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg
+    image: https://scholarships.vinuni.edu.vn/wp-content/uploads/2023/03/LeThiPhuong-400x473.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Singapore Management University
+      vn: Singapore Management University
+
+  - name: Van-Anh Nguyen
+    url: https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en
+    image: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Monash
+      vn: University of Monash
+
+  - name: Minh Tam Nguyen
+    url: https://tamnguyen9520.github.io/
+    image: https://tamnguyen9520.github.io/tam_profile.jpeg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Rice University
+      vn: Rice University
+
+  - name: Trang Nguyen
+    url: https://www.linkedin.com/in/trangnnp/
+    image: /profile-images/trang-nguyen.jpeg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Stanford University
+      vn: Stanford University
+
+  - name: Quynh Phung
+    url: https://qqphung.github.io/
+    image: https://qqphung.github.io/img/avatar_350x350.png
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Maryland, College Park
+      vn: University of Maryland, College Park
+
+  - name: Huyen K. Vo
+    url: https://vothuckhanhhuyen.github.io/
+    image: https://vothuckhanhhuyen.github.io/images/portrait.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Max Planck Institutes
+      vn: Max Planck Institutes
+
+  - name: Quyen Tran
+    url: https://tranquyenbk173.github.io/
+    image: https://raw.githubusercontent.com/tranquyenbk173/tranquyenbk173.github.io/refs/heads/main/assets/img/sky.png
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Illinois Chicago
+      vn: University of Illinois Chicago
+
+  - name: Dung (Judy) Nguyen
+    url: https://judydnguyen.github.io/
+    image: /profile-images/dung-june-thai.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Vanderbilt University
+      vn: Vanderbilt University
+
+  - name: Dung (June) Thai
+    url: https://www.linkedin.com/in/dung-thai/
+    image: /profile-images/june-thai.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Massachusetts Amherst
+      vn: University of Massachusetts Amherst
+
+  - name: Tran Huynh
+    url: https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en
+    image: /profile-images/tran-huynh.png
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Virginia Tech
+      vn: Virginia Tech
+
+  - name: Thao Nguyen
+    url: https://thaonguyen217.github.io/
+    image: /profile-images/thaonguyen-uiuc.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Illinois Urbana-Champaign
+      vn: University of Illinois Urbana-Champaign
+
+  - name: Trinh Vuong
+    url: https://scholar.google.ca/citations?hl=en&user=trFdwLkAAAAJ
+    image: /profile-images/trinhvuong-korea.jpeg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Korea University
+      vn: Korea University
+
+  - name: Huyen Le
+    url: https://minhhuyenle.github.io/
+    image: https://avatars.githubusercontent.com/u/137878202?v=4
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: VinUniversity
+      vn: VinUniversity
+
+  - name: Trang Nguyen
+    url: https://nguyenvuthientrang.github.io/
+    image: https://nguyenvuthientrang.github.io/images/pfp_vinai.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Carnegie Mellon University
+      vn: Carnegie Mellon University
+
+  - name: Huyen Trang
+    url: https://phamvuhuyentrang.github.io/
+    image: https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: The University of Texas at Austin
+      vn: The University of Texas at Austin
+
+  - name: Duong Tran
+    url: https://www.linkedin.com/in/dgtr/
+    image: ../profile-images/duong-tran.jpeg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: Bosch Center for AI
+      vn: Bosch Center for AI
+
+  - name: Chau Minh Pham
+    url: https://chtmp223.github.io/
+    image: https://chtmp223.github.io/assets/img/home.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Maryland, College Park
+      vn: University of Maryland, College Park
+
+  - name: Nhi Nguyen
+    url: https://iam-nhi-nguyen.github.io/
+    image: https://raw.githubusercontent.com/iam-nhi-nguyen/iam-nhi-nguyen.github.io/main/assets/images/photo_of_nhi.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: New York University
+      vn: New York University
+
+industry:
+  - name: Thu Nguyen-Phuoc
+    url: https://www.monkeyoverflow.com/about
+    image: https://images.squarespace-cdn.com/content/v1/570a63ac5559863dc7622dd3/1460299278859-MCAX7O5X41NRVX24QZ4Y/image-asset.jpeg
+    title:
+      en: Research Scientist
+      vn: Research Scientist
+    institution:
+      en: Meta
+      vn: Meta
+
+  - name: Anh N. Thai
+    url: https://anhthai1997.com/
+    image: https://anhthai1997.com/img/me.jpg
+    title:
+      en: AI Researcher
+      vn: AI Researcher
+    institution:
+      en: Dolby Laboratories
+      vn: Dolby Laboratories
+
+  - name: Tam Nguyen
+    url: https://www.linkedin.com/in/tam-nguyen-945b50135/
+    image: ../profile-images/tam-nguyen-virginia-tech.jpeg
+    title:
+      en: Data Scientist
+      vn: Data Scientist
+    institution:
+      en: Virginia Tech
+      vn: Virginia Tech
+
+  - name: Vy Ai Vo
+    url: https://vyaivo.github.io/
+    image: https://vyaivo.github.io/images/Vo_square_small.jpg
+    title:
+      en: Research Scientist
+      vn: Research Scientist
+    institution:
+      en: "Intel Labs"
+      vn: "Intel Labs"
+
+  - name: Thu Le
+    url: https://www.amazon.science/author/dieu-thu-le
+    image: ../profile-images/thu-le-amz.webp
+    title:
+      en: Applied Scientist
+      vn: Applied Scientist
+    institution:
+      en: "Amazon Science"
+      vn: "Amazon Science"
+
+  - name: Lan Vu
+    url: https://www.linkedin.com/in/lanvu/
+    image: ../profile-images/lan-vu.webp
+    title:
+      en: Principal Software Engineer
+      vn: Principal Software Engineer
+    institution:
+      en: Broadcom
+      vn: Broadcom
+

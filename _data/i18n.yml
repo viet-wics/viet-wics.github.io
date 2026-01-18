@@ -1,0 +1,87 @@
+# Internationalization (i18n) - UI Translations
+# Easy to maintain all text in one place!
+
+en:
+  site_title: "<strong>Vietnamese</strong> Women in Computer Science"
+  site_description: "A collection of Vietnamese women who are currently working in the field of Computer Science."
+  
+  # Language switcher
+  switch_language: "Tiếng Việt"
+  switch_language_full: "Switch to Vietnamese / Nhấn vào đây để đổi sang tiếng Việt"
+  
+  # Header greeting
+  greeting: "Hi there!"
+  greeting_junior: "Whether you're a junior student looking for inspiration... 🎓"
+  greeting_senior: "Or a senior researcher seeking collaboration opportunities... 🤝"
+  greeting_purpose: "I hope this page can be a reference for <strong>you</strong> (or for any Vietnamese woman) who wants to pursue a career in Computer Science."
+  greeting_luck: "Good luck!"
+  
+  # Submission info
+  submit_intro: "📩 Submit a new entry via"
+  submit_form: "this Google Forms (slow)"
+  submit_github: "an GitHub issue (faster)"
+  faq_text: "More questions? Please check"
+  faq_link: "FAQ"
+  contact_text: "or drop us an email at"
+  contact_email: "vietwics@gmail.com (fastest)"
+  contact_thanks: "Thank you!"
+  
+  # Navigation
+  jump_to: "👉🏻 Jump to:"
+  academic_nav: "🏛️ Academic Position"
+  graduate_nav: "🎓 Graduate Student"
+  industry_nav: "💼 Industrial Positions"
+  
+  # Section headings
+  academic_heading: "🏛️ Academic Positions"
+  graduate_heading: "🎓 Graduate Students"
+  industry_heading: "💼 Industrial Positions"
+  
+  # Call to action
+  this_could_be_you: "This could be YOU!"
+  
+  # Footer message
+  footer_message: "Bloom at your own pace! 🌸 You'll be there soon! (.❛ ᴗ ❛.)"
+
+vn:
+  site_title: "<strong>Phụ nữ Việt</strong> trong ngành STEM"
+  site_description: ""
+  
+  # Language switcher
+  switch_language: "English"
+  switch_language_full: "Switch to English / Nhấn vào đây để đổi sang tiếng Anh"
+  
+  # Header greeting
+  greeting: "Chào bạn!"
+  greeting_junior: "Dù bạn là học sinh/ sinh viên... 🎓"
+  greeting_senior: "Hay đã tốt nghiệp, đi làm... 🤝"
+  greeting_purpose: "Mình hi vọng trang này có thể trở thành 'tài liệu tham khảo'/ động lực cho bạn (hay bất kỳ người phụ nữ Việt Nam nào) trên con đường theo đuổi lĩnh vực  STEM ( đặc biệt là Khoa học Máy tính)."
+  greeting_luck: "Cố gắng lên nhé!"
+  
+  # Submission info
+  submit_intro: "📩 Đề xuất người mới qua"
+  submit_form: "đơn Google Forms này (chậm)"
+  submit_github: "GitHub issue (nhanh hơn)"
+  faq_text: "Các câu hỏi thường gặp"
+  faq_link: "đọc tại đây"
+  contact_text: "hoặc gửi email đến"
+  contact_email: "vietwics@gmail.com (nhanh nhất)"
+  contact_thanks: ""
+  
+  # Navigation
+  jump_to: "👉🏻 Chuyển đến:"
+  academic_nav: "🏛️ Giáo sư"
+  graduate_nav: "🎓 Nghiên cứu sinh Tiến sỹ"
+  industry_nav: "💼 Nghiên cứu viên"
+  
+  # Section headings
+  academic_heading: "🏛️ Vị trí Giáo sư"
+  graduate_heading: "🎓 Nghiên cứu sinh Tiến sỹ"
+  industry_heading: "💼 Vị trí Nghiên cứu viên"
+  
+  # Call to action
+  this_could_be_you: "Đây có thể là bạn!"
+  
+  # Footer message
+  footer_message: "Bloom at your own pace! 🌸 You'll be there soon! (.❛ ᴗ ❛.)"
+

@@ -28,13 +28,13 @@ en:
   
   # Navigation
   jump_to: "👉🏻 Jump to:"
-  academic_nav: "🏛️ Academic Position"
-  graduate_nav: "🎓 Graduate Student"
+  academic_nav: "🏛️ Academic Positions"
+  graduate_nav: "🎓 PhD Students"
   industry_nav: "💼 Industrial Positions"
   
   # Section headings
   academic_heading: "🏛️ Academic Positions"
-  graduate_heading: "🎓 Graduate Students"
+  graduate_heading: "🎓 PhD Students"
   industry_heading: "💼 Industrial Positions"
   
   # Call to action

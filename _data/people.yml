@@ -14,7 +14,7 @@ academic:
 
   - name: Ngan Le
     url: https://uark-aicv.github.io/team/ngan_le.html
-    image: https://uark-aicv.github.io/images/teampic/ngan_le.jpg
+    image: /profile-images/ngan_le_aicv.jpg
     title:
       en: Professor
       vn: Giáo sư
@@ -74,7 +74,7 @@ academic:
 
   - name: Thanh T.N. Nguyen
     url: https://uet.vnu.edu.vn/~thanhntn/
-    image: https://uet.vnu.edu.vn/~thanhntn/CV-NguyenThiNhatThanh-03082022_files/image001.jpg
+    image: /profile-images/Thanh-Nguyen-278.webp
     title:
       en: Lecturer
       vn: Giảng viên
@@ -84,7 +84,7 @@ academic:
 
   - name: Huynh Thi Thanh Binh
     url: https://users.soict.hust.edu.vn/binhht/
-    image: https://users.soict.hust.edu.vn/binhht/images/HuynhThiThanhBinh6.jpg
+    image: /profile-images/huynh-thi-thanh-binh.jpg
     title:
       en: Professor
       vn: Giáo sư
@@ -194,7 +194,7 @@ academic:
 
   - name: Phi Le Nguyen
     url: https://users.soict.hust.edu.vn/lenp/
-    image: https://users.soict.hust.edu.vn/lenp/aodai_2.jpg
+    image: /profile-images/Phi-Le-Nguyen.avif
     title:
       en: Professor
       vn: Giáo sư

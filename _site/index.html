@@ -126,7 +126,7 @@
         <td style="text-align: right; border: none;">
           <image src="https://avatars.githubusercontent.com/u/166851392?v=4" height="170"></image>
         </td>
-        <td style="text-align: left; font-size: 18px; border: none; font-family: 'Sacramento', fantasy;">
+        <td style="text-align: left; font-size: 18px; border: none;">
           <image src="/assets/img/favicon.ico" height="30"></image> Hi there!
           <br>Whether you're a junior student looking for inspiration... 🎓
           <br>Or a senior researcher seeking collaboration opportunities... 🤝
@@ -145,9 +145,80 @@
     </center>
 
     <br>
-    👉🏻 Jump to: <a href="#Academic-Positions">🏛️ Academic Position</a> | <a href="#Graduate-Students">🎓 Graduate Student</a> | <a href="#Industrial-Positions">💼 Industrial Positions</a>
 
-    <!-- Academic Positions Section -->
+    <!-- Tab Navigation -->
+    <style>
+      .tab-container {
+        margin: 20px 0;
+      }
+      .tab-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        border-bottom: 2px solid #e0e0e0;
+        margin-bottom: 30px;
+      }
+      .tab-button {
+        padding: 14px 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-bottom: 3px solid transparent;
+        color: #888;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+      }
+      .tab-button:hover {
+        color: #333;
+        background-color: #f8f9fa;
+        transform: translateY(-2px);
+      }
+      .tab-button.active {
+        color: #000;
+        border-bottom-color: #007bff;
+        font-weight: 600;
+        background-color: #f8f9fa;
+      }
+      .tab-content {
+        display: none;
+        animation: fadeOut 0.3s ease-out;
+      }
+      .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="switchTab('academic')">🏛️ Academic Positions (29)</button>
+        <button class="tab-button" onclick="switchTab('graduate')">🎓 PhD Students (26)</button>
+        <button class="tab-button" onclick="switchTab('industry')">💼 Industrial Positions (6)</button>
+      </div>
+
+      <!-- Academic Positions Tab Content -->
+      <div id="academic-tab" class="tab-content active">
+        <!-- Academic Positions Section -->
     <h3 id="Academic-Positions">🏛️ Academic Positions</h3>
 
     <table style="width:75%">
@@ -174,7 +245,7 @@
         
         
         <td style="text-align:center">
-          <img src="https://uark-aicv.github.io/images/teampic/ngan_le.jpg" height="200">
+          <img src="/profile-images/ngan_le_aicv.jpg" height="200">
           <br>
           <a href="https://uark-aicv.github.io/team/ngan_le.html">Ngan Le</a>
           
@@ -268,7 +339,7 @@
         
         
         <td style="text-align:center">
-          <img src="https://uet.vnu.edu.vn/~thanhntn/CV-NguyenThiNhatThanh-03082022_files/image001.jpg" height="200">
+          <img src="/profile-images/Thanh-Nguyen-278.webp" height="200">
           <br>
           <a href="https://uet.vnu.edu.vn/~thanhntn/">Thanh T.N. Nguyen</a>
           
@@ -287,7 +358,7 @@
         
         
         <td style="text-align:center">
-          <img src="https://users.soict.hust.edu.vn/binhht/images/HuynhThiThanhBinh6.jpg" height="200">
+          <img src="/profile-images/huynh-thi-thanh-binh.jpg" height="200">
           <br>
           <a href="https://users.soict.hust.edu.vn/binhht/">Huynh Thi Thanh Binh</a>
           
@@ -460,7 +531,7 @@
         
         
         <td style="text-align:center">
-          <img src="https://users.soict.hust.edu.vn/lenp/aodai_2.jpg" height="200">
+          <img src="/profile-images/Phi-Le-Nguyen.avif" height="200">
           <br>
           <a href="https://users.soict.hust.edu.vn/lenp/">Phi Le Nguyen</a>
           
@@ -642,9 +713,12 @@
       
       <tr><td></td><td></td><td></td><td></td></tr>
     </table>
+      </div>
 
-    <!-- Graduate Students Section -->
-    <h3 id="Graduate-Students">🎓 Graduate Students</h3>
+      <!-- Graduate Students Tab Content -->
+      <div id="graduate-tab" class="tab-content">
+        <!-- Graduate Students Section -->
+        <h3 id="Graduate-Students">🎓 PhD Students</h3>
 
     <table style="width:75%">
       
@@ -1089,9 +1163,12 @@
       
       <tr><td></td><td></td><td></td><td></td></tr>
     </table>
+      </div>
 
-    <!-- Industrial Positions Section -->
-    <h3 id="Industrial-Positions">💼 Industrial Positions</h3>
+      <!-- Industrial Positions Tab Content -->
+      <div id="industry-tab" class="tab-content">
+        <!-- Industrial Positions Section -->
+        <h3 id="Industrial-Positions">💼 Industrial Positions</h3>
 
     <table style="width:75%">
       
@@ -1208,6 +1285,30 @@
       
       <tr><td></td><td></td><td></td><td></td></tr>
     </table>
+      </div>
+    </div>
+
+    <script>
+      function switchTab(tabName) {
+        // Hide all tab contents
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+        });
+
+        // Remove active class from all buttons
+        const tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+
+        // Show selected tab content
+        document.getElementById(tabName + '-tab').classList.add('active');
+
+        // Add active class to clicked button
+        event.target.classList.add('active');
+      }
+    </script>
 
     <!-- Footer Message -->
     <div style="line-height:60%;"><br></div>

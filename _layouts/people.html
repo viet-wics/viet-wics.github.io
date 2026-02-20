@@ -23,7 +23,7 @@ layout: default
         <td style="text-align: right; border: none;">
           <image src="https://avatars.githubusercontent.com/u/166851392?v=4" height="170"></image>
         </td>
-        <td style="text-align: left; font-size: 18px; border: none; font-family: 'Sacramento', fantasy;">
+        <td style="text-align: left; font-size: 18px; border: none;">
           <image src="/assets/img/favicon.ico" height="30"></image> {{ t.greeting }}
           <br>{{ t.greeting_junior }}
           <br>{{ t.greeting_senior }}
@@ -42,9 +42,80 @@ layout: default
     </center>
 
     <br>
-    {{ t.jump_to }} <a href="#Academic-Positions">{{ t.academic_nav }}</a> | <a href="#Graduate-Students">{{ t.graduate_nav }}</a> | <a href="#Industrial-Positions">{{ t.industry_nav }}</a>
 
-    <!-- Academic Positions Section -->
+    <!-- Tab Navigation -->
+    <style>
+      .tab-container {
+        margin: 20px 0;
+      }
+      .tab-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        border-bottom: 2px solid #e0e0e0;
+        margin-bottom: 30px;
+      }
+      .tab-button {
+        padding: 14px 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-bottom: 3px solid transparent;
+        color: #888;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+      }
+      .tab-button:hover {
+        color: #333;
+        background-color: #f8f9fa;
+        transform: translateY(-2px);
+      }
+      .tab-button.active {
+        color: #000;
+        border-bottom-color: #007bff;
+        font-weight: 600;
+        background-color: #f8f9fa;
+      }
+      .tab-content {
+        display: none;
+        animation: fadeOut 0.3s ease-out;
+      }
+      .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="switchTab('academic')">{{ t.academic_nav }} ({{ site.data.people.academic | size }})</button>
+        <button class="tab-button" onclick="switchTab('graduate')">{{ t.graduate_nav }} ({{ site.data.people.graduate | size }})</button>
+        <button class="tab-button" onclick="switchTab('industry')">{{ t.industry_nav }} ({{ site.data.people.industry | size }})</button>
+      </div>
+
+      <!-- Academic Positions Tab Content -->
+      <div id="academic-tab" class="tab-content active">
+        <!-- Academic Positions Section -->
     <h3 id="Academic-Positions">{{ t.academic_heading }}</h3>
 
     <table style="width:75%">
@@ -95,9 +166,12 @@ layout: default
       
       <tr><td></td><td></td><td></td><td></td></tr>
     </table>
+      </div>
 
-    <!-- Graduate Students Section -->
-    <h3 id="Graduate-Students">{{ t.graduate_heading }}</h3>
+      <!-- Graduate Students Tab Content -->
+      <div id="graduate-tab" class="tab-content">
+        <!-- Graduate Students Section -->
+        <h3 id="Graduate-Students">{{ t.graduate_heading }}</h3>
 
     <table style="width:75%">
       {% assign counter = 0 %}
@@ -147,9 +221,12 @@ layout: default
       
       <tr><td></td><td></td><td></td><td></td></tr>
     </table>
+      </div>
 
-    <!-- Industrial Positions Section -->
-    <h3 id="Industrial-Positions">{{ t.industry_heading }}</h3>
+      <!-- Industrial Positions Tab Content -->
+      <div id="industry-tab" class="tab-content">
+        <!-- Industrial Positions Section -->
+        <h3 id="Industrial-Positions">{{ t.industry_heading }}</h3>
 
     <table style="width:75%">
       {% assign counter = 0 %}
@@ -196,6 +273,30 @@ layout: default
       
       <tr><td></td><td></td><td></td><td></td></tr>
     </table>
+      </div>
+    </div>
+
+    <script>
+      function switchTab(tabName) {
+        // Hide all tab contents
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+        });
+
+        // Remove active class from all buttons
+        const tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+
+        // Show selected tab content
+        document.getElementById(tabName + '-tab').classList.add('active');
+
+        // Add active class to clicked button
+        event.target.classList.add('active');
+      }
+    </script>
 
     <!-- Footer Message -->
     <div style="line-height:60%;"><br></div>

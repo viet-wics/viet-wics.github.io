@@ -1,8 +1,9 @@
 ---
 layout: page
-permalink: /stereotype/
+permalink: /blogs/stereotype/
 title: ''
-description: 
+description:
+lang: en
 ---
 
 ### Challenging Stereotypes:<br>A Decade-Long Journey in Computer Science as a Vietnamese Woman

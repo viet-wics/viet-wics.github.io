@@ -21,8 +21,8 @@ layout: default
     {% include social.html %}
   {% endif %}
 
-  {% if page.comments %}
-    {% include disqus.html %}
-  {% endif %}
-
 </div>
+
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}

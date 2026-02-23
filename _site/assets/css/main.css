@@ -379,9 +379,9 @@ footer a:hover { color: #B509AC; }
 .center { text-align: center; }
 
 /* Disqus comments styling */
-#disqus_thread { margin-left: auto; margin-right: auto; }
+#disqus_thread { padding-top: 20px; margin-left: auto; margin-right: auto; }
 
-#disqus_thread iframe { max-width: 80% !important; }
+#disqus_thread iframe { max-width: 90% !important; }
 
 .page-layout { max-width: 680px; margin: 0 auto; background-color: white; padding: 40px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
 

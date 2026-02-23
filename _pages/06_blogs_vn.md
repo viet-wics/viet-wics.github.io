@@ -12,7 +12,7 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 
 ---
 
-*Các bài viết sẽ/ sắp được đăng*  
+*Các bài viết sẽ/sắp được đăng/dịch*  
 - Làm sao để viết một bản thảo CVPR thật hay (bài dịch)  
 *todo: translate from [How to write a good CVPR submission](https://www.cs.ryerson.ca/~wangcs/resources/How-to-write-a-good-CVPR-submission.pdf)*
 -  Viết một bài báo khoa học hay (bài dịch)  
@@ -28,7 +28,7 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 - Nộp Tiến sĩ ngành STEM ở Mỹ như thế nào? (bài dịch)  
 *todo: translate [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)*
 - Mười năm theo học Kỹ thuật của một cô gái Việt (bài viết)  
-*todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)*
+*todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)* ++ project "cái bàn"
 - Một số thống kê và các đường dẫn hữu ích (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/why/)*
 
@@ -39,6 +39,4 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 <center>
 <i>Bạn muốn đề xuất chủ đề mới? <br>Gửi email cho mình tại <b>vietwics@gmail.com</b> hoặc để lại bình luận nhé!</i>
 </center>
-
----
 

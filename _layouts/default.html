@@ -9,7 +9,9 @@
 
 
     <div class="page-content">
+      {% if page.layout == 'people' %}
       <div class="header-background"><div class="img"></div></div>
+      {% endif %}
       <div class="wrapper">
         {{ content }}
       </div>

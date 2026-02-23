@@ -49,7 +49,7 @@ text:
     older: 'Older'
 
 # Comments
-disqus_shortname: # put your disqus shortname
+disqus_shortname: viet-wics # put your disqus shortname
 
 # Optional features
 show_social_icons:  false

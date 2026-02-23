@@ -1,7 +1,8 @@
 ---
 layout: page
-permalink: /blogs/nghien-cuu-khoa-hoc-la-gi/
+permalink: /vn/bai-viet/nghien-cuu-khoa-hoc-la-gi/
 title: 'Nghiên cứu khoa học là gì?'
+comments: true
 description: "Minh hoạ về việc học Tiến sĩ, bản dịch từ 'The illustrated guide to a Ph.D.' bởi GS. Matt Might"
 lang: vn
 ---
@@ -116,7 +117,9 @@ special terms under the Creative Commons license</a>.]*
 ---
 
 <div style='text-align:right'>
-Người dịch: <a href='https://thaoshibe.github.io/'>thaoshibe</a>. Các bạn chia sẻ nhớ ghi nguồn nha, mình xin cảm ơn ạ!
-<br>San Jose, thứ sáu, ngày 20/02/2026.
+Người dịch: <a href='https://thaoshibe.github.io/'>thaoshibe</a>. Các bạn chia sẻ nhớ ghi nguồn cho tác giả gốc nha, mình xin cảm ơn ạ!
+<br>Thứ sáu, ngày 20/02/2026.
 </div>
+
+---
 

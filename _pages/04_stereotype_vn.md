@@ -4,6 +4,7 @@ permalink: /blogs/muoi-nam-nhin-lai/
 title: ''
 description:
 lang: en
+comments: true
 ---
 
 ### Mười năm theo học ngành Kỹ thuật của một cô gái Việt

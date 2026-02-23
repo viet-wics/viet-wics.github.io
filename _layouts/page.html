@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="page-layout">
 
   <header class="post-header">
     <div class="header-background"></div>
@@ -19,6 +19,10 @@ layout: default
 
   {% if page.social %}
     {% include social.html %}
+  {% endif %}
+
+  {% if page.comments %}
+    {% include disqus.html %}
   {% endif %}
 
 </div>

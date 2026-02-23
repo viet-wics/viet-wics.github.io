@@ -25,7 +25,7 @@
         <!-- Pages -->
         {% for p in site.pages %}
           {% if p.title and p.title != "" and p.url != "/" %}
-            {% unless p.url contains '/blogs/' and p.url != '/blogs/' and p.url != '/vn/blogs/' %}
+            {% unless (p.url contains '/blogs/' or p.url contains '/bai-viet/') and p.url != '/blogs/' and p.url != '/vn/blogs/' and p.url != '/bai-viet/' and p.url != '/vn/bai-viet/' %}
               {% if p.lang %}
                 {% if p.lang == page.lang %}
                   <a class="page-link" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>

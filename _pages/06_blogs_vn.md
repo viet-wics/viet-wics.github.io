@@ -55,7 +55,21 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 
 #### 🤭 Góc thư giãn
 - [PhD Comics](https://phdcomics.com/) (series truyện tranh, Dr. Jorge Cham) <center><a href="https://phdcomics.com/comics/archive/phd050508s.gif"><img src="https://phdcomics.com/comics/archive/phd050508s.gif" style="max-width: 500px;"></a></center>
-- [High impact PhD memes](https://www.facebook.com/MemingPhD/) (facebook page) <center><a href="https://www.facebook.com/photo/?fbid=2982901988620778&set=a.220046476155809"><img src="/images/phd_meme.jpg" style="max-width: 250px;"></a></center>
+- [High impact PhD memes](https://www.facebook.com/MemingPhD/) (facebook page)
+
+<center>
+<div style="display: flex; justify-content: center; gap: 10px; margin: 1rem 0;">
+  <a href="https://www.facebook.com/photo/?fbid=2982901988620778&set=a.220046476155809">
+    <img src="/images/phd_meme.jpg" style="height: 200px; width: auto; object-fit: contain;">
+  </a>
+  <a href="https://www.facebook.com/photo.php?fbid=2714660138778299&set=pb.100044513733038.-2207520000&type=3">
+    <img src="/images/phd_meme_3.jpg" style="height: 210px; width: auto; object-fit: contain;">
+  </a>
+  <a href="https://www.facebook.com/photo?fbid=2821618931415752&set=a.220046476155809">
+    <img src="/images/phd_meme2.jpeg" style="height: 200px; width: auto; object-fit: contain;">
+  </a>
+</div>
+</center>
 
 <!-- * Apr 30, 2024  
 <span style="font-size: 1.1em;">[Statistics & Resources](/blogs/stat/)</span> -->

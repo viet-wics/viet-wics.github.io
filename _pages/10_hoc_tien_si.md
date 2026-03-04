@@ -6,12 +6,12 @@ comments: true
 description: "Minh hoạ về việc học Tiến sĩ, bản dịch từ 'The illustrated guide to a Ph.D.' bởi GS. Matt Might"
 lang: vn
 ---
-<!-- <div style='text-align:right;'><i>Thứ sáu, ngày 20/02/2026</i></div> -->
-<!-- ---
 
-Mỗi khi có người hỏi mình "học Tiến sĩ là học gì?", mình đều lúng túng không biết trả lời ra sao.
-Thực ra, chính bản thân mình cũng từng không biết "học Tiến sĩ" là học gì, làm gì. Đến khi được nhận vào chương trình học Tiến sĩ rồi, mình vẫn còn khá mơ hồ.
-Vậy nên, trong bài viết này, mình xin được dịch bộ tranh minh họa về việc học Tiến sĩ của GS. Matt Might. -->
+<div style='text-align:left'>
+<a href="/vn/bai-viet">[mục lục bài viết]</a> <a href="/vn/">[trang chủ]</a> <a href="mailto:vietwics@gmail.com">[email]</a> <a href="https://thaoshibe.github.io/">[@thaoshibe]</a>
+</div>
+
+---
 
 *Chào bạn!*
 <br>

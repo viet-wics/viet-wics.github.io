@@ -12,12 +12,10 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 * <span style="font-size: 1.1em;">[Nghiên cứu khoa học là gì? Minh họa về học Tiến sĩ (Bài dịch)](/vn/bai-viet/nghien-cuu-khoa-hoc-la-gi/)</span>
 
 *Các bài viết sẽ/sắp được đăng/dịch*  
-- Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)  
+- [Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/)  
 *todo: translate [3 qualities of successful Ph.D. students](https://matt.might.net/articles/successful-phd-students/)*
 - Nộp Tiến sĩ ngành STEM ở Mỹ như thế nào? (bài dịch)  
 *todo: translate [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)*
-- Đường đến thành công xây từ những lá thư từ chối (bài dịch)  
-*todo: translate from [The Road to Success is Paved with Rejection Letters](https://perceiving-systems.blog/en/news/the-road-to-success-is-paved-with-rejection-letters)*
 
 #### 👩🏻 Phụ nữ làm Nghiên cứu Khoa học
 - Chuyện của tôi, một người phụ nữ trong AI (bài dịch)  
@@ -29,9 +27,17 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 
 ---
 
-#### 📎 Links đến những bài viết, tài liệu hay (tiếng Anh)
+#### 📎🇻🇳 Links đến những bài viết, tài liệu hay (tiếng Việt)
+
+- [Con đường học PhD của tôi](https://machinelearningcoban.com/lifesofar2/) (TS. Vũ Hữu Tiệp, Penn State)
+- [Kinh nghiệm học Tiến sĩ](https://docs.google.com/document/d/1EZwDxa4_201rejxHU5GHG_x1YTnU7z1ztD7FVy3RrKk/edit?tab=t.0#heading=h.jftd3n1wkhkw) (TS. Nguyễn Đức Minh Khôi, Oregon State)
+
+
+#### 📎🇺🇸 Links đến những bài viết, tài liệu hay (tiếng Anh)
 
 ##### NCS, cuộc sống NCS
+
+- [The Road to Success is Paved with Rejection Letters](https://perceiving-systems.blog/en/news/the-road-to-success-is-paved-with-rejection-letters) (blog post, Prof. Michael J. Black)
 - [10 easy ways to fail a Ph.D.](https://matt.might.net/articles/ways-to-fail-a-phd/) (blog post, Prof. Matt Might)
 - [You and Your Research](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) (transcription của [bài giảng](https://www.youtube.com/watch?v=a1zDuOPkMSw) (Youtube), Prof. Richard Hamming)
 - [Collection of advice for prospective and current PhD students](https://github.com/pliang279/awesome-phd-advice?tab=readme-ov-file#collection-of-advice-for-prospective-and-current-phd-students) (github list, Prof. Paul Liang)

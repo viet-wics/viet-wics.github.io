@@ -13,8 +13,8 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 - [Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/)
 
 #### 👩🏻 Phụ nữ làm Nghiên cứu Khoa học
-- Chuyện của tôi, một người phụ nữ trong AI (bài dịch)  
-*todo: translate from [My data point as a woman in AI](https://deviparikh.substack.com/p/my-data-point-as-a-woman-in-ai-21840f2a6c67)*
+
+- [Chuyện của tôi, một người phụ nữ trong AI (bài dịch)](/vn/bai-viet/chuyen-cua-toi-mot-nguoi-phu-nu-trong-AI/)  
 - Mười năm theo học Kỹ thuật của một cô gái Việt (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)* ++ project "cái bàn"
 <!-- - Một số thống kê và các đường dẫn hữu ích (bài viết)  
@@ -47,6 +47,11 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 ##### Viết báo, Hội nghị khoa học, v.v.
 - [How to write a good CVPR submission](https://www.cs.ryerson.ca/~wangcs/resources/How-to-write-a-good-CVPR-submission.pdf) (slides, Prof. Bill Freeman)  
 - [Writing a good scientific paper](https://perceiving-systems.blog/en/post/writing-a-good-scientific-paper) (blog post, Prof. Michael J. Black)
+- [How we write rebuttals](https://deviparikh.substack.com/p/how-we-write-rebuttals-dc84742fece1) (blog post, Prof. Devi Parikh, Dhruv Batra, Stefan Lee)
+
+##### Làm việc hiệu quả
+- [Calendar. Not to-do lists. Viewing time as space](https://deviparikh.substack.com/p/calendar-in-stead-of-to-do-lists-9ada86a512dd) (blog post, Prof. Devi Parikh)
+- 
 
 ##### Các bảng xếp hạng *(Chú ý: Mọi xếp hạng đều mang tính "tương đối" nha!)*
 - Hội nghị/ Tạp chí: [Google Scholar - Top publications](https://scholar.google.com/citations?view_op=top_venues&hl=en)

@@ -4,18 +4,13 @@ permalink: /vn/bai-viet/
 title: Bài viết
 comments: true
 lang: vn
-description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
+description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa học và học Tiến sĩ.
 ---
 
 #### 📝 Nghiên cứu Khoa học và học Tiến sĩ
 
-* <span style="font-size: 1.1em;">[Nghiên cứu khoa học là gì? Minh họa về học Tiến sĩ (Bài dịch)](/vn/bai-viet/nghien-cuu-khoa-hoc-la-gi/)</span>
-
-*Các bài viết sẽ/sắp được đăng/dịch*  
-- [Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/)  
-*todo: translate [3 qualities of successful Ph.D. students](https://matt.might.net/articles/successful-phd-students/)*
-- Nộp Tiến sĩ ngành STEM ở Mỹ như thế nào? (bài dịch)  
-*todo: translate [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)*
+- [Nghiên cứu khoa học là gì? Minh họa về học Tiến sĩ (bài dịch)](/vn/bai-viet/nghien-cuu-khoa-hoc-la-gi/)
+- [Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/)
 
 #### 👩🏻 Phụ nữ làm Nghiên cứu Khoa học
 - Chuyện của tôi, một người phụ nữ trong AI (bài dịch)  
@@ -25,6 +20,11 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 <!-- - Một số thống kê và các đường dẫn hữu ích (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/why/)* -->
 
+<!-- *Các bài viết sẽ/sắp được đăng/dịch*   -->
+<!-- - [Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/)   -->
+<!-- *todo: translate [3 qualities of successful Ph.D. students](https://matt.might.net/articles/successful-phd-students/)* -->
+<!-- - Nộp Tiến sĩ ngành STEM ở Mỹ như thế nào? (bài dịch)  
+*todo: translate [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)* -->
 
 ---
 
@@ -32,6 +32,7 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 
 - [Con đường học PhD của tôi](https://machinelearningcoban.com/lifesofar2/) (TS. Vũ Hữu Tiệp, Penn State)
 - [Kinh nghiệm học Tiến sĩ](https://docs.google.com/document/d/1EZwDxa4_201rejxHU5GHG_x1YTnU7z1ztD7FVy3RrKk/edit?tab=t.0#heading=h.jftd3n1wkhkw) (TS. Nguyễn Đức Minh Khôi, Oregon State)
+- Cẩm nang: Nộp Tiến sĩ ngành STEM ở Mỹ *(bài sẽ dịch [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)*)
 
 
 #### 📎🇺🇸 Links đến những bài viết, tài liệu hay (tiếng Anh)

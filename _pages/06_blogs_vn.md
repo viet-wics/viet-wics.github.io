@@ -25,6 +25,7 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 <!-- - Một số thống kê và các đường dẫn hữu ích (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/why/)* -->
 
+
 ---
 
 #### 📎🇻🇳 Links đến những bài viết, tài liệu hay (tiếng Việt)
@@ -47,14 +48,14 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 - [Writing a good scientific paper](https://perceiving-systems.blog/en/post/writing-a-good-scientific-paper) (blog post, Prof. Michael J. Black)
 
 ##### Các bảng xếp hạng *(Chú ý: Mọi xếp hạng đều mang tính "tương đối" nha!)*
-- Xếp hạng các hội nghị/ tạp chí uy tín: [Google Scholar - Top publications](https://scholar.google.com/citations?view_op=top_venues&hl=en)
-- Xếp hạng trường Đại học: [US News Ranking](https://www.usnews.com/education/best-global-universities), [THE Ranking](https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking), hoặc [QS World](https://www.topuniversities.com/world-university-rankings).
-- Xếp hạng trường Đại học, tập trung vào Computer Science: [CSRankings](https://csrankings.org/#/index?all&us)
+- Hội nghị/ Tạp chí: [Google Scholar - Top publications](https://scholar.google.com/citations?view_op=top_venues&hl=en)
+- Trường Đại học: [US News Ranking](https://www.usnews.com/education/best-global-universities), [THE Ranking](https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking), hoặc [QS World](https://www.topuniversities.com/world-university-rankings).
+- Trường Đại học, tập trung vào Computer Science: [CSRankings](https://csrankings.org/#/index?all&us)
 
 ---
 
 #### 🤭 Góc thư giãn
-- [PhD Comics](https://phdcomics.com/) (series truyện tranh, Dr. Jorge Cham) <center><a href="https://phdcomics.com/comics/archive/phd050508s.gif"><img src="https://phdcomics.com/comics/archive/phd050508s.gif" style="max-width: 500px;"></a></center>
+- [PhD Comics](https://phdcomics.com/) (series truyện tranh, Dr. Jorge Cham) <center><a href="https://phdcomics.com/comics/archive/phd050508s.gif"><img src="https://phdcomics.com/comics/archive/phd050508s.gif" style="max-width: 600px;"></a></center>
 - [High impact PhD memes](https://www.facebook.com/MemingPhD/) (facebook page)
 
 <center>
@@ -73,6 +74,16 @@ description: Các bài viết/ bài dịch liên quan đến chủ đề Ph.D.
 
 <!-- * Apr 30, 2024  
 <span style="font-size: 1.1em;">[Statistics & Resources](/blogs/stat/)</span> -->
+---
+
+#### 🏛️ University of Wisconsin-Madison (UW-Madison)
+
+Các bài viết liên quan đến UW-Madison -- nơi mà mình đang theo học:
+
+- [Misc on the University of Wisconsin, CS, and Madison](https://pages.cs.wisc.edu/~anhai/misc/wisc/) (blog posts, Prof. AnHai Doan)  
+- [Living in Madison Wisconsin](https://pages.cs.wisc.edu/~anhai/misc/wisc/living-in-madison.html) (blog post, Prof. AnHai Doan)  
+- [Cold Weather](https://pages.cs.wisc.edu/~anhai/misc/wisc/cold-weather.html) (blog post, Prof. AnHai Doan)  
+
 
 ---
 <center>

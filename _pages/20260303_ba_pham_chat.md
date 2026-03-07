@@ -3,7 +3,7 @@ layout: page
 permalink: /vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/
 title: 'Ba phẩm chất của NCS thành công'
 comments: true
-description: "Bài dịch từ `3 qualities of successful Ph.D. students: Perseverance, tenacity and cogency` bởi GS. Matt Might"
+description: 
 lang: vn
 ---
 

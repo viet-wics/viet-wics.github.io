@@ -14,9 +14,11 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 
 #### 👩🏻 Phụ nữ làm Nghiên cứu Khoa học
 
+<!-- - [Tôi trả lời tôi: Những lầm tưởng tôi từng có về việc theo học các ngành STEM](/blogs/stereotype/) (bài viết, chưa có kế hoạch viết sang tiếng Việt) -->
+- [A Decade-Long Journey in Computer Science as a Vietnamese Woman](/blogs/stereotype/) (bài viết)
+<!-- *todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)* ++ project "cái bàn" -->
 - [Chuyện của tôi, một người phụ nữ trong AI (bài dịch)](/vn/bai-viet/chuyen-cua-toi-mot-nguoi-phu-nu-trong-AI/)  
-- Mười năm theo học Kỹ thuật của một cô gái Việt (bài viết)  
-*todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)* ++ project "cái bàn"
+
 <!-- - Một số thống kê và các đường dẫn hữu ích (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/why/)* -->
 

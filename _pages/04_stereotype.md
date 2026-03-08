@@ -1,14 +1,18 @@
 ---
 layout: page
 permalink: /blogs/stereotype/
-title: ''
-description:
+title: 'Challenging Stereotypes'
+description: A Decade-Long Journey in Computer Science as a Vietnamese Woman
 lang: en
+comments: true
 ---
 
-### Challenging Stereotypes:<br>A Decade-Long Journey in Computer Science as a Vietnamese Woman
+<div style='text-align:left'>
+<a href="/vn/bai-viet">[mục lục bài viết]</a> <a href="/vn/">[trang chủ]</a> <a href="mailto:vietwics@gmail.com">[email]</a> <a href="https://thaoshibe.github.io/">[@thaoshibe]</a>
+</div>
 
 <!-- Ten years ago, back in 2014 — I was a high school senior preparing for the Vietnamese National High School Graduation Examination (“Kỳ thi Trung học Phổ thông Quốc gia”). The Vietnamese National High School Graduation Examination is a standardized test in the Vietnamese education system that all Vietnamese high school students must take. The results of this test are used for: (1) High School Graduation and (2) Admission to undergraduate programs of universities or junior colleges — according to [Wikipedia, "High School Graduation Examination"](https://en.wikipedia.org/wiki/High_School_Graduation_Examination). Like many other students at that time, I spent countless hours worrying about choosing the right major and career path. -->
+---
 
 Ten years ago, back in 2014 — I was a high school senior preparing for the [Vietnamese National High School Graduation Examination](https://en.wikipedia.org/wiki/High_School_Graduation_Examination) (Kỳ thi Trung học Phổ thông Quốc gia). This standardized test is a major milestone for all Vietnamese high school students, serving two primary purposes:
 
@@ -56,11 +60,11 @@ This post is dedicated to young girls, especially Vietnamese junior students, ye
 
 <!-- Let's get started! -->
 
-*Table of content*
-1. [The Doubts I Used to Have… And is it normal to have these doubts?](#the-doubts-i-used-to-have-and-is-it-normal-to-have-these-doubts)<br>
-   - [Computer Science is for men](#computer-science-is-for-men)<br>
-   - [Computer Science is for geniues](#computer-science-is-reserved-for-geniuses)<br>
-   - [Computer Science makes you unattractive, undesirable](#women-studying-computer-science-are-unattractive-or-will-stay-single)<br>
+*Table of content*<br>
+0 - [The Doubts I Used to Have… And is it normal to have these doubts?](#the-doubts-i-used-to-have-and-is-it-normal-to-have-these-doubts)<br>
+1 - [Computer Science is for men](#computer-science-is-for-men)<br>
+2 - [Computer Science is for geniues](#computer-science-is-reserved-for-geniuses)<br>
+3 - [Computer Science makes you unattractive, undesirable](#women-studying-computer-science-are-unattractive-or-will-stay-single)<br>
 <!-- 1. [Reflecting on the Reasons I Kept Going](#reflecting-on-the-reasons-i-kept-going) -->
 <!-- 2. <br> -->
 
@@ -149,7 +153,7 @@ Let me revisit the common "role models" people often associate with Computer Sci
 
 I'm not entirely certain about the origin of this "stereotype," but it's likely one of the most pervasive and long-standing misconceptions. A study by Heriot-Watt University revealed a telling insight: [when students aged 13–17 were asked to draw their perception of Computer Science, many depicted scientists as boys, nerds, and geeks](https://psycnet.apa.org/record/2018-43118-010).
 
-<center><img src="/profile-images/draw-a-computer.png" width="700"><br>
+<center><img src="/profile-images/draw-a-computer.png" width="650"><br>
 </center>
 <i>Caption: When students aged 13–17 were asked to draw their perception of Computer Science, many depicted scientists as men.</i>
 <br>
@@ -194,24 +198,24 @@ Candidly, I once subscribed to these stereotypes. However, I've since recognized
 <table>
   <tr>
     <td align="center">
-      <img src="/profile-images/my-room.jpg" height="200">
+      <img src="/profile-images/my-room.jpg" height="160">
       <br>
       <em>My desk at home (Can you spot the cat?)</em>
     </td>
     <td align="center">
-      <img src="/profile-images/home-desk.jpg" height="200">
+      <img src="/profile-images/home-desk.jpg" height="160">
       <br>
       <em>My desk at home (yes, with my cat as "decorative object")</em>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="/profile-images/uw-madison-room.jpg" height="200">
+      <img src="/profile-images/uw-madison-room.jpg" height="160">
       <br>
       <em>My first-year office at University of Wisconsin-Madison</em>
     </td>
     <td align="center">
-      <img src="/profile-images/adobe-room.jpg" height="200">
+      <img src="/profile-images/adobe-room.jpg" height="160">
       <br>
       <em>My desk at <a href="https://research.adobe.com/">Adobe Reseach</a> @ Summer 2024</em>
     </td>
@@ -391,24 +395,24 @@ To anyone who still believes that girls in STEM/ Computer Science are "unattract
 <table>
   <tr>
     <td align="center">
-      <img src="/profile-images/vinai-office.jpg" height="250">
+      <img src="/profile-images/vinai-office.jpg" height="220">
       <br>
       <em>Me at <a href="https://www.vinai.io/vinai-ai-residency/">VinAI Research</a> office <br>@ 2020</em>
     </td>
     <td align="center">
-      <img src="/profile-images/graduation.jpeg" height="250">
+      <img src="/profile-images/graduation.jpeg" height="220">
       <br>
       <em>With my undergrad classmates <br>@ 2020</em>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="/profile-images/summer2024.jpg" height="250">
+      <img src="/profile-images/summer2024.jpg" height="220">
       <br>
       <em>With my summer intern mentor(s) <br>@ Summer 2024</em>
     </td>
     <td align="center">
-      <img src="/profile-images/cvpr2024.jpeg" height="250">
+      <img src="/profile-images/cvpr2024.jpeg" height="220">
       <br>
       <em>Me with my labmates at CVPR <br>@ 2024</em>
     </td>
@@ -467,3 +471,5 @@ I hope this article gives you a new perspective and (even better) inspires Vietn
 - McPherson, E., Park, B., & Ito, T. A. (2018). The role of prototype matching in science pursuits: Perceptions of scientists that are inaccurate and diverge from self-perceptions predict reduced interest in science careers. Personality and Social Psychology Bulletin, 44(6), 881–898. https://doi.org/10.1177/0146167217754069
 - Park, L. E., Young, A. F., Troisi, J. D., & Pinkus, R. T. (2011). Effects of everyday romantic goal pursuit on women’s attitudes toward math and science. Personality and Social Psychology Bulletin, 37(9), 1259–1273. https://doi.org/10.1177/0146167211408436
 - Starr, C. R. (2018). “I’m not a science nerd!”: STEM stereotypes, identity, and motivation among undergraduate women. Psychology of Women Quarterly, 42(4), 489–503. https://doi.org/10.1177/0361684318793848
+
+

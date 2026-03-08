@@ -1,158 +1,136 @@
 ---
 layout: page
-permalink: /blogs/muoi-nam-nhin-lai/
-title: ''
-description:
-lang: en
+permalink: /vn/bai-viet/nhung-lam-tuong-toi-tung-co-ve-nghien-cuu-khoa-hoc/
+title: 'Tôi trả lời tôi'
 comments: true
+description: " Những lầm tưởng tôi từng có về việc theo học các ngành Kỹ thuật/ STEM"
+lang: vn
 ---
 
-### Mười năm theo học ngành Kỹ thuật của một cô gái Việt
+<div style='text-align:left'>
+<a href="/vn/bai-viet">[mục lục bài viết]</a> <a href="/vn/">[trang chủ]</a> <a href="mailto:vietwics@gmail.com">[email]</a> <a href="https://thaoshibe.github.io/">[@thaoshibe]</a>
+</div>
 
-<!-- Ten years ago, back in 2014 — I was a high school senior preparing for the Vietnamese National High School Graduation Examination (“Kỳ thi Trung học Phổ thông Quốc gia”). The Vietnamese National High School Graduation Examination is a standardized test in the Vietnamese education system that all Vietnamese high school students must take. The results of this test are used for: (1) High School Graduation and (2) Admission to undergraduate programs of universities or junior colleges — according to [Wikipedia, "High School Graduation Examination"](https://en.wikipedia.org/wiki/High_School_Graduation_Examination). Like many other students at that time, I spent countless hours worrying about choosing the right major and career path. -->
+---
 
-Ten years ago, back in 2014 — I was a high school senior preparing for the [Vietnamese National High School Graduation Examination](https://en.wikipedia.org/wiki/High_School_Graduation_Examination) (Kỳ thi Trung học Phổ thông Quốc gia). This standardized test is a major milestone for all Vietnamese high school students, serving two primary purposes:
+> CHÚ Ý: Bài viết này sẽ được viết lại dựa trên bài viết tiếng Anh mình từng viết năm 2024. Hiện tại mình chưa có thời gian để viết, mình sẽ cập nhật và hoàn thiện khi mình có thời gian... (huhu)
 
-1. High School Graduation
-1. Admission to undergraduate programs at universities or junior colleges
+Mười năm trước (2014), tôi, một nữ sinh cấp ba, gấp rút chuẩn bị cho kỳ thi Trung học phổ thông Quốc gia.
+Đây có lẽ là kỳ thi "đổi đời" với những cô gái tỉnh lẻ (như tôi):
+<ol>
+  <li> Tôi sẽ hoàn thành 12 năm đèn sách của mình.</li>
+  <li> Và, quan trọng hơn, tôi sẽ bước vào ngưỡng cửa Đại học.</li>
+</ol>
 
-Like many of my peers at the time, I found myself consumed by existential questions about my future, constantly wrestling with doubts and uncertainties.
-I wanted to apply for the <a href="https://ts.hust.edu.vn/en/program/mathematics-informatics">Mathematics-Informatics program</a> at <a href="https://hust.edu.vn/">Hanoi University of Science and Technology</a> (top #1 university in Vietnam for Science Technology Engineer Mathematics (STEM)).
+Tôi, như bao bạn học sinh cuối cấp khác, đau đầu trước câu hỏi chọn ngành, chọn trường.
 <br>
-But I hesitated.<br>
-The 17-year-old me was riddled with self-doubt:
+Tôi muốn đăng ký vào chương trình Toán Tin của trường <a href="https://hust.edu.vn/">Đại học Bách Khoa Hà Nội</a>.
+<br>
+Nhưng, tôi sợ.
+<br>
+<br>
+Tôi, năm 17 tuổi, do dự trước những câu hỏi:
 
-> "Am I a good fit for the field of STEM?"<br>
-> <img src="/profile-images/self-doubt.jpeg" width="300"><br>
-> "Should girls even consider studying Computer Science?"<br>
-> <i><font size=2>Image: Illustration of me, 10 years ago, reflecting on my potential in Computer Science.</font></i>
+<center>
+<i>
+"Liệu con gái có nên học Kỹ thuật/ STEM?
+<br>
+Liệu tôi (chẳng thông minh xuất chúng) có đủ khả năng theo học Kỹ thuật/ STEM?"
+</i>
+</center>
 
-<!-- <center><img src="/profile-images/toank24.JPG" width="600"></center> -->
+<center>
+<img src="/profile-images/self-doubt.jpeg" style="max-height: 300px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</center>
+<hr>
 
-<!-- > Vietnamese National High School Graduation Examination is a standardized test in the Vietnamese education system that all Vietnamese high school students must takes. The results of this test will be use for: (1) High School Graduation (2) Admission to undergraduate programs of universities or junior colleges. -- According to [Wikipedia, "High School Graduation Examination"](https://en.wikipedia.org/wiki/High_School_Graduation_Examination) -->
+Lúc đó, tôi rất mơ hồ về tương lai của mình.
+Sách, báo về hướng nghiệp đều rất chung chung (số lượng tuyển sinh, ngành xét tuyển, v.v.)
+Tôi cũng có tìm, nhưng không tìm được anh/ chị nào đi trước để hỏi kinh nghiệm, câu chuyện của các anh/ chị...
 
-<!-- I wanted to apply for the <a href="https://ts.hust.edu.vn/en/program/mathematics-informatics">Mathematics-Informatics program</a> at <a href="https://hust.edu.vn/">Hanoi University of Science and Technology</a> (top #1 university in Vietnam for STEM). But I hesitated. The 17-year-old me was riddled with self-doubt: -->
 
-
-<!-- Back then, I had so many questions, uncertainties, and no clear answers. Yet somehow, for various reasons and through a series of choices, here I am, ten years later, working in this very field. -->
-<!-- If I could go back to 2014, what would I say to the younger version of myself grappling with those doubts? -->
-<!-- This post is for young girls out there looking for a glimmer of hope or a reason to pursue Computer Science. I hope my story—though deeply personal and far from comprehensive—can offer you some perspective on what it means to be a woman in this field. -->
-
-Back then, I was awash with questions, uncertainties swirling around me, and no clear path forward. Yet through a complex tapestry of choices and unexpected turns, here I am a decade later, established in this very field.
-
-Now, ten years later, if I could travel back to 2014 and meet my younger self, wrestling with those deep-seated doubts, what wisdom would I share?
+Vậy mà cũng đã 10 năm.
+Tôi đã đi trên con đường mà tôi từng không dám đi đó.
+<br>
+(Dù chưa thành công vẻ vang gì) Nhưng tôi giờ đây, có lẽ đã "đủ điều kiện" là "anh/ chị" đi trước, có thể trò chuyện với cô gái 17 tuổi năm ấy.
 
 ---
 
-This post is dedicated to young girls, especially Vietnamese junior students, yearning for a glimmer of hope or a spark of inspiration to pursue Computer Science. My story—intensely personal and far from a comprehensive guide— but hopefully can to offer a glimpse into what it truly means to be a Vietnamese woman navigating this dynamic landscape.
+Bài viết này dành cho các bạn học sinh (đặc biệt là các bạn nữ), đang đứng trước những lựa chọn về ngành/ nghề.
+Tôi sẽ chia sẻ về 3 lầm tưởng của tôi về việc theo đuổi các ngành Kỹ thuật/ STEM (đặc biệt là Công nghệ, AI).
 
-<!-- <center><img src="/profile-images/toank24-girl.jpg" width="600"></center> -->
+Những chia sẻ của tôi hoàn toàn là trải nghiệm cá nhân, vì vậy, xin bạn chỉ dùng làm tham khảo. Dù vậy, tôi vẫn hi vọng những chia sẻ này có thể trả lời được (một số) những băn khoăn bạn có thể đang có.
 
-> "Yes, you belong to Computer Science."<br>
-> <img src="/profile-images/meet-me.jpeg" width="300"><br>
-> "Your 10-year-later self will be proud of you today!"<br>
-> <i><font size=2>Image: If I could travel back in time, what would I tell my younger self?</font></i>
+<center>
+<img src="/profile-images/meet-me.jpeg" style="max-height: 300px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</center>
 
 ---
 
 <!-- Let's get started! -->
 
-*Table of content*
-1. [The Doubts I Used to Have… And is it normal to have these doubts?](#the-doubts-i-used-to-have-and-is-it-normal-to-have-these-doubts)<br>
-   - [Computer Science is for men](#computer-science-is-for-men)<br>
-   - [Computer Science is for geniues](#computer-science-is-reserved-for-geniuses)<br>
-   - [Computer Science makes you unattractive, undesirable](#women-studying-computer-science-are-unattractive-or-will-stay-single)<br>
-<!-- 1. [Reflecting on the Reasons I Kept Going](#reflecting-on-the-reasons-i-kept-going) -->
-<!-- 2. <br> -->
-
-<!--    - Resilient: Rejection, rejection, rejection
-   - Embrace your uniqueness
-   - Consistent small improvements
-   - Grateful -->
-
-<!-- "Am I really cut out for this field?"  
-
-Back then, I had so many questions, uncertainties, and no clear answers. Yet somehow, for various reasons and through a series of choices, here I am, ten years later, working in this very field.  
-
-If I could go back to 2014, what would I say to the younger version of myself grappling with those doubts?  
-
-This post is for young girls out there looking for a glimmer of hope or a reason to pursue Computer Science. I hope my story—though deeply personal and far from comprehensive—can offer you some perspective on what it means to be a woman in this field.
- -->
+*Mục lục*:
+- (0) [Băn khoăn thì có sao không; và có băn khoăn... thì có bình thường không?](#the-doubts-i-used-to-have-and-is-it-normal-to-have-these-doubts)
+- (1) Lầm tưởng 1: [Computer Science is for men](#computer-science-is-for-men)
+- (2) Lầm tưởng 2: [Computer Science is for geniues](#computer-science-is-reserved-for-geniuses)
+- (3) Lầm tưởng 3: [Computer Science makes you unattractive, undesirable](#women-studying-computer-science-are-unattractive-or-will-stay-single)
 
  ---
 
 <div style="background-color: #F2F2F2; padding: 10px; border-radius: 10px; width: 90%; margin: 0 auto;">
-     <img src="/profile-images/thao-android.jpg" alt="Thao's profile picture" style="float: left; margin-right: 10px;" width="200">
-  <b>About Me:<a href="https://thaoshibe.github.io/">「 ✦ Thao Nguyen ✦ 」</a></b>
-  <p>Hello there, I'm Thao (<a href="https://thaoshibe.github.io/">Thao Nguyen</a>). I'm a PhD student in <a href="https://www.cs.wisc.edu/">Computer Science at the University of Wisconsin-Madison</a>, USA.</p>
-
-  <p>I graduated from Thai Nguyen High School for the Gifted, majoring in Mathematics (Class K24). Later, I pursued a degree in Mathematics and Computer Science (<a href="https://hust.edu.vn/en/academics/academic-programs/talented-programs-368400.html">Talent Engineering Program</a>) at Hanoi University of Science and Technology.</p>
-
-  <p>In my final year of university (2019), I was fortunate to be among the first 10 AI Residents at <a href="https://www.vinai.io/vinai-ai-residency/">VinAI Research</a> (Batch 1). My experiences at VinAI were instrumental in opening doors to research and eventually led me to apply for a PhD program in the United States.</p>
-
-  <p>As I write this (December 2024), I am in my third year of the Ph.D. program, working with Professor <a href="https://pages.cs.wisc.edu/~yongjaelee/">Yong Jae Lee</a>. Beyond Computer Science, I am also pursuing a PhD Minor in Educational Psychology.</p>
+     <img src="/profile-images/thao-android.jpg" alt="Thao's profile picture" style="float: left; margin-right: 10px;" width="180">
+  <b>Về mình:<a href="https://thaoshibe.github.io/">「 ✦ Thảo ✦ 」</a></b>
+  <p>Chào bạn, mình là <a href="https://thaoshibe.github.io/">Thảo</a> (Shibe). Mình đang theo học cao học (PhD student) ngành Khoa học máy tính (Computer Science) tại trường <a href="https://www.cs.wisc.edu/">Đại học Wisconsin-Madison</a>, Mỹ.</p>
+  <p>Mình từng là một thành viên của lớp chuyên Toán (K24), trường THPT Chuyên Thái Nguyên. Sau đó, mình theo học ngành Toán Tin, tại <a href="https://hust.edu.vn/">trường Đại học Bách Khoa Hà Nội</a>.</p>
+  <p>Năm gần cuối Đại học, mình may mắn được nhận vào chương trình AI Residency (Batch 1) của VinAI Research (giờ là <a href="https://www.qualcomm.com/research/artificial-intelligence/ai-residency-program">Qualcomm AI Residency Program</a>). Nơi đây đã giúp mình có những kinh nghiệm làm nghiên cứu khoa học, và dần đần, thúc đẩy mình nộp học Tiến sĩ tại Mỹ.</p>
+  <p>Khi mình viết bài viết này (tháng 12/2024), mình đang là một thành viên của nhóm nghiên cứu WAIV, dẫn dắt bởi GS. <a href="https://pages.cs.wisc.edu/~yongjaelee/">Yong Jae Lee</a>. Mình cũng đang theo học chuyên ngành 2 "Tâm lý học Giáo dục" (Educational Psychology).</p>
 </div>
 
 ---
 
-### The Doubts I Used to Have... And is it normal to have these doubts?
+### Băn khoăn thì có sao không; và có băn khoăn... thì có bình thường không?
 
-<!-- I’ve had plenty of questions and uncertainties about this field. But what stands out most—what I remember most vividly—are three key questions:
+Mười năm trước, tôi có rất rất rất nhiều những câu hỏi xung quanh việc chọn ngành/ nghề, chọn trường của mình.
+Một số câu hỏi tôi còn nhớ (và thậm chí, từng được đăng ẩn danh trên VnExpress, hay HUST Confession): Kỹ thuật có phù hợp với con gái không? Để học STEM, cần phải "thông minh xuất chúng" lắm đúng không? Phụ nữ học Kỹ thuật... thì kém hấp dẫn, khó lấy chồng?
 
-Is scientific research/science and technology a field meant only for men?
-Is scientific research/science and technology only for those with innate intelligence?
-Are women in scientific research/science and technology often unattractive and less likely to find love or get married?
-Before diving into each question, I want to say that having questions like these, and feeling uneasy about them, is entirely normal. Questions like "Can I do well in this field?" or "Do I have the traits or qualities necessary for people in this field?" are perfectly reasonable and natural.
+Trước khi chúng ta bàn về từng lầm tưởng mà tôi từng có, thì tôi muốn nói rằng, có những băn khoăn như vậy là vô cùng bình thường.
 
-In Educational Psychology, this process is called prototype matching, or, in simpler terms, "comparing yourself to role models." When making a decision to pursue something, people often tend to compare themselves to "role models" who might have made similar choices. Their decision is influenced by how closely they perceive themselves to align with these models.
+Những câu hỏi như: "Tôi có phù hợp với ngành này không?", "Tôi có tố chất giống như những người đi trước ở ngành này không?", v.v. là hết sức sự nhiên.
 
-For example, when you’re searching for housing near your university, you might explore where other students from your school usually rent. This shapes your decision. This process of self-to-prototype matching has been shown in many studies to affect whether a student chooses to pursue a particular major. For instance, if you feel you resemble the "role models" you associate with science and technology, you’re more likely to feel confident about choosing that field. Conversely, if you feel you don’t match those role models, you might hesitate or question your ability to succeed in it.
-
-Scientific research/science and technology is one of those fields that I think comes with many "role models" or stereotypes (e.g., "usually male," "intelligent," "socially awkward," etc.).
-
-I’ve been through these processes myself and found that these "role models" and the act of "comparing yourself to them" can sometimes discourage you from choosing a path in science and engineering.
-
-Research "---" has shown that female students, when they feel they don’t match the "science researcher" archetype, are less likely to register for science and technology-related courses. For example...
-
-Now that I understand how "role models" can influence the decision to study a field, let’s revisit the common "role models" people oftenassociate with scientific research/science and technology! --->
-
-Ten years ago, I've had plenty of questions and uncertainties about whether should I pursuit Computer Science/ STEM. But what stands out most—what I remember most vividly—are three key questions:
-
-> (1) Is Computer Science a field meant only for men?<br>
-> (2) Is Computer Science only for those with outstanding intelligence?<br>
-> (3) Are women in Computer Science often unattractive and less likely to find love or get married?
-
-Before diving into each question, I want to say that <b>having questions like these, and feeling uneasy about them, is entirely normal</b>.
-
-Questions like "Can I do well in this field?" or "Do I have the traits or qualities necessary for people in this field?" are perfectly reasonable and natural.
-In Educational Psychology, this process is called *prototype matching*, or, in simpler terms, *"comparing yourself to role models."* When making a decision to pursue something, people often tend to compare themselves to "role models" who might have made similar choices. Their decision is influenced by how closely they perceive themselves to align with these models. For example, when you're searching for housing near your university, you might explore where other students from your school usually rent. This shapes your decision.
+Trong Tâm lý học Giáo dục, những câu hỏi như vậy được gọi là *so sánh với hình mẫu* (prototype matching), hay cụ thể hơn, so sánh bản thân mình với những người đi trước trong cùng lĩnh vực. Quyết định của bạn có thể sẽ bị ảnh hưởng rất lớn bởi việc bạn cảm tháy mình "gần" hay "xa" với những hình mẫu này.
+Đơn giản hơn, khi bạn chọn thuê nhà, bạn có xu hướng hỏi bạn bè của mình xem họ thuê nhà ở đâu... Và những thông tin này có khả năng đóng góp vào quyết định chọn nơi thuê nhà của chính bạn.
 
 <div style="background-color: #EDEDFF; padding: 10px; border-radius: 10px; width: 90%; margin: 0 auto;">
-<p><i>Prototype matching is a strategy whereby decisions—from the mundane to the profound—are influenced by overlap in one's self-concept with impressions of a prototypical other.
-When making a complex social decision such as where to live next school year or whether to begin smoking as an adolescent, people compare themselves with a prototype of the typical person who would choose each possible option, and choose the outcome that produces the least discrepancy between the self and the prototype.</i></p>
+<p><i>So khớp nguyên mẫu (prototype matching) là một chiến lược mà trong đó các quyết định—từ những việc bình thường đến những việc quan trọng—bị ảnh hưởng bởi mức độ tương đồng giữa khái niệm bản thân của một người và ấn tượng của họ về một nguyên mẫu điển hình của người khác.
+
+Khi đưa ra một quyết định xã hội phức tạp, chẳng hạn như năm học tới nên sống ở đâu hoặc liệu một thiếu niên có nên bắt đầu hút thuốc hay không, mọi người thường so sánh bản thân với hình ảnh nguyên mẫu của người điển hình sẽ chọn mỗi phương án khả dĩ. Sau đó, họ chọn phương án tạo ra sự khác biệt nhỏ nhất giữa bản thân họ và nguyên mẫu đó.</i></p>
 </div>
 
 <br>
-This process of self-to-prototype matching has been shown in research to affect whether a student chooses to pursue a particular major. For instance, if you feel you resemble the "role models" you associate with science and technology, you're more likely to feel confident about choosing that field. Conversely, if you feel you don't match those role models, you might hesitate or question your ability to succeed in it.
+Quá trình so sánh này, tưởng đơn giản và vô hại, mà lại được nhiều nghiên cứu chỉ ra rằng có thể ảnh hưởng đáng kể đến việc chọn ngành của sinh viên.
+Ví dụ, nếu bạn cảm thấy bản thân bạn giống với các hình mẫu những người làm Kỹ thuật, bạn sẽ có xu hướng cảm thấy tự tin khi chọn học Kỹ thuật.
+Ngược lại, nếu bạn không thấy bản thân mình trong đó, bạn sẽ cảm thấy nghi ngờ liệu mình có khả năng thành công trong lĩnh vực đó không.
 
-STEM is one of those fields that I think comes with many "role models" or stereotypes (e.g., "usually male," "intelligent," "socially awkward," etc.). I've been through these processes myself and found that these "role models" and the act of "comparing yourself to them" can sometimes discourage you from choosing a path in science and engineering.
-Research has shown that [female students, when they feel they don't match the "science researcher" archetype, are less likely to register for science and technology-related courses](https://journals.sagepub.com/doi/full/10.1177/0146167217754069).
 
-Ten years later, now that I understand how "role models" can influence the decision to study a field.
-Let me revisit the common "role models" people often associate with Computer Science; and how my perceptions has changed!
+Các ngành STEM/ Kỹ thuật là các ngành tôi nghĩ luôn được "gán mác" rất mạnh (vd: toàn nam, thông minh, ít nói, v.v.). 
+Cụ thể, một nghiên cứu đã chỉ ra [sinh viên nữ khi cảm thấy họ không giống như các "hình mẫu" về người làm Kỹ thuật, sẽ không chọn học ngành Kỹ thuật, hoặc các khóa học liên quan đến Kỹ thuật](https://journals.sagepub.com/doi/full/10.1177/0146167217754069).
+
+Mười năm nhìn lại, có rất nhiều lầm tưởng, hình mẫu như vậy, mà tôi từng có.
+Trong bài viết này, tối sẽ "ghé thăm" lại những lầm tưởng, hình mẫu đó, sau 10 năm, với tư cách là "một anh/ chị đi trước".
 
 ---
 
-### Computer Science is for Men
+### Khoa học Kỹ thuật toàn con trai
 <!-- **Research Paper About Visual Collaboration** -->
 
-<i>**Computer Scientist is a men**</i>
+<i>**Khoa học kỹ thuật toàn con trai**</i>
 
-I'm not entirely certain about the origin of this "stereotype," but it's likely one of the most pervasive and long-standing misconceptions. A study by Heriot-Watt University revealed a telling insight: [when students aged 13–17 were asked to draw their perception of Computer Science, many depicted scientists as boys, nerds, and geeks](https://psycnet.apa.org/record/2018-43118-010).
+Tôi không biết lầm tưởng này đến từ đâu, nhưng có lẽ, đây là lầm tưởng đầu tiên, và phổ biến nhất.
+Một nghiên cứu của trường Heriot-Watt phát hiện: [khi hỏi học sinh 13-17 tuổi vẽ tưởng tượng của các em về người làm Khoa học máy tính, thường các em sẽ vẽ con trai, mọt sách, và hơi lập dị](https://psycnet.apa.org/record/2018-43118-010).
 
-<center><img src="/profile-images/draw-a-computer.png" width="700"><br>
+<center><img src="/profile-images/draw-a-computer.png" width="650"><br>
 </center>
-<i>Caption: When students aged 13–17 were asked to draw their perception of Computer Science, many depicted scientists as men.</i>
+<i>Khi được hỏi vẽ về người làm Khoa học máy sinh, học sinh 13-17 tuổi thường vẽ con trai, mọt sách, và hơi lập dị.</i>
 <br>
 
 
@@ -448,23 +426,21 @@ To anyone who still believes that girls in STEM/ Computer Science are "unattract
 I hope this article gives you a new perspective and (even better) inspires Vietnamese students who are unsure about their choice of major to confidently pick STEM, especially pursuing a graduate degree in Computer Science.
 
 > "Remember that life is a whole spectrum. And you will find your place!"
+<center><a href="https://unsplash.com/photos/woman-in-white-and-red-polka-dot-long-sleeve-shirt-2Q3Ivd-HsaM"><img src="/images/a-woman-in-ai.jpg" style="max-height: 200px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></a></center>
 
+
+<br>
+<small style="color: #666; font-style: italic;">
+Bài gốc được mình viết bằng tiếng Anh [Challenging Stereotypes: A Decade-Long Journey in Computer Science as a Vietnamese Woman](/blogs/stereotype/), vào cuối năm 2024. Mình quyết định viết lại (có sửa đổi) bài viết này sang tiếng Việt, vì mình cảm thấy: (1) mình là người Việt Nam; và (2) ngôn ngữ, không nên là trở ngại cho các bạn trẻ tiếp cận thông tin, đặc biệt là các bạn nữ sinh cấp ba (như mình 10 năm trước).
+Mình mong bài viết của mình sẽ giúp bạn (đặc biệt là các bạn nữ) có thêm một góc nhìn về việc chọn học các ngành STEM, đặc biệt là Khoa học máy tính (Computer Science, AI, v.v.). Chúc bạn có lựa chọn sáng suốt cho mình, cố gắng lên nhé!
+<br>
+*[Nguồn ảnh minh họa] Tất cả các hình ảnh minh họa được tạo bởi AI (Bing Image Creator).*
+</small>
 
 ---
 
-<center>
-<i>Any questions? Please drop me an email vietwics@gmail.com --- Thank you!</i>
-</center>
+<div style='text-align:right'>
+Người dịch: <a href='https://thaoshibe.github.io/'>thaoshibe</a>. Các bạn chia sẻ nhớ ghi nguồn cho tác giả gốc nha, mình xin cảm ơn ạ!
+<br>Thứ bảy, ngày 07/03/2026.
+</div>
 
----
-**References:**
-- First Generated Image: [bing.com/images/create](https://sl.bing.net/kgi7WKo9Z6W)
-- Second Generated Image: [bing.com/images/create](https://sl.bing.net/gLlsRoEI9rE)
-- Cheryan, S., Plaut, V. C., Davies, P. G., & Steele, C. M. (2009). Ambient belonging: How stereotypical cues impact gender participation in computer science. Journal of Personality and Social Psychology, 97(6), 1045–1060. https://pubmed.ncbi.nlm.nih.gov/19968418/
-- Berg, T., Sharpe, A., & Aitkin, E. (2019). Females in computing: Understanding stereotypes through collaborative picturing. Computers in Human Behavior, 91, 72–83. https://www.sciencedirect.com/science/article/pii/S0360131518301829
-- Bian, L., Leslie, S.-J., & Cimpian, A. (2017). Evidence of bias against girls and women in contexts that emphasize intellectual ability. American Psychologist, 72(1), 1–16. https://psycnet.apa.org/record/2018-62311-015
-- Cheryan, S., Plaut, V. C., Handron, C., & Hudson, L. (2013). The stereotypical computer scientist: Gendered media representations as a barrier to inclusion for women. Sex Roles, 69(1), 58–71. https://psycnet.apa.org/record/2013-22691-001
-- Gaucher, D., Friesen, J., & Kay, A. C. (2011). Evidence that gendered wording in job advertisements exists and sustains gender inequality. Journal of Personality and Social Psychology, 101(1), 109–128. https://pubmed.ncbi.nlm.nih.gov/21381851/
-- McPherson, E., Park, B., & Ito, T. A. (2018). The role of prototype matching in science pursuits: Perceptions of scientists that are inaccurate and diverge from self-perceptions predict reduced interest in science careers. Personality and Social Psychology Bulletin, 44(6), 881–898. https://doi.org/10.1177/0146167217754069
-- Park, L. E., Young, A. F., Troisi, J. D., & Pinkus, R. T. (2011). Effects of everyday romantic goal pursuit on women’s attitudes toward math and science. Personality and Social Psychology Bulletin, 37(9), 1259–1273. https://doi.org/10.1177/0146167211408436
-- Starr, C. R. (2018). “I’m not a science nerd!”: STEM stereotypes, identity, and motivation among undergraduate women. Psychology of Women Quarterly, 42(4), 489–503. https://doi.org/10.1177/0361684318793848

@@ -53,7 +53,7 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 
 ##### Làm việc hiệu quả
 - [Calendar. Not to-do lists. Viewing time as space](https://deviparikh.substack.com/p/calendar-in-stead-of-to-do-lists-9ada86a512dd) (blog post, Prof. Devi Parikh)
-- 
+- [How to read a paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf) (a short paper, Prof. Srinivasan Keshav)
 
 ##### Các bảng xếp hạng *(Chú ý: Mọi xếp hạng đều mang tính "tương đối" nha!)*
 - Hội nghị/ Tạp chí: [Google Scholar - Top publications](https://scholar.google.com/citations?view_op=top_venues&hl=en)

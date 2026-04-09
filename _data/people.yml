@@ -293,16 +293,6 @@ academic:
       vn: Gachon University
 
 graduate:
-  - name: Thao Nguyen
-    url: https://thaonguyen19.github.io/
-    image: https://thaonguyen19.github.io/me3.jpg
-    title:
-      en: PhD Student
-      vn: Nghiên cứu sinh Tiến sỹ
-    institution:
-      en: University of Washington
-      vn: University of Washington
-
   - name: Mai Hoang Dao
     url: https://maihoangdao.github.io/
     image: https://avatars.githubusercontent.com/u/42550670?v=4
@@ -614,4 +604,14 @@ industry:
     institution:
       en: Broadcom
       vn: Broadcom
+
+  - name: Thao Nguyen
+    url: https://thaonguyen19.github.io/
+    image: https://thaonguyen19.github.io/me3.jpg
+    title:
+      en: Member of Technical Staff
+      vn: Member of Technical Staff
+    institution:
+      en: Anthropic
+      vn: Anthropic
 

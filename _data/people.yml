@@ -414,9 +414,9 @@ graduate:
       en: University of Maryland, College Park
       vn: University of Maryland, College Park
 
-  - name: Huyen K. Vo
+  - name: Huyen Vo
     url: https://vothuckhanhhuyen.github.io/
-    image: https://vothuckhanhhuyen.github.io/images/portrait.jpg
+    image: /profile-images/huyen-800.webp
     title:
       en: PhD Student
       vn: Nghiên cứu sinh Tiến sỹ
@@ -443,16 +443,6 @@ graduate:
     institution:
       en: Vanderbilt University
       vn: Vanderbilt University
-
-  - name: Dung (June) Thai
-    url: https://www.linkedin.com/in/dung-thai/
-    image: /profile-images/june-thai.jpg
-    title:
-      en: PhD Student
-      vn: Nghiên cứu sinh Tiến sỹ
-    institution:
-      en: University of Massachusetts Amherst
-      vn: University of Massachusetts Amherst
 
   - name: Tran Huynh
     url: https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en
@@ -624,4 +614,14 @@ industry:
     institution:
       en: Anthropic
       vn: Anthropic
+
+  - name: Dung (June) Thai
+    url: https://www.linkedin.com/in/dung-thai/
+    image: /profile-images/june-thai.jpg
+    title:
+      en: Staff Research Scientist
+      vn: Staff Research Scientist
+    institution:
+      en: Ensemble Health Partners
+      vn: Ensemble Health Partners
 

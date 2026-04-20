@@ -544,6 +544,16 @@ graduate:
       en: New York University
       vn: New York University
 
+  - name: Minh-Vuong Nguyen
+    url: https://scholar.google.com/citations?user=eUbbNpcAAAAJ&hl=en
+    image: /profile-images/minh-vuong-nguyen.jpeg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: RMIT University
+      vn: RMIT University
+
 industry:
   - name: Thu Nguyen-Phuoc
     url: https://www.monkeyoverflow.com/about

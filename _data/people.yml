@@ -554,6 +554,26 @@ graduate:
       en: RMIT University
       vn: RMIT University
 
+  - name: Nhu Vo
+    url: https://scholar.google.com/citations?user=CrE42ccAAAAJ&hl=en
+    image: /profile-images/nhu-vo.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: University of Technology Sydney
+      vn: University of Technology Sydney
+
+  - name: Trang Dang Yen
+    url: https://www.linkedin.com/in/trang-dang-yen-511a2b250/
+    image: /profile-images/trang-dang-yen.jpg
+    title:
+      en: PhD Student
+      vn: Nghiên cứu sinh Tiến sỹ
+    institution:
+      en: The University of Sydney
+      vn: The University of Sydney
+
 industry:
   - name: Thu Nguyen-Phuoc
     url: https://www.monkeyoverflow.com/about

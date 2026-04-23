@@ -115,22 +115,30 @@ layout: default
   .avatar-marker.cat-industry .avatar-ring { border-color: #5f9060; }
 
   .avatar-popup {
-    text-align: center;
-    min-width: 180px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 220px;
+    max-width: 260px;
   }
   .avatar-popup img {
-    width: 120px;
-    height: 120px;
-    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
     object-fit: cover;
-    margin: 4px auto 8px;
+    flex: 0 0 72px;
     display: block;
-    border: 3px solid #f5ecec;
+    border: 2px solid #f5ecec;
+  }
+  .avatar-popup .person-body {
+    flex: 1 1 auto;
+    min-width: 0;
   }
   .avatar-popup .person-name {
     font-weight: 600;
-    font-size: 15px;
-    margin: 0 0 4px;
+    font-size: 14px;
+    margin: 0 0 3px;
+    line-height: 1.25;
   }
   .avatar-popup .person-name a {
     color: #2c3e50;
@@ -138,15 +146,22 @@ layout: default
   }
   .avatar-popup .person-name a:hover { text-decoration: underline; }
   .avatar-popup .person-meta {
-    font-size: 13px;
+    font-size: 12px;
     color: #555;
-    line-height: 1.4;
+    line-height: 1.35;
   }
   .avatar-popup .person-city {
-    font-size: 12px;
+    font-size: 11px;
     color: #888;
-    margin-top: 6px;
+    margin-top: 4px;
   }
+
+  /* Tighten Leaflet's default popup chrome. */
+  .leaflet-popup-content-wrapper { border-radius: 10px; padding: 2px; }
+  .leaflet-popup-content { margin: 10px 12px; line-height: 1.35; }
+  /* Side-card popup: no downward-pointing tip, since it sits to the side. */
+  .leaflet-popup.side-popup .leaflet-popup-tip-container { display: none; }
+  .leaflet-popup.side-popup { margin-bottom: 0; }
 
   .map-missing {
     margin: 18px auto;
@@ -342,9 +357,11 @@ layout: default
         '<div class="avatar-popup">' +
           '<img src="' + image + '" alt="" ' +
             'onerror="this.style.display=\'none\';" />' +
-          '<div class="person-name"><a href="' + url + '" target="_blank" rel="noopener">' + name + '</a></div>' +
-          '<div class="person-meta">' + title + '<br>' + inst + '</div>' +
-          '<div class="person-city">📍 ' + city + '</div>' +
+          '<div class="person-body">' +
+            '<div class="person-name"><a href="' + url + '" target="_blank" rel="noopener">' + name + '</a></div>' +
+            '<div class="person-meta">' + title + '<br>' + inst + '</div>' +
+            '<div class="person-city">📍 ' + city + '</div>' +
+          '</div>' +
         '</div>'
       );
     }
@@ -411,7 +428,18 @@ layout: default
           title: p.name,
           riseOnHover: true
         });
-        marker.bindPopup(popupHtml(p), { maxWidth: 240 });
+        // Open the popup to the RIGHT of the avatar so it doesn't cover the
+        // person it belongs to. Offset pushes the popup anchor ~140px right
+        // and level with the marker; we also hide the default tip so it reads
+        // as a side-card rather than a speech bubble pointing down.
+        marker.bindPopup(popupHtml(p), {
+          maxWidth: 260,
+          minWidth: 220,
+          offset: L.point(140, 90),
+          className: 'side-popup',
+          autoPan: true,
+          autoPanPadding: L.point(20, 20)
+        });
         marker.addTo(map);
         allEntries.push({ marker: marker, group: g, idx: i });
       });
@@ -497,9 +525,10 @@ layout: default
         return a.group.lat - b.group.lat || a.group.lng - b.group.lng;
       });
 
-      var clusters = []; // { lat, lng, anchorPt, members:[entries] }
+      var clusters = []; // { lat, lng, anchorPt, members:[entries], country }
       sorted.forEach(function (entry) {
         var truePt = map.latLngToLayerPoint([entry.group.lat, entry.group.lng]);
+        var country = deriveRegion(entry.group.members[0].city);
         var assigned = null;
         for (var k = 0; k < clusters.length; k++) {
           if (truePt.distanceTo(clusters[k].anchorPt) < COLLISION_GAP_PX) {
@@ -514,10 +543,46 @@ layout: default
             lat: entry.group.lat,
             lng: entry.group.lng,
             anchorPt: truePt,
-            members: [entry]
+            members: [entry],
+            country: country
           });
         }
       });
+
+      // At low zoom, the continental spread of places like the US/Canada pushes
+      // institutions farther apart than COLLISION_GAP_PX, so they fragment into
+      // several halos. Merge clusters that belong to the same country into a
+      // single mega-cluster anchored at the largest sub-cluster so users see
+      // one halo per country until they zoom in.
+      var COUNTRY_MERGE_MAX_ZOOM = 4;
+      if (map.getZoom() <= COUNTRY_MERGE_MAX_ZOOM) {
+        var byCountry = {};
+        clusters.forEach(function (c) {
+          if (!c.country) return;
+          // Skip Vietnam — it's the map's focal point, keep institution-level
+          // granularity domestically.
+          if (/^vi[eệ]t\s*nam$/i.test(c.country)) return;
+          var key = c.country.toLowerCase();
+          (byCountry[key] = byCountry[key] || []).push(c);
+        });
+        var merged = [];
+        var absorbed = new Set();
+        Object.keys(byCountry).forEach(function (key) {
+          var group = byCountry[key];
+          if (group.length < 2) return;
+          // Largest sub-cluster becomes the anchor.
+          group.sort(function (a, b) { return b.members.length - a.members.length; });
+          var anchor = group[0];
+          for (var i = 1; i < group.length; i++) {
+            anchor.members = anchor.members.concat(group[i].members);
+            absorbed.add(group[i]);
+          }
+          merged.push(anchor);
+        });
+        if (absorbed.size) {
+          clusters = clusters.filter(function (c) { return !absorbed.has(c); });
+        }
+      }
 
       // Place markers: solo clusters at true point, multi clusters in a spiral.
       clusters.forEach(function (c) {
@@ -585,22 +650,20 @@ layout: default
           smoothFactor: 0
         }).addTo(haloLayer);
 
-        // Click the halo → zoom to fit this cluster's members. If every member
-        // shares the same coords (single institution), fitBounds is a no-op, so
-        // fall back to setView at a reasonable city-level zoom.
-        var memberLatLngs = c.members.map(function (m) { return [m.lat, m.lng]; });
+        // Click the halo → zoom in on the cluster. Use the TRUE institution
+        // coordinates (entry.group.lat/lng), not the post-spread marker
+        // positions — the spiral spread is a pixel-space visual trick and its
+        // centroid can drift far from the real cluster (e.g. a US cluster's
+        // spread centroid landing in Mexico).
+        var memberLatLngs = c.members.map(function (entry) {
+          return [entry.group.lat, entry.group.lng];
+        });
         haloPoly.on('click', function (e) {
           L.DomEvent.stopPropagation(e);
           var bounds = L.latLngBounds(memberLatLngs);
           var center = bounds.getCenter();
           var currentZoom = map.getZoom();
           var targetZoom = Math.min(currentZoom + 3, 12, map.getMaxZoom());
-          console.log('[halo click]', {
-            members: memberLatLngs.length,
-            center: center,
-            from: currentZoom,
-            to: targetZoom
-          });
           map.setView(center, targetZoom, { animate: true });
         });
       });

@@ -9,16 +9,16 @@
   <title>viet-wics | 🗺️ Bản đồ</title>
   <meta name="description" content="A collections of Vietnamese women working in Computer Science, focusing on higher-education.
 ">
-  <meta property="og:image" content="http://localhost:4000/assets/img/avatar.jpeg">
+  <meta property="og:image" content="/assets/img/avatar.jpeg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="http://localhost:4000/vn/map/">
+  <meta property="og:url" content="/vn/map/">
   <meta property="og:title" content="🗺️ Bản đồ">
-  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/vn/map/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/vn/map/">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
 </head>
 
@@ -29,7 +29,7 @@
 
   <div class="wrapper">
 
-    <a href="http://localhost:4000/">
+    <a href="/">
     <span class="site-title">
         
         <strong>viet-wics</strong> viet-wics
@@ -73,7 +73,7 @@
             
               
                 
-                  <a class="page-link" href="http://localhost:4000/vn/map/">🗺️ Bản đồ</a>
+                  <a class="page-link" href="/vn/map/">🗺️ Bản đồ</a>
                 
               
             
@@ -87,7 +87,7 @@
             
               
                 
-                  <a class="page-link" href="http://localhost:4000/vn/bai-viet/">Bài viết</a>
+                  <a class="page-link" href="/vn/bai-viet/">Bài viết</a>
                 
               
             
@@ -108,7 +108,7 @@
           
             
               
-                <a class="page-link" href="http://localhost:4000/faq/">FAQ</a>
+                <a class="page-link" href="/faq/">FAQ</a>
               
             
           
@@ -116,7 +116,7 @@
           
             
               
-                <a class="page-link" href="http://localhost:4000/aboutme/">About me</a>
+                <a class="page-link" href="/aboutme/">About me</a>
               
             
           
@@ -153,7 +153,7 @@
 
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">vitae</a> -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
 
       </div>
     </nav>
@@ -175,6 +175,9 @@
       crossorigin="" />
 
 <style>
+  /* Remove the default vertical page padding so the map sits flush under the header. */
+  .page-content { padding-top: 0 !important; padding-bottom: 0 !important; }
+
   /* Break out of the parent .wrapper so the map can be edge-to-edge. */
   .map-shell {
     position: relative;
@@ -214,15 +217,20 @@
     font-size: 18px;
     color: #222;
   }
-  .map-overlay.legend-card {
-    bottom: 24px;
-    left: 14px;
+  /* Legend rendered as a Leaflet control so it sits inside the map pane. */
+  .leaflet-control.legend-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    padding: 10px 14px;
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
     font-size: 13px;
   }
-  .map-overlay.legend-card .swatch {
+  .leaflet-control.legend-card .swatch {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -231,9 +239,9 @@
     border: 2px solid #fff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
   }
-  .map-overlay.legend-card .swatch.academic { background: #e74c3c; }
-  .map-overlay.legend-card .swatch.graduate { background: #3498db; }
-  .map-overlay.legend-card .swatch.industry { background: #2ecc71; }
+  .leaflet-control.legend-card .swatch.academic { background: #c9595f; }
+  .leaflet-control.legend-card .swatch.graduate { background: #4f77b0; }
+  .leaflet-control.legend-card .swatch.industry { background: #5f9060; }
   .map-overlay.stats-card {
     top: 14px;
     right: 14px;
@@ -243,7 +251,7 @@
 
   @media (max-width: 600px) {
     .map-overlay.title-card h1 { font-size: 16px; }
-    .map-overlay.legend-card { gap: 10px; font-size: 12px; }
+    .leaflet-control.legend-card { gap: 10px; font-size: 12px; }
   }
 
   /* Square avatar markers. */
@@ -254,11 +262,11 @@
   .avatar-marker .avatar-ring {
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    border-radius: 10px;
     overflow: hidden;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-    background-color: #ddd;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(60, 48, 66, 0.22);
+    background-color: #f3ece8;
   }
   .avatar-marker .avatar-ring img {
     width: 100%;
@@ -266,9 +274,10 @@
     object-fit: cover;
     display: block;
   }
-  .avatar-marker.cat-academic .avatar-ring { border-color: #e74c3c; }
-  .avatar-marker.cat-graduate .avatar-ring { border-color: #3498db; }
-  .avatar-marker.cat-industry .avatar-ring { border-color: #2ecc71; }
+  /* Muted but saturated category tones (terracotta, denim, moss). */
+  .avatar-marker.cat-academic .avatar-ring { border-color: #c9595f; }
+  .avatar-marker.cat-graduate .avatar-ring { border-color: #4f77b0; }
+  .avatar-marker.cat-industry .avatar-ring { border-color: #5f9060; }
 
   .avatar-popup {
     text-align: center;
@@ -277,11 +286,11 @@
   .avatar-popup img {
     width: 120px;
     height: 120px;
-    border-radius: 0;
+    border-radius: 12px;
     object-fit: cover;
     margin: 4px auto 8px;
     display: block;
-    border: 3px solid #f1f1f1;
+    border: 3px solid #f5ecec;
   }
   .avatar-popup .person-name {
     font-weight: 600;
@@ -316,6 +325,11 @@
   }
   .map-missing summary { cursor: pointer; }
 
+  /* Soften cluster halos — cursor hint; blur is applied only to the
+     visual-only underlay so clicks still register on the crisp shape. */
+  .soft-halo { cursor: pointer; }
+  .soft-halo-blur { filter: blur(3px); pointer-events: none; }
+
   /* Map-style country/region label that hovers above a dense halo. */
   .region-label-icon { background: transparent; border: none; }
   .region-label {
@@ -336,17 +350,10 @@
 </style>
 
 <div class="map-shell">
-  <div id="viet-wics-map"></div>
-
-  <div class="map-overlay title-card">
-    <h1>🗺️ Bản đồ</h1>
-  </div>
-
-  <div class="map-overlay legend-card">
-    <span><span class="swatch academic"></span>Giáo sư</span>
-    <span><span class="swatch graduate"></span>Nghiên cứu sinh</span>
-    <span><span class="swatch industry"></span>Công nghiệp</span>
-  </div>
+  <div id="viet-wics-map"
+       data-label-academic="Giáo sư"
+       data-label-graduate="Nghiên cứu sinh"
+       data-label-industry="Công nghiệp"></div>
 
   
   
@@ -680,7 +687,7 @@
               "name": "Mai Hoang Dao",
               "url": "https://maihoangdao.github.io/",
               "image": "https://avatars.githubusercontent.com/u/42550670?v=4",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Edinburgh",
               "category": "graduate",
               "lat": 55.9445,
@@ -690,7 +697,7 @@
               "name": "Thao Nguyen",
               "url": "https://thaoshibe.github.io/",
               "image": "/assets/img/thao.png",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Wisconsin-Madison",
               "category": "graduate",
               "lat": 43.0766,
@@ -700,7 +707,7 @@
               "name": "Ha Thu Nguyen",
               "url": "https://scholar.google.com/citations?user=I2qs4EUAAAAJ&hl=en",
               "image": "/profile-images/ha-thu-nguyen.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Norwegian University of Science and Technology",
               "category": "graduate",
               "lat": 63.4197,
@@ -710,7 +717,7 @@
               "name": "Huong LD Hoang",
               "url": "https://huonghld.github.io/huong-hoang/",
               "image": "https://huonghld.github.io/huong-hoang/assets/img/profile-img.png",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of California, San Diego",
               "category": "graduate",
               "lat": 32.8801,
@@ -720,7 +727,7 @@
               "name": "Huyen Thi Ngoc Nguyen",
               "url": "https://ece.illinois.edu/about/directory/grad-students/huyentn2",
               "image": "https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=18549&s=300",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Illinois Urbana-Champaign",
               "category": "graduate",
               "lat": 40.1106,
@@ -730,7 +737,7 @@
               "name": "Doan Van Thao",
               "url": "https://scholar.google.co.uk/citations?user=H5zZgaIAAAAJ&hl=en",
               "image": "https://scholarships.vinuni.edu.vn/wp-content/uploads/2020/06/Doan-Thi-Van-Thao-400x761.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "UCLouvain",
               "category": "graduate",
               "lat": 50.6691,
@@ -740,7 +747,7 @@
               "name": "Thi Phuong Le",
               "url": "https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg",
               "image": "https://scholarships.vinuni.edu.vn/wp-content/uploads/2023/03/LeThiPhuong-400x473.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Singapore Management University",
               "category": "graduate",
               "lat": 1.2966,
@@ -750,7 +757,7 @@
               "name": "Van-Anh Nguyen",
               "url": "https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en",
               "image": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Monash",
               "category": "graduate",
               "lat": -37.9105,
@@ -760,7 +767,7 @@
               "name": "Minh Tam Nguyen",
               "url": "https://tamnguyen9520.github.io/",
               "image": "https://tamnguyen9520.github.io/tam_profile.jpeg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Rice University",
               "category": "graduate",
               "lat": 29.7172,
@@ -770,7 +777,7 @@
               "name": "Trang Nguyen",
               "url": "https://www.linkedin.com/in/trangnnp/",
               "image": "/profile-images/trang-nguyen.jpeg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Stanford University",
               "category": "graduate",
               "lat": 37.4275,
@@ -780,7 +787,7 @@
               "name": "Quynh Phung",
               "url": "https://qqphung.github.io/",
               "image": "https://qqphung.github.io/img/avatar_350x350.png",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Maryland, College Park",
               "category": "graduate",
               "lat": 38.9869,
@@ -790,7 +797,7 @@
               "name": "Huyen Vo",
               "url": "https://vothuckhanhhuyen.github.io/",
               "image": "/profile-images/huyen-800.webp",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Max Planck Institutes",
               "category": "graduate",
               "lat": 48.5216,
@@ -800,7 +807,7 @@
               "name": "Quyen Tran",
               "url": "https://tranquyenbk173.github.io/",
               "image": "https://raw.githubusercontent.com/tranquyenbk173/tranquyenbk173.github.io/refs/heads/main/assets/img/sky.png",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Illinois Chicago",
               "category": "graduate",
               "lat": 41.8709,
@@ -810,7 +817,7 @@
               "name": "Dung (Judy) Nguyen",
               "url": "https://judydnguyen.github.io/",
               "image": "/profile-images/dung-june-thai.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Vanderbilt University",
               "category": "graduate",
               "lat": 36.1486,
@@ -820,7 +827,7 @@
               "name": "Tran Huynh",
               "url": "https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en",
               "image": "/profile-images/tran-huynh.png",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Virginia Tech",
               "category": "graduate",
               "lat": 37.2284,
@@ -830,7 +837,7 @@
               "name": "Thao Nguyen",
               "url": "https://thaonguyen217.github.io/",
               "image": "/profile-images/thaonguyen-uiuc.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Illinois Urbana-Champaign",
               "category": "graduate",
               "lat": 40.1106,
@@ -840,7 +847,7 @@
               "name": "Huyen Le",
               "url": "https://minhhuyenle.github.io/",
               "image": "https://avatars.githubusercontent.com/u/137878202?v=4",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "VinUniversity",
               "category": "graduate",
               "lat": 20.9989,
@@ -850,7 +857,7 @@
               "name": "Trang Nguyen",
               "url": "https://nguyenvuthientrang.github.io/",
               "image": "https://nguyenvuthientrang.github.io/images/pfp_vinai.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Carnegie Mellon University",
               "category": "graduate",
               "lat": 40.4433,
@@ -860,7 +867,7 @@
               "name": "Huyen Trang",
               "url": "https://phamvuhuyentrang.github.io/",
               "image": "https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "The University of Texas at Austin",
               "category": "graduate",
               "lat": 30.2849,
@@ -870,7 +877,7 @@
               "name": "Duong Tran",
               "url": "https://www.linkedin.com/in/dgtr/",
               "image": "/profile-images/duong-tran.jpeg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "Bosch Center for AI",
               "category": "graduate",
               "lat": 48.7647,
@@ -880,7 +887,7 @@
               "name": "Chau Minh Pham",
               "url": "https://chtmp223.github.io/",
               "image": "https://chtmp223.github.io/assets/img/home.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "University of Maryland, College Park",
               "category": "graduate",
               "lat": 38.9869,
@@ -890,7 +897,7 @@
               "name": "Nhi Nguyen",
               "url": "https://iam-nhi-nguyen.github.io/",
               "image": "https://raw.githubusercontent.com/iam-nhi-nguyen/iam-nhi-nguyen.github.io/main/assets/images/photo_of_nhi.jpg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "New York University",
               "category": "graduate",
               "lat": 40.7295,
@@ -900,7 +907,7 @@
               "name": "Minh-Vuong Nguyen",
               "url": "https://scholar.google.com/citations?user=eUbbNpcAAAAJ&hl=en",
               "image": "/profile-images/minh-vuong-nguyen.jpeg",
-              "title": "Nghiên cứu sinh Tiến sỹ",
+              "title": "NCS Tiến sỹ",
               "institution": "RMIT University",
               "category": "graduate",
               "lat": -37.8083,
@@ -989,15 +996,30 @@
             },];
   </script>
 
-  <div class="map-overlay stats-card">
-    
-      <strong>63</strong> người
-    
-  </div>
 </div>
 
 
 
+
+  <details class="map-missing">
+    <summary>
+      
+        ⚠️ 2 đơn vị chưa có toạ độ (chưa hiển thị trên bản đồ)
+      
+    </summary>
+    <ul>
+      
+        <li><code>The University of Sydney</code></li>
+      
+        <li><code>University of Technology Sydney</code></li>
+      
+    </ul>
+    <p style="margin: 6px 0 0;">
+      
+        Thêm vào <code>_data/locations.yml</code> để hiển thị các bạn này.
+      
+    </p>
+  </details>
 
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -1013,8 +1035,25 @@
       zoom: 2,
       minZoom: 2,
       worldCopyJump: true,
-      scrollWheelZoom: true
+      scrollWheelZoom: true,
+      zoomControl: false,
+      doubleClickZoom: false
     });
+    L.control.zoom({ position: 'topright' }).addTo(map);
+
+    // Legend control (bottom-right, inside the map pane).
+    var mapEl = document.getElementById('viet-wics-map');
+    var legendCtrl = L.control({ position: 'bottomright' });
+    legendCtrl.onAdd = function () {
+      var div = L.DomUtil.create('div', 'leaflet-control legend-card');
+      div.innerHTML =
+        '<span><span class="swatch academic"></span>' + mapEl.dataset.labelAcademic + '</span>' +
+        '<span><span class="swatch graduate"></span>' + mapEl.dataset.labelGraduate + '</span>' +
+        '<span><span class="swatch industry"></span>' + mapEl.dataset.labelIndustry + '</span>';
+      L.DomEvent.disableClickPropagation(div);
+      return div;
+    };
+    legendCtrl.addTo(map);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
@@ -1098,6 +1137,9 @@
       if (g.members.length < 3) return;
       var regionName = deriveRegion(g.members[0].city);
       if (!regionName) return;
+      // Suppress the Vietnam label — the map is already Vietnam-centric and
+      // the giant "VIETNAM" watermark overwhelms the domestic cluster.
+      if (/^vi[eệ]t\s*nam$/i.test(regionName)) return;
       g.label = L.marker([g.lat, g.lng], {
         icon: L.divIcon({
           className: 'region-label-icon',
@@ -1134,7 +1176,7 @@
     var GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // ~137.508°
     var BASE_SPREAD_PX = 24;       // distance unit between rings of the spiral
     var COLLISION_GAP_PX = 50;     // markers closer than this get grouped & spread
-    var HALO_PADDING_PX = 32;      // how far the blob pads beyond the outermost marker
+    var HALO_PADDING_PX = 64;      // how far the blob pads beyond the outermost marker
     var HALO_SMOOTH_ITERS = 3;     // Chaikin smoothing passes (more = softer)
 
     // Andrew's monotone chain — convex hull of a list of L.points.
@@ -1267,15 +1309,52 @@
         hull = chaikinSmooth(hull, HALO_SMOOTH_ITERS);
 
         var latLngs = hull.map(function (p) { return map.layerPointToLatLng(p); });
+
+        // Visual underlay: blurred, non-interactive — gives the organic soft edge.
         L.polygon(latLngs, {
-          color: '#5a5a5a',
-          weight: 1,
+          color: '#f8b4c4',
+          weight: 8,
           opacity: 0.18,
-          fillColor: '#5a5a5a',
-          fillOpacity: Math.min(0.22, 0.08 + n * 0.010),
+          lineJoin: 'round',
+          lineCap: 'round',
+          fillColor: '#fbb7a0',
+          fillOpacity: Math.min(0.20, 0.08 + n * 0.008),
           interactive: false,
+          className: 'soft-halo-blur',
           smoothFactor: 0
         }).addTo(haloLayer);
+
+        // Crisp interactive overlay: nearly invisible but captures clicks cleanly
+        // (blur filters can mess with SVG hit-testing, so the click target stays sharp).
+        var haloPoly = L.polygon(latLngs, {
+          color: 'transparent',
+          weight: 0,
+          fillColor: '#fbb7a0',
+          fillOpacity: 0.01,
+          interactive: true,
+          bubblingMouseEvents: false,
+          className: 'soft-halo',
+          smoothFactor: 0
+        }).addTo(haloLayer);
+
+        // Click the halo → zoom to fit this cluster's members. If every member
+        // shares the same coords (single institution), fitBounds is a no-op, so
+        // fall back to setView at a reasonable city-level zoom.
+        var memberLatLngs = c.members.map(function (m) { return [m.lat, m.lng]; });
+        haloPoly.on('click', function (e) {
+          L.DomEvent.stopPropagation(e);
+          var bounds = L.latLngBounds(memberLatLngs);
+          var center = bounds.getCenter();
+          var currentZoom = map.getZoom();
+          var targetZoom = Math.min(currentZoom + 3, 12, map.getMaxZoom());
+          console.log('[halo click]', {
+            members: memberLatLngs.length,
+            center: center,
+            from: currentZoom,
+            to: targetZoom
+          });
+          map.setView(center, targetZoom, { animate: true });
+        });
       });
     }
 
@@ -1338,20 +1417,20 @@
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
 <!-- Load Common JS -->
-<script src="http://localhost:4000/assets/js/common.js"></script>
+<script src="/assets/js/common.js"></script>
 
 
 <!-- Load KaTeX -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-<script src="http://localhost:4000/assets/js/katex.js"></script>
+<script src="/assets/js/katex.js"></script>
 
 
 
 
 <!-- Include custom icon fonts -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
 
 <!-- Google Analytics -->
 <script>

@@ -10,6 +10,9 @@ layout: default
       crossorigin="" />
 
 <style>
+  /* Remove the default vertical page padding so the map sits flush under the header. */
+  .page-content { padding-top: 0 !important; padding-bottom: 0 !important; }
+
   /* Break out of the parent .wrapper so the map can be edge-to-edge. */
   .map-shell {
     position: relative;
@@ -49,15 +52,20 @@ layout: default
     font-size: 18px;
     color: #222;
   }
-  .map-overlay.legend-card {
-    bottom: 24px;
-    left: 14px;
+  /* Legend rendered as a Leaflet control so it sits inside the map pane. */
+  .leaflet-control.legend-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    padding: 10px 14px;
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
     font-size: 13px;
   }
-  .map-overlay.legend-card .swatch {
+  .leaflet-control.legend-card .swatch {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -66,9 +74,9 @@ layout: default
     border: 2px solid #fff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
   }
-  .map-overlay.legend-card .swatch.academic { background: #e74c3c; }
-  .map-overlay.legend-card .swatch.graduate { background: #3498db; }
-  .map-overlay.legend-card .swatch.industry { background: #2ecc71; }
+  .leaflet-control.legend-card .swatch.academic { background: #c9595f; }
+  .leaflet-control.legend-card .swatch.graduate { background: #4f77b0; }
+  .leaflet-control.legend-card .swatch.industry { background: #5f9060; }
   .map-overlay.stats-card {
     top: 14px;
     right: 14px;
@@ -78,7 +86,7 @@ layout: default
 
   @media (max-width: 600px) {
     .map-overlay.title-card h1 { font-size: 16px; }
-    .map-overlay.legend-card { gap: 10px; font-size: 12px; }
+    .leaflet-control.legend-card { gap: 10px; font-size: 12px; }
   }
 
   /* Square avatar markers. */
@@ -89,11 +97,11 @@ layout: default
   .avatar-marker .avatar-ring {
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    border-radius: 10px;
     overflow: hidden;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-    background-color: #ddd;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(60, 48, 66, 0.22);
+    background-color: #f3ece8;
   }
   .avatar-marker .avatar-ring img {
     width: 100%;
@@ -101,9 +109,10 @@ layout: default
     object-fit: cover;
     display: block;
   }
-  .avatar-marker.cat-academic .avatar-ring { border-color: #e74c3c; }
-  .avatar-marker.cat-graduate .avatar-ring { border-color: #3498db; }
-  .avatar-marker.cat-industry .avatar-ring { border-color: #2ecc71; }
+  /* Muted but saturated category tones (terracotta, denim, moss). */
+  .avatar-marker.cat-academic .avatar-ring { border-color: #c9595f; }
+  .avatar-marker.cat-graduate .avatar-ring { border-color: #4f77b0; }
+  .avatar-marker.cat-industry .avatar-ring { border-color: #5f9060; }
 
   .avatar-popup {
     text-align: center;
@@ -112,11 +121,11 @@ layout: default
   .avatar-popup img {
     width: 120px;
     height: 120px;
-    border-radius: 0;
+    border-radius: 12px;
     object-fit: cover;
     margin: 4px auto 8px;
     display: block;
-    border: 3px solid #f1f1f1;
+    border: 3px solid #f5ecec;
   }
   .avatar-popup .person-name {
     font-weight: 600;
@@ -151,6 +160,11 @@ layout: default
   }
   .map-missing summary { cursor: pointer; }
 
+  /* Soften cluster halos — cursor hint; blur is applied only to the
+     visual-only underlay so clicks still register on the crisp shape. */
+  .soft-halo { cursor: pointer; }
+  .soft-halo-blur { filter: blur(3px); pointer-events: none; }
+
   /* Map-style country/region label that hovers above a dense halo. */
   .region-label-icon { background: transparent; border: none; }
   .region-label {
@@ -171,17 +185,10 @@ layout: default
 </style>
 
 <div class="map-shell">
-  <div id="viet-wics-map"></div>
-
-  <div class="map-overlay title-card">
-    <h1>{% if lang == 'vn' %}🗺️ Bản đồ{% else %}🗺️ Map{% endif %}</h1>
-  </div>
-
-  <div class="map-overlay legend-card">
-    <span><span class="swatch academic"></span>{% if lang == 'vn' %}Giáo sư{% else %}Academic{% endif %}</span>
-    <span><span class="swatch graduate"></span>{% if lang == 'vn' %}Nghiên cứu sinh{% else %}PhD Students{% endif %}</span>
-    <span><span class="swatch industry"></span>{% if lang == 'vn' %}Công nghiệp{% else %}Industry{% endif %}</span>
-  </div>
+  <div id="viet-wics-map"
+       data-label-academic="{% if lang == 'vn' %}Giáo sư{% else %}Academic{% endif %}"
+       data-label-graduate="{% if lang == 'vn' %}Nghiên cứu sinh{% else %}PhD Students{% endif %}"
+       data-label-industry="{% if lang == 'vn' %}Công nghiệp{% else %}Industry{% endif %}"></div>
 
   {% assign categories = "academic,graduate,industry" | split: "," %}
   {% assign mapped_count = 0 %}
@@ -223,13 +230,6 @@ layout: default
     ];
   </script>
 
-  <div class="map-overlay stats-card">
-    {% if lang == 'vn' %}
-      <strong>{{ mapped_count }}</strong> người
-    {% else %}
-      <strong>{{ mapped_count }}</strong> people
-    {% endif %}
-  </div>
 </div>
 
 {%- comment -%} Build a list of institutions we couldn't place. {%- endcomment -%}
@@ -283,8 +283,25 @@ layout: default
       zoom: 2,
       minZoom: 2,
       worldCopyJump: true,
-      scrollWheelZoom: true
+      scrollWheelZoom: true,
+      zoomControl: false,
+      doubleClickZoom: false
     });
+    L.control.zoom({ position: 'topright' }).addTo(map);
+
+    // Legend control (bottom-right, inside the map pane).
+    var mapEl = document.getElementById('viet-wics-map');
+    var legendCtrl = L.control({ position: 'bottomright' });
+    legendCtrl.onAdd = function () {
+      var div = L.DomUtil.create('div', 'leaflet-control legend-card');
+      div.innerHTML =
+        '<span><span class="swatch academic"></span>' + mapEl.dataset.labelAcademic + '</span>' +
+        '<span><span class="swatch graduate"></span>' + mapEl.dataset.labelGraduate + '</span>' +
+        '<span><span class="swatch industry"></span>' + mapEl.dataset.labelIndustry + '</span>';
+      L.DomEvent.disableClickPropagation(div);
+      return div;
+    };
+    legendCtrl.addTo(map);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
@@ -368,6 +385,9 @@ layout: default
       if (g.members.length < 3) return;
       var regionName = deriveRegion(g.members[0].city);
       if (!regionName) return;
+      // Suppress the Vietnam label — the map is already Vietnam-centric and
+      // the giant "VIETNAM" watermark overwhelms the domestic cluster.
+      if (/^vi[eệ]t\s*nam$/i.test(regionName)) return;
       g.label = L.marker([g.lat, g.lng], {
         icon: L.divIcon({
           className: 'region-label-icon',
@@ -404,7 +424,7 @@ layout: default
     var GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // ~137.508°
     var BASE_SPREAD_PX = 24;       // distance unit between rings of the spiral
     var COLLISION_GAP_PX = 50;     // markers closer than this get grouped & spread
-    var HALO_PADDING_PX = 32;      // how far the blob pads beyond the outermost marker
+    var HALO_PADDING_PX = 64;      // how far the blob pads beyond the outermost marker
     var HALO_SMOOTH_ITERS = 3;     // Chaikin smoothing passes (more = softer)
 
     // Andrew's monotone chain — convex hull of a list of L.points.
@@ -537,15 +557,52 @@ layout: default
         hull = chaikinSmooth(hull, HALO_SMOOTH_ITERS);
 
         var latLngs = hull.map(function (p) { return map.layerPointToLatLng(p); });
+
+        // Visual underlay: blurred, non-interactive — gives the organic soft edge.
         L.polygon(latLngs, {
-          color: '#5a5a5a',
-          weight: 1,
+          color: '#f8b4c4',
+          weight: 8,
           opacity: 0.18,
-          fillColor: '#5a5a5a',
-          fillOpacity: Math.min(0.22, 0.08 + n * 0.010),
+          lineJoin: 'round',
+          lineCap: 'round',
+          fillColor: '#fbb7a0',
+          fillOpacity: Math.min(0.20, 0.08 + n * 0.008),
           interactive: false,
+          className: 'soft-halo-blur',
           smoothFactor: 0
         }).addTo(haloLayer);
+
+        // Crisp interactive overlay: nearly invisible but captures clicks cleanly
+        // (blur filters can mess with SVG hit-testing, so the click target stays sharp).
+        var haloPoly = L.polygon(latLngs, {
+          color: 'transparent',
+          weight: 0,
+          fillColor: '#fbb7a0',
+          fillOpacity: 0.01,
+          interactive: true,
+          bubblingMouseEvents: false,
+          className: 'soft-halo',
+          smoothFactor: 0
+        }).addTo(haloLayer);
+
+        // Click the halo → zoom to fit this cluster's members. If every member
+        // shares the same coords (single institution), fitBounds is a no-op, so
+        // fall back to setView at a reasonable city-level zoom.
+        var memberLatLngs = c.members.map(function (m) { return [m.lat, m.lng]; });
+        haloPoly.on('click', function (e) {
+          L.DomEvent.stopPropagation(e);
+          var bounds = L.latLngBounds(memberLatLngs);
+          var center = bounds.getCenter();
+          var currentZoom = map.getZoom();
+          var targetZoom = Math.min(currentZoom + 3, 12, map.getMaxZoom());
+          console.log('[halo click]', {
+            members: memberLatLngs.length,
+            center: center,
+            from: currentZoom,
+            to: targetZoom
+          });
+          map.setView(center, targetZoom, { animate: true });
+        });
       });
     }
 

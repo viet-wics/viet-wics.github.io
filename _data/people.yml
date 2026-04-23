@@ -292,6 +292,16 @@ academic:
       en: Gachon University
       vn: Gachon University
 
+  - name: Thuy-Duong "June" Vuong
+    url: https://thuyduongvuong.github.io/index.html
+    image: /profile-images/thuy-duong-june-vuong.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of California, San Diego
+      vn: University of California, San Diego
+
 graduate:
   - name: Mai Hoang Dao
     url: https://maihoangdao.github.io/

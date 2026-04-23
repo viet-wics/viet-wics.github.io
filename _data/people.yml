@@ -12,25 +12,35 @@ academic:
       en: Arizona State University
       vn: Arizona State University
 
-  - name: Ngan Le
-    url: https://uark-aicv.github.io/team/ngan_le.html
-    image: /profile-images/ngan_le_aicv.jpg
+  - name: My T. Thai
+    url: https://www.cise.ufl.edu/~mythai/
+    image: https://www.cise.ufl.edu/~mythai/images/thai.png
     title:
       en: Professor
       vn: Giáo sư
     institution:
-      en: University of Arkansas
-      vn: University of Arkansas
+      en: University of Florida
+      vn: University of Florida
 
-  - name: Linh Thi Xuan PHAN
-    url: https://www.cis.upenn.edu/~linhphan/
-    image: https://www.cis.upenn.edu/~linhphan/pics/linh.jpg
+  - name: Anh Nguyen
+    url: https://mcyphi.org/anhnguyen/
+    image: https://mcyphi.org/anhnguyen/images/avatar/AN_Headshot_2.jpg
     title:
       en: Professor
       vn: Giáo sư
     institution:
-      en: University of Pennsylvania
-      vn: University of Pennsylvania
+      en: University of Montana
+      vn: University of Montana
+
+  - name: Thuy-Duong "June" Vuong
+    url: https://thuyduongvuong.github.io/index.html
+    image: /profile-images/thuy-duong-june-vuong.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of California, San Diego
+      vn: University of California, San Diego
 
   - name: Thanh H. Nguyen
     url: https://ix.cs.uoregon.edu/~thanhhng/
@@ -61,6 +71,34 @@ academic:
     institution:
       en: University of Albany
       vn: University of Albany
+  - name: Hong Nhung Nguyen
+    url: https://nhungcnc.com/index.html#
+    image: https://nhungcnc.com/IMAGE.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Gachon University
+      vn: Gachon University
+  - name: Thao Nguyen
+    url: https://thao-nguyen-ai.github.io/
+    image: https://thao-nguyen-ai.github.io/images/thao.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Haverford College
+      vn: Haverford College
+
+  - name: Linh Thi Xuan PHAN
+    url: https://www.cis.upenn.edu/~linhphan/
+    image: https://www.cis.upenn.edu/~linhphan/pics/linh.jpg
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: University of Pennsylvania
+      vn: University of Pennsylvania
 
   - name: Hien Nguyen
     url: https://blogs.uww.edu/nguyenh/
@@ -72,15 +110,25 @@ academic:
       en: University of Wisconsin-Whitewater
       vn: University of Wisconsin-Whitewater
 
-  - name: Thanh T.N. Nguyen
-    url: https://uet.vnu.edu.vn/~thanhntn/
-    image: /profile-images/Thanh-Nguyen-278.webp
+  - name: Ngan Le
+    url: https://uark-aicv.github.io/team/ngan_le.html
+    image: /profile-images/ngan_le_aicv.jpg
     title:
-      en: Lecturer
-      vn: Giảng viên
+      en: Professor
+      vn: Giáo sư
     institution:
-      en: University of Engineering and Technology, VNU
-      vn: Đại học Công nghệ, ĐH Quốc gia Hà Nội
+      en: University of Arkansas
+      vn: University of Arkansas
+
+  - name: Phi Le Nguyen
+    url: https://users.soict.hust.edu.vn/lenp/
+    image: /profile-images/Phi-Le-Nguyen.avif
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Hanoi University of Science and Technology
+      vn: Đại học Bách Khoa Hà Nội
 
   - name: Huynh Thi Thanh Binh
     url: https://users.soict.hust.edu.vn/binhht/
@@ -192,16 +240,6 @@ academic:
       en: Hanoi University of Science and Technology
       vn: Đại học Bách Khoa Hà Nội
 
-  - name: Phi Le Nguyen
-    url: https://users.soict.hust.edu.vn/lenp/
-    image: /profile-images/Phi-Le-Nguyen.avif
-    title:
-      en: Professor
-      vn: Giáo sư
-    institution:
-      en: Hanoi University of Science and Technology
-      vn: Đại học Bách Khoa Hà Nội
-
   - name: Phuong Khanh Nguyen
     url: https://soict.hust.edu.vn/ts-nguyen-khanh-phuong.html
     image: https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5231.jpg
@@ -242,6 +280,36 @@ academic:
       en: Hanoi University of Science and Technology
       vn: Đại học Bách Khoa Hà Nội
 
+  - name: Thanh T.N. Nguyen
+    url: https://uet.vnu.edu.vn/~thanhntn/
+    image: /profile-images/Thanh-Nguyen-278.webp
+    title:
+      en: Lecturer
+      vn: Giảng viên
+    institution:
+      en: University of Engineering and Technology, VNU
+      vn: Đại học Công nghệ, ĐH Quốc gia Hà Nội
+
+  - name: Kim Tien Ly
+    url: https://ori.ox.ac.uk/people/kim-tien-ly/
+    image: https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000
+    title:
+      en: Postdoc
+      vn: Postdoc
+    institution:
+      en: Oxford Robotics Institute
+      vn: Oxford Robotics Institute
+
+  - name: Trinh Vuong
+    url: https://scholar.google.ca/citations?hl=en&user=trFdwLkAAAAJ
+    image: /profile-images/trinhvuong-korea.jpeg
+    title:
+      en: Postdoc
+      vn: Postdoc
+    institution:
+      en: Harvard University
+      vn: Harvard University
+
   - name: Huyen Nguyen
     url: https://huyennguyen.com/
     image: https://huyennguyen.com/assets/img/huyen.jpg
@@ -251,56 +319,6 @@ academic:
     institution:
       en: Harvard University
       vn: Harvard University
-
-  - name: My T. Thai
-    url: https://www.cise.ufl.edu/~mythai/
-    image: https://www.cise.ufl.edu/~mythai/images/thai.png
-    title:
-      en: Professor
-      vn: Giáo sư
-    institution:
-      en: University of Florida
-      vn: University of Florida
-
-  - name: Anh Nguyen
-    url: https://mcyphi.org/anhnguyen/
-    image: https://mcyphi.org/anhnguyen/images/avatar/AN_Headshot_2.jpg
-    title:
-      en: Professor
-      vn: Giáo sư
-    institution:
-      en: University of Montana
-      vn: University of Montana
-
-  - name: Thao Nguyen
-    url: https://thao-nguyen-ai.github.io/
-    image: https://thao-nguyen-ai.github.io/images/thao.jpg
-    title:
-      en: Professor
-      vn: Giáo sư
-    institution:
-      en: Haverford College
-      vn: Haverford College
-
-  - name: Hong Nhung Nguyen
-    url: https://nhungcnc.com/index.html#
-    image: https://nhungcnc.com/IMAGE.jpg
-    title:
-      en: Professor
-      vn: Giáo sư
-    institution:
-      en: Gachon University
-      vn: Gachon University
-
-  - name: Thuy-Duong "June" Vuong
-    url: https://thuyduongvuong.github.io/index.html
-    image: /profile-images/thuy-duong-june-vuong.jpg
-    title:
-      en: Professor
-      vn: Giáo sư
-    institution:
-      en: University of California, San Diego
-      vn: University of California, San Diego
 
 graduate:
   - name: Mai Hoang Dao
@@ -364,15 +382,6 @@ graduate:
       en: UCLouvain
       vn: UCLouvain
 
-  - name: Kim Tien Ly
-    url: https://ori.ox.ac.uk/people/kim-tien-ly/
-    image: https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000
-    title:
-      en: PhD Student
-      vn: Nghiên cứu sinh Tiến sỹ
-    institution:
-      en: University of Oxford
-      vn: University of Oxford
 
   - name: Thi Phuong Le
     url: https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg
@@ -474,15 +483,6 @@ graduate:
       en: University of Illinois Urbana-Champaign
       vn: University of Illinois Urbana-Champaign
 
-  - name: Trinh Vuong
-    url: https://scholar.google.ca/citations?hl=en&user=trFdwLkAAAAJ
-    image: /profile-images/trinhvuong-korea.jpeg
-    title:
-      en: PhD Student
-      vn: Nghiên cứu sinh Tiến sỹ
-    institution:
-      en: Korea University
-      vn: Korea University
 
   - name: Huyen Le
     url: https://minhhuyenle.github.io/

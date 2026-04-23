@@ -118,16 +118,16 @@ layout: default
         <!-- Graduate Students Section -->
         <h3 id="Graduate-Students">{{ t.graduate_heading }}</h3>
 
-    <table style="width:75%">
+    <table style="width:100%;margin:0 auto;">
       {% assign counter = 0 %}
       {% for person in site.data.people.graduate %}
-        {% assign mod = counter | modulo: 4 %}
+        {% assign mod = counter | modulo: 5 %}
         {% if mod == 0 %}
           <tr>
         {% endif %}
         
         <td style="text-align:center">
-          <img src="{{ person.image }}" height="200">
+          <img src="{{ person.image }}" height="150">
           <br>
           <a href="{{ person.url }}">{{ person.name }}</a>
           {% if person.featured %}
@@ -137,26 +137,26 @@ layout: default
         </td>
         
         {% assign counter = counter | plus: 1 %}
-        {% assign mod_next = counter | modulo: 4 %}
+        {% assign mod_next = counter | modulo: 5 %}
         {% if mod_next == 0 %}
           </tr>
         {% endif %}
       {% endfor %}
       
       <!-- Add "This could be YOU!" placeholder -->
-      {% assign mod = counter | modulo: 4 %}
+      {% assign mod = counter | modulo: 5 %}
       {% if mod == 0 %}
         <tr>
       {% endif %}
       
       <td style="text-align:center">
-        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
         <br>
         <a href="">{{ t.this_could_be_you }}</a><br>
       </td>
       
       {% assign counter = counter | plus: 1 %}
-      {% assign remaining = 4 | minus: mod %}
+      {% assign remaining = 5 | minus: mod %}
       {% if remaining > 1 %}
         {% for i in (2..remaining) %}
           <td></td>
@@ -164,7 +164,7 @@ layout: default
       {% endif %}
       </tr>
       
-      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
     </table>
       </div>
 
@@ -173,42 +173,42 @@ layout: default
         <!-- Industrial Positions Section -->
         <h3 id="Industrial-Positions">{{ t.industry_heading }}</h3>
 
-    <table style="width:75%">
+    <table style="width:100%;margin:0 auto;">
       {% assign counter = 0 %}
       {% for person in site.data.people.industry %}
-        {% assign mod = counter | modulo: 4 %}
+        {% assign mod = counter | modulo: 5 %}
         {% if mod == 0 %}
           <tr>
         {% endif %}
         
         <td style="text-align:center">
-          <img src="{{ person.image }}" height="200">
+          <img src="{{ person.image }}" height="150">
           <br>
           <a href="{{ person.url }}">{{ person.name }}</a>
           <br>{{ person.title[lang] }},<br>{{ person.institution[lang] }}
         </td>
         
         {% assign counter = counter | plus: 1 %}
-        {% assign mod_next = counter | modulo: 4 %}
+        {% assign mod_next = counter | modulo: 5 %}
         {% if mod_next == 0 %}
           </tr>
         {% endif %}
       {% endfor %}
       
       <!-- Add "This could be YOU!" placeholder -->
-      {% assign mod = counter | modulo: 4 %}
+      {% assign mod = counter | modulo: 5 %}
       {% if mod == 0 %}
         <tr>
       {% endif %}
       
       <td style="text-align:center">
-        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
         <br>
         <a href="">{{ t.this_could_be_you }}</a><br>
       </td>
       
       {% assign counter = counter | plus: 1 %}
-      {% assign remaining = 4 | minus: mod %}
+      {% assign remaining = 5 | minus: mod %}
       {% if remaining > 1 %}
         {% for i in (2..remaining) %}
           <td></td>
@@ -216,59 +216,7 @@ layout: default
       {% endif %}
       </tr>
       
-      <tr><td></td><td></td><td></td><td></td></tr>
-    </table>
-      </div>
-
-      <!-- Industrial Positions Tab Content -->
-      <div id="industry-tab" class="tab-content">
-        <!-- Industrial Positions Section -->
-        <h3 id="Industrial-Positions">{{ t.industry_heading }}</h3>
-
-    <table style="width:75%">
-      {% assign counter = 0 %}
-      {% for person in site.data.people.industry %}
-        {% assign mod = counter | modulo: 4 %}
-        {% if mod == 0 %}
-          <tr>
-        {% endif %}
-        
-        <td style="text-align:center">
-          <img src="{{ person.image }}" height="200">
-          <br>
-          <a href="{{ person.url }}">{{ person.name }}</a>
-          <br>{{ person.title[lang] }},<br>{{ person.institution[lang] }}
-        </td>
-        
-        {% assign counter = counter | plus: 1 %}
-        {% assign mod_next = counter | modulo: 4 %}
-        {% if mod_next == 0 %}
-          </tr>
-        {% endif %}
-      {% endfor %}
-      
-      <!-- Add "This could be YOU!" placeholder -->
-      {% assign mod = counter | modulo: 4 %}
-      {% if mod == 0 %}
-        <tr>
-      {% endif %}
-      
-      <td style="text-align:center">
-        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
-        <br>
-        <a href="">{{ t.this_could_be_you }}</a><br>
-      </td>
-      
-      {% assign counter = counter | plus: 1 %}
-      {% assign remaining = 4 | minus: mod %}
-      {% if remaining > 1 %}
-        {% for i in (2..remaining) %}
-          <td></td>
-        {% endfor %}
-      {% endif %}
-      </tr>
-      
-      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
     </table>
       </div>
 
@@ -277,16 +225,16 @@ layout: default
         <!-- Academic Positions Section -->
     <h3 id="Academic-Positions">{{ t.academic_heading }}</h3>
 
-    <table style="width:75%">
+    <table style="width:100%;margin:0 auto;">
       {% assign counter = 0 %}
       {% for person in site.data.people.academic %}
-        {% assign mod = counter | modulo: 4 %}
+        {% assign mod = counter | modulo: 5 %}
         {% if mod == 0 %}
           <tr>
         {% endif %}
         
         <td style="text-align:center">
-          <img src="{{ person.image }}" height="200">
+          <img src="{{ person.image }}" height="150">
           <br>
           <a href="{{ person.url }}">{{ person.name }}</a>
           {% if person.featured %}
@@ -296,26 +244,26 @@ layout: default
         </td>
         
         {% assign counter = counter | plus: 1 %}
-        {% assign mod_next = counter | modulo: 4 %}
+        {% assign mod_next = counter | modulo: 5 %}
         {% if mod_next == 0 %}
           </tr>
         {% endif %}
       {% endfor %}
       
       <!-- Add "This could be YOU!" placeholder -->
-      {% assign mod = counter | modulo: 4 %}
+      {% assign mod = counter | modulo: 5 %}
       {% if mod == 0 %}
         <tr>
       {% endif %}
       
       <td style="text-align:center">
-        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="200">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
         <br>
         <a href="">{{ t.this_could_be_you }}</a><br>
       </td>
       
       {% assign counter = counter | plus: 1 %}
-      {% assign remaining = 4 | minus: mod %}
+      {% assign remaining = 5 | minus: mod %}
       {% if remaining > 1 %}
         {% for i in (2..remaining) %}
           <td></td>
@@ -323,7 +271,7 @@ layout: default
       {% endif %}
       </tr>
       
-      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
     </table>
       </div>
     </div>

@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>viet-wics | 🗺️ Bản đồ</title>
+  <meta name="description" content="A collections of Vietnamese women working in Computer Science, focusing on higher-education.
+">
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="http://localhost:4000/vn/map/">
+  <meta property="og:title" content="🗺️ Bản đồ">
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/vn/map/">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a href="http://localhost:4000/">
+    <span class="site-title">
+        
+        <strong>viet-wics</strong> viet-wics
+    </span>
+    </a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a class="page-link" href="http://localhost:4000/vn/map/">🗺️ Bản đồ</a>
+                
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                
+                  <a class="page-link" href="http://localhost:4000/vn/bai-viet/">Bài viết</a>
+                
+              
+            
+          
+        
+          
+            
+              
+                
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              
+                <a class="page-link" href="http://localhost:4000/faq/">FAQ</a>
+              
+            
+          
+        
+          
+            
+              
+                <a class="page-link" href="http://localhost:4000/aboutme/">About me</a>
+              
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <!-- Language Switcher -->
+        <!-- Language Switcher -->
+
+  <a class="page-link" href="/">🇺🇸 English</a>
+
+
+
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      
+      <div class="wrapper">
+        
+
+<link rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+
+<style>
+  /* Break out of the parent .wrapper so the map can be edge-to-edge. */
+  .map-shell {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  #viet-wics-map {
+    width: 100vw;
+    /* Fill the viewport below the site header. Tweak the offset if the header
+       height changes; 70px works for the current layout. */
+    height: calc(100vh - 70px);
+    min-height: 540px;
+    z-index: 0;
+  }
+
+  /* Floating overlays on top of the map. */
+  .map-overlay {
+    position: absolute;
+    z-index: 500;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    padding: 10px 14px;
+    pointer-events: auto;
+  }
+  .map-overlay.title-card {
+    top: 14px;
+    left: 14px;
+    padding: 8px 14px;
+  }
+  .map-overlay.title-card h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+  }
+  .map-overlay.legend-card {
+    bottom: 24px;
+    left: 14px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .map-overlay.legend-card .swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+  }
+  .map-overlay.legend-card .swatch.academic { background: #e74c3c; }
+  .map-overlay.legend-card .swatch.graduate { background: #3498db; }
+  .map-overlay.legend-card .swatch.industry { background: #2ecc71; }
+  .map-overlay.stats-card {
+    top: 14px;
+    right: 14px;
+    font-size: 13px;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .map-overlay.title-card h1 { font-size: 16px; }
+    .map-overlay.legend-card { gap: 10px; font-size: 12px; }
+  }
+
+  /* Square avatar markers. */
+  .avatar-marker {
+    background: transparent;
+    border: none;
+  }
+  .avatar-marker .avatar-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    background-color: #ddd;
+  }
+  .avatar-marker .avatar-ring img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .avatar-marker.cat-academic .avatar-ring { border-color: #e74c3c; }
+  .avatar-marker.cat-graduate .avatar-ring { border-color: #3498db; }
+  .avatar-marker.cat-industry .avatar-ring { border-color: #2ecc71; }
+
+  .avatar-popup {
+    text-align: center;
+    min-width: 180px;
+  }
+  .avatar-popup img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0;
+    object-fit: cover;
+    margin: 4px auto 8px;
+    display: block;
+    border: 3px solid #f1f1f1;
+  }
+  .avatar-popup .person-name {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+  .avatar-popup .person-name a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  .avatar-popup .person-name a:hover { text-decoration: underline; }
+  .avatar-popup .person-meta {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+  }
+  .avatar-popup .person-city {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+  }
+
+  .map-missing {
+    margin: 18px auto;
+    max-width: 760px;
+    font-size: 12px;
+    color: #999;
+    background: #fafafa;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .map-missing summary { cursor: pointer; }
+
+  /* Map-style country/region label that hovers above a dense halo. */
+  .region-label-icon { background: transparent; border: none; }
+  .region-label {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, 0.75);
+    text-shadow:
+      0 0 4px rgba(255, 255, 255, 0.95),
+      0 0 10px rgba(255, 255, 255, 0.85),
+      0 0 18px rgba(255, 255, 255, 0.6);
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
+
+<div class="map-shell">
+  <div id="viet-wics-map"></div>
+
+  <div class="map-overlay title-card">
+    <h1>🗺️ Bản đồ</h1>
+  </div>
+
+  <div class="map-overlay legend-card">
+    <span><span class="swatch academic"></span>Giáo sư</span>
+    <span><span class="swatch graduate"></span>Nghiên cứu sinh</span>
+    <span><span class="swatch industry"></span>Công nghiệp</span>
+  </div>
+
+  
+  
+  
+
+  <script>
+    // Person records emitted from Liquid. Anyone whose institution is not in
+    // _data/locations.yml is dropped here and surfaced in the "missing" list
+    // below, so contributors know what coords to add.
+    window.VIETWICS_PEOPLE = [{
+              "name": "Ni Trieu",
+              "url": "https://nitrieu.github.io/",
+              "image": "https://nitrieu.github.io/images/profile.png",
+              "title": "Giáo sư",
+              "institution": "Arizona State University",
+              "category": "academic",
+              "lat": 33.4242,
+              "lng": -111.9281,
+              "city": "Tempe, AZ, USA"
+            },{
+              "name": "My T. Thai",
+              "url": "https://www.cise.ufl.edu/~mythai/",
+              "image": "https://www.cise.ufl.edu/~mythai/images/thai.png",
+              "title": "Giáo sư",
+              "institution": "University of Florida",
+              "category": "academic",
+              "lat": 29.6436,
+              "lng": -82.3549,
+              "city": "Gainesville, FL, USA"
+            },{
+              "name": "Anh Nguyen",
+              "url": "https://mcyphi.org/anhnguyen/",
+              "image": "https://mcyphi.org/anhnguyen/images/avatar/AN_Headshot_2.jpg",
+              "title": "Giáo sư",
+              "institution": "University of Montana",
+              "category": "academic",
+              "lat": 46.8625,
+              "lng": -113.9858,
+              "city": "Missoula, MT, USA"
+            },{
+              "name": "Thuy-Duong \"June\" Vuong",
+              "url": "https://thuyduongvuong.github.io/index.html",
+              "image": "/profile-images/thuy-duong-june-vuong.jpg",
+              "title": "Giáo sư",
+              "institution": "University of California, San Diego",
+              "category": "academic",
+              "lat": 32.8801,
+              "lng": -117.234,
+              "city": "La Jolla, CA, USA"
+            },{
+              "name": "Thanh H. Nguyen",
+              "url": "https://ix.cs.uoregon.edu/~thanhhng/",
+              "image": "/profile-images/thanh-h-nguyen.jpg",
+              "title": "Giáo sư",
+              "institution": "University of Oregon",
+              "category": "academic",
+              "lat": 44.0448,
+              "lng": -123.0726,
+              "city": "Eugene, OR, USA"
+            },{
+              "name": "Trang Vu",
+              "url": "https://trangvu.github.io/",
+              "image": "https://raw.githubusercontent.com/trangvu/trangvu.github.io/refs/heads/master/assets/img/prof_pic.jpg",
+              "title": "Giảng viên",
+              "institution": "Monash University",
+              "category": "academic",
+              "lat": -37.9105,
+              "lng": 145.1362,
+              "city": "Melbourne, Australia"
+            },{
+              "name": "Phung Lai",
+              "url": "https://www.albany.edu/cehc/faculty/phung-lai",
+              "image": "https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2024-04/image001_20240424112255.jpg?h=052569ad&itok=RnKvO7Zh",
+              "title": "Giáo sư",
+              "institution": "University of Albany",
+              "category": "academic",
+              "lat": 42.6864,
+              "lng": -73.8237,
+              "city": "Albany, NY, USA"
+            },{
+              "name": "Hong Nhung Nguyen",
+              "url": "https://nhungcnc.com/index.html#",
+              "image": "https://nhungcnc.com/IMAGE.jpg",
+              "title": "Giáo sư",
+              "institution": "Gachon University",
+              "category": "academic",
+              "lat": 37.4503,
+              "lng": 127.1294,
+              "city": "Seongnam, South Korea"
+            },{
+              "name": "Thao Nguyen",
+              "url": "https://thao-nguyen-ai.github.io/",
+              "image": "https://thao-nguyen-ai.github.io/images/thao.jpg",
+              "title": "Giáo sư",
+              "institution": "Haverford College",
+              "category": "academic",
+              "lat": 40.009,
+              "lng": -75.3083,
+              "city": "Haverford, PA, USA"
+            },{
+              "name": "Linh Thi Xuan PHAN",
+              "url": "https://www.cis.upenn.edu/~linhphan/",
+              "image": "https://www.cis.upenn.edu/~linhphan/pics/linh.jpg",
+              "title": "Giáo sư",
+              "institution": "University of Pennsylvania",
+              "category": "academic",
+              "lat": 39.9522,
+              "lng": -75.1932,
+              "city": "Philadelphia, PA, USA"
+            },{
+              "name": "Hien Nguyen",
+              "url": "https://blogs.uww.edu/nguyenh/",
+              "image": "https://blogs.uww.edu/nguyenh/files/2016/05/hienpic.jpg",
+              "title": "Giáo sư",
+              "institution": "University of Wisconsin-Whitewater",
+              "category": "academic",
+              "lat": 42.8359,
+              "lng": -88.7378,
+              "city": "Whitewater, WI, USA"
+            },{
+              "name": "Ngan Le",
+              "url": "https://uark-aicv.github.io/team/ngan_le.html",
+              "image": "/profile-images/ngan_le_aicv.jpg",
+              "title": "Giáo sư",
+              "institution": "University of Arkansas",
+              "category": "academic",
+              "lat": 36.0682,
+              "lng": -94.1719,
+              "city": "Fayetteville, AR, USA"
+            },{
+              "name": "Phi Le Nguyen",
+              "url": "https://users.soict.hust.edu.vn/lenp/",
+              "image": "/profile-images/Phi-Le-Nguyen.avif",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Huynh Thi Thanh Binh",
+              "url": "https://users.soict.hust.edu.vn/binhht/",
+              "image": "/profile-images/huynh-thi-thanh-binh.jpg",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Tuyet-Trinh Vu",
+              "url": "https://soict.hust.edu.vn/ts-vu-tuyet-trinh.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/06/V%C5%A9-Tuy%E1%BA%BFt-Trinh.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Nga, Nguyen Thi Thanh",
+              "url": "https://soict.hust.edu.vn/ts-nguyen-thi-thanh-nga.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/08/Nguy%E1%BB%85n-Th%E1%BB%8B-Thanh-Nga.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Thi Ha Dinh Ly",
+              "url": "https://soict.hust.edu.vn/ts-dinh-thi-ha-ly.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/DinhThiHaLy-3.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "D. L. Truong",
+              "url": "https://soict.hust.edu.vn/pgs-ts-truong-thi-dieu-linh.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5878.jpg",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Thu Ngo-Quynh",
+              "url": "https://soict.hust.edu.vn/pgs-ts-ngo-quynh-thu.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5536.jpg",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Nguyen Thi Thu Huong",
+              "url": "https://soict.hust.edu.vn/ts-nguyen-thi-thu-huong.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5783.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Nguyen Thi Kim Anh",
+              "url": "https://soict.hust.edu.vn/pgs-ts-nguyen-thi-kim-anh.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/06/Nguy%E1%BB%85n-Th%E1%BB%8B-Kim-Anh.jpg",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Nguyen Thi Hoang Lan",
+              "url": "https://soict.hust.edu.vn/pgs-ts-nguyen-thi-hoang-lan.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2017/03/PGS.TS-Nguy%E1%BB%85n-Th%E1%BB%8B-Ho%C3%A0ng-Lan.jpg",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Bui Thi Mai Anh",
+              "url": "https://soict.hust.edu.vn/ts-bui-thi-mai-anh.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/06/B%C3%B9i-Th%E1%BB%8B-Mai-Anh.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Trang Nguyen",
+              "url": "https://users.soict.hust.edu.vn/trangntt/",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2017/03/Nguynthithutrang.png",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Phuong Khanh Nguyen",
+              "url": "https://soict.hust.edu.vn/ts-nguyen-khanh-phuong.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5231.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Thi-Oanh Nguyen",
+              "url": "https://soict.hust.edu.vn/ts-nguyen-thi-oanh.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5827.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Huong Le Thanh",
+              "url": "https://soict.hust.edu.vn/pgs-ts-le-thanh-huong.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5526.jpg",
+              "title": "Giáo sư",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Vu Thi Huong Giang",
+              "url": "https://soict.hust.edu.vn/ts-vu-thi-huong-giang.html",
+              "image": "https://soict.hust.edu.vn/wp-content/uploads/2019/08/V%C5%A9-Th%E1%BB%8B-H%C6%B0%C6%A1ng-Giang.jpg",
+              "title": "Giảng viên",
+              "institution": "Đại học Bách Khoa Hà Nội",
+              "category": "academic",
+              "lat": 21.0072,
+              "lng": 105.8429,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Thanh T.N. Nguyen",
+              "url": "https://uet.vnu.edu.vn/~thanhntn/",
+              "image": "/profile-images/Thanh-Nguyen-278.webp",
+              "title": "Giảng viên",
+              "institution": "Đại học Công nghệ, ĐH Quốc gia Hà Nội",
+              "category": "academic",
+              "lat": 21.0383,
+              "lng": 105.7825,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Kim Tien Ly",
+              "url": "https://ori.ox.ac.uk/people/kim-tien-ly/",
+              "image": "https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000",
+              "title": "Postdoc",
+              "institution": "Oxford Robotics Institute",
+              "category": "academic",
+              "lat": 51.7548,
+              "lng": -1.2544,
+              "city": "Oxford, UK"
+            },{
+              "name": "Trinh Vuong",
+              "url": "https://scholar.google.ca/citations?hl=en&user=trFdwLkAAAAJ",
+              "image": "/profile-images/trinhvuong-korea.jpeg",
+              "title": "Postdoc",
+              "institution": "Harvard University",
+              "category": "academic",
+              "lat": 42.377,
+              "lng": -71.1167,
+              "city": "Cambridge, MA, USA"
+            },{
+              "name": "Huyen Nguyen",
+              "url": "https://huyennguyen.com/",
+              "image": "https://huyennguyen.com/assets/img/huyen.jpg",
+              "title": "Postdoc",
+              "institution": "Harvard University",
+              "category": "academic",
+              "lat": 42.377,
+              "lng": -71.1167,
+              "city": "Cambridge, MA, USA"
+            },{
+              "name": "Mai Hoang Dao",
+              "url": "https://maihoangdao.github.io/",
+              "image": "https://avatars.githubusercontent.com/u/42550670?v=4",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Edinburgh",
+              "category": "graduate",
+              "lat": 55.9445,
+              "lng": -3.1892,
+              "city": "Edinburgh, UK"
+            },{
+              "name": "Thao Nguyen",
+              "url": "https://thaoshibe.github.io/",
+              "image": "/assets/img/thao.png",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Wisconsin-Madison",
+              "category": "graduate",
+              "lat": 43.0766,
+              "lng": -89.4125,
+              "city": "Madison, WI, USA"
+            },{
+              "name": "Ha Thu Nguyen",
+              "url": "https://scholar.google.com/citations?user=I2qs4EUAAAAJ&hl=en",
+              "image": "/profile-images/ha-thu-nguyen.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Norwegian University of Science and Technology",
+              "category": "graduate",
+              "lat": 63.4197,
+              "lng": 10.4023,
+              "city": "Trondheim, Norway"
+            },{
+              "name": "Huong LD Hoang",
+              "url": "https://huonghld.github.io/huong-hoang/",
+              "image": "https://huonghld.github.io/huong-hoang/assets/img/profile-img.png",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of California, San Diego",
+              "category": "graduate",
+              "lat": 32.8801,
+              "lng": -117.234,
+              "city": "La Jolla, CA, USA"
+            },{
+              "name": "Huyen Thi Ngoc Nguyen",
+              "url": "https://ece.illinois.edu/about/directory/grad-students/huyentn2",
+              "image": "https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=18549&s=300",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Illinois Urbana-Champaign",
+              "category": "graduate",
+              "lat": 40.1106,
+              "lng": -88.2073,
+              "city": "Urbana, IL, USA"
+            },{
+              "name": "Doan Van Thao",
+              "url": "https://scholar.google.co.uk/citations?user=H5zZgaIAAAAJ&hl=en",
+              "image": "https://scholarships.vinuni.edu.vn/wp-content/uploads/2020/06/Doan-Thi-Van-Thao-400x761.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "UCLouvain",
+              "category": "graduate",
+              "lat": 50.6691,
+              "lng": 4.6118,
+              "city": "Louvain-la-Neuve, Belgium"
+            },{
+              "name": "Thi Phuong Le",
+              "url": "https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg",
+              "image": "https://scholarships.vinuni.edu.vn/wp-content/uploads/2023/03/LeThiPhuong-400x473.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Singapore Management University",
+              "category": "graduate",
+              "lat": 1.2966,
+              "lng": 103.8497,
+              "city": "Singapore"
+            },{
+              "name": "Van-Anh Nguyen",
+              "url": "https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en",
+              "image": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Monash",
+              "category": "graduate",
+              "lat": -37.9105,
+              "lng": 145.1362,
+              "city": "Melbourne, Australia"
+            },{
+              "name": "Minh Tam Nguyen",
+              "url": "https://tamnguyen9520.github.io/",
+              "image": "https://tamnguyen9520.github.io/tam_profile.jpeg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Rice University",
+              "category": "graduate",
+              "lat": 29.7172,
+              "lng": -95.4012,
+              "city": "Houston, TX, USA"
+            },{
+              "name": "Trang Nguyen",
+              "url": "https://www.linkedin.com/in/trangnnp/",
+              "image": "/profile-images/trang-nguyen.jpeg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Stanford University",
+              "category": "graduate",
+              "lat": 37.4275,
+              "lng": -122.1697,
+              "city": "Stanford, CA, USA"
+            },{
+              "name": "Quynh Phung",
+              "url": "https://qqphung.github.io/",
+              "image": "https://qqphung.github.io/img/avatar_350x350.png",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Maryland, College Park",
+              "category": "graduate",
+              "lat": 38.9869,
+              "lng": -76.9426,
+              "city": "College Park, MD, USA"
+            },{
+              "name": "Huyen Vo",
+              "url": "https://vothuckhanhhuyen.github.io/",
+              "image": "/profile-images/huyen-800.webp",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Max Planck Institutes",
+              "category": "graduate",
+              "lat": 48.5216,
+              "lng": 9.0576,
+              "city": "Tübingen, Germany"
+            },{
+              "name": "Quyen Tran",
+              "url": "https://tranquyenbk173.github.io/",
+              "image": "https://raw.githubusercontent.com/tranquyenbk173/tranquyenbk173.github.io/refs/heads/main/assets/img/sky.png",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Illinois Chicago",
+              "category": "graduate",
+              "lat": 41.8709,
+              "lng": -87.6494,
+              "city": "Chicago, IL, USA"
+            },{
+              "name": "Dung (Judy) Nguyen",
+              "url": "https://judydnguyen.github.io/",
+              "image": "/profile-images/dung-june-thai.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Vanderbilt University",
+              "category": "graduate",
+              "lat": 36.1486,
+              "lng": -86.805,
+              "city": "Nashville, TN, USA"
+            },{
+              "name": "Tran Huynh",
+              "url": "https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en",
+              "image": "/profile-images/tran-huynh.png",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Virginia Tech",
+              "category": "graduate",
+              "lat": 37.2284,
+              "lng": -80.4234,
+              "city": "Blacksburg, VA, USA"
+            },{
+              "name": "Thao Nguyen",
+              "url": "https://thaonguyen217.github.io/",
+              "image": "/profile-images/thaonguyen-uiuc.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Illinois Urbana-Champaign",
+              "category": "graduate",
+              "lat": 40.1106,
+              "lng": -88.2073,
+              "city": "Urbana, IL, USA"
+            },{
+              "name": "Huyen Le",
+              "url": "https://minhhuyenle.github.io/",
+              "image": "https://avatars.githubusercontent.com/u/137878202?v=4",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "VinUniversity",
+              "category": "graduate",
+              "lat": 20.9989,
+              "lng": 105.897,
+              "city": "Hà Nội, Việt Nam"
+            },{
+              "name": "Trang Nguyen",
+              "url": "https://nguyenvuthientrang.github.io/",
+              "image": "https://nguyenvuthientrang.github.io/images/pfp_vinai.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Carnegie Mellon University",
+              "category": "graduate",
+              "lat": 40.4433,
+              "lng": -79.9436,
+              "city": "Pittsburgh, PA, USA"
+            },{
+              "name": "Huyen Trang",
+              "url": "https://phamvuhuyentrang.github.io/",
+              "image": "https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "The University of Texas at Austin",
+              "category": "graduate",
+              "lat": 30.2849,
+              "lng": -97.7341,
+              "city": "Austin, TX, USA"
+            },{
+              "name": "Duong Tran",
+              "url": "https://www.linkedin.com/in/dgtr/",
+              "image": "/profile-images/duong-tran.jpeg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "Bosch Center for AI",
+              "category": "graduate",
+              "lat": 48.7647,
+              "lng": 8.9404,
+              "city": "Renningen, Germany"
+            },{
+              "name": "Chau Minh Pham",
+              "url": "https://chtmp223.github.io/",
+              "image": "https://chtmp223.github.io/assets/img/home.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "University of Maryland, College Park",
+              "category": "graduate",
+              "lat": 38.9869,
+              "lng": -76.9426,
+              "city": "College Park, MD, USA"
+            },{
+              "name": "Nhi Nguyen",
+              "url": "https://iam-nhi-nguyen.github.io/",
+              "image": "https://raw.githubusercontent.com/iam-nhi-nguyen/iam-nhi-nguyen.github.io/main/assets/images/photo_of_nhi.jpg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "New York University",
+              "category": "graduate",
+              "lat": 40.7295,
+              "lng": -73.9965,
+              "city": "New York, NY, USA"
+            },{
+              "name": "Minh-Vuong Nguyen",
+              "url": "https://scholar.google.com/citations?user=eUbbNpcAAAAJ&hl=en",
+              "image": "/profile-images/minh-vuong-nguyen.jpeg",
+              "title": "Nghiên cứu sinh Tiến sỹ",
+              "institution": "RMIT University",
+              "category": "graduate",
+              "lat": -37.8083,
+              "lng": 144.9633,
+              "city": "Melbourne, Australia"
+            },{
+              "name": "Thu Nguyen-Phuoc",
+              "url": "https://www.monkeyoverflow.com/about",
+              "image": "https://images.squarespace-cdn.com/content/v1/570a63ac5559863dc7622dd3/1460299278859-MCAX7O5X41NRVX24QZ4Y/image-asset.jpeg",
+              "title": "Research Scientist",
+              "institution": "Meta",
+              "category": "industry",
+              "lat": 51.5345,
+              "lng": -0.1245,
+              "city": "London, United Kingdom"
+            },{
+              "name": "Anh N. Thai",
+              "url": "https://anhthai1997.com/",
+              "image": "https://anhthai1997.com/img/me.jpg",
+              "title": "AI Researcher",
+              "institution": "Dolby Laboratories",
+              "category": "industry",
+              "lat": 37.774,
+              "lng": -122.4015,
+              "city": "San Francisco, CA, USA (HQ)"
+            },{
+              "name": "Tam Nguyen",
+              "url": "https://www.linkedin.com/in/tam-nguyen-945b50135/",
+              "image": "/profile-images/tam-nguyen-virginia-tech.jpeg",
+              "title": "Data Scientist",
+              "institution": "Virginia Tech",
+              "category": "industry",
+              "lat": 37.2284,
+              "lng": -80.4234,
+              "city": "Blacksburg, VA, USA"
+            },{
+              "name": "Vy Ai Vo",
+              "url": "https://vyaivo.github.io/",
+              "image": "https://vyaivo.github.io/images/Vo_square_small.jpg",
+              "title": "Research Scientist",
+              "institution": "Intel Labs",
+              "category": "industry",
+              "lat": 45.5152,
+              "lng": -122.6784,
+              "city": "Portland, OR, USA"
+            },{
+              "name": "Thu Le",
+              "url": "https://www.amazon.science/author/dieu-thu-le",
+              "image": "/profile-images/thu-le-amz.webp",
+              "title": "Applied Scientist",
+              "institution": "Amazon Science",
+              "category": "industry",
+              "lat": 47.6228,
+              "lng": -122.336,
+              "city": "Seattle, WA, USA (HQ)"
+            },{
+              "name": "Lan Vu",
+              "url": "https://www.linkedin.com/in/lanvu/",
+              "image": "/profile-images/lan-vu.webp",
+              "title": "Principal Software Engineer",
+              "institution": "Broadcom",
+              "category": "industry",
+              "lat": 37.4129,
+              "lng": -121.929,
+              "city": "San Jose, CA, USA (HQ)"
+            },{
+              "name": "Thao Nguyen",
+              "url": "https://thaonguyen19.github.io/",
+              "image": "https://thaonguyen19.github.io/me3.jpg",
+              "title": "Member of Technical Staff",
+              "institution": "Anthropic",
+              "category": "industry",
+              "lat": 37.7894,
+              "lng": -122.4096,
+              "city": "San Francisco, CA, USA (HQ)"
+            },{
+              "name": "Dung (June) Thai",
+              "url": "https://www.linkedin.com/in/dung-thai/",
+              "image": "/profile-images/june-thai.jpg",
+              "title": "Staff Research Scientist",
+              "institution": "Ensemble Health Partners",
+              "category": "industry",
+              "lat": 39.1031,
+              "lng": -84.512,
+              "city": "Cincinnati, OH, USA (HQ)"
+            },];
+  </script>
+
+  <div class="map-overlay stats-card">
+    
+      <strong>63</strong> người
+    
+  </div>
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<script>
+  (function () {
+    var people = window.VIETWICS_PEOPLE || [];
+
+    var map = L.map('viet-wics-map', {
+      center: [20, 10],
+      zoom: 2,
+      minZoom: 2,
+      worldCopyJump: true,
+      scrollWheelZoom: true
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    function escapeHtml(str) {
+      return String(str || '').replace(/[&<>"']/g, function (c) {
+        return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+      });
+    }
+
+    function makeIcon(person) {
+      var size = 42;
+      var img = escapeHtml(person.image);
+      var cat = escapeHtml(person.category);
+      return L.divIcon({
+        className: 'avatar-marker cat-' + cat,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -size / 2],
+        html:
+          '<div class="avatar-ring">' +
+            '<img src="' + img + '" alt="" loading="lazy" ' +
+              'onerror="this.style.display=\'none\';this.parentNode.style.background=\'#ccc\';" />' +
+          '</div>'
+      });
+    }
+
+    function popupHtml(person) {
+      var name = escapeHtml(person.name);
+      var url = escapeHtml(person.url);
+      var image = escapeHtml(person.image);
+      var title = escapeHtml(person.title);
+      var inst = escapeHtml(person.institution);
+      var city = escapeHtml(person.city);
+      return (
+        '<div class="avatar-popup">' +
+          '<img src="' + image + '" alt="" ' +
+            'onerror="this.style.display=\'none\';" />' +
+          '<div class="person-name"><a href="' + url + '" target="_blank" rel="noopener">' + name + '</a></div>' +
+          '<div class="person-meta">' + title + '<br>' + inst + '</div>' +
+          '<div class="person-city">📍 ' + city + '</div>' +
+        '</div>'
+      );
+    }
+
+    // Group people by their true lat/lng. We never collapse them into a single
+    // count badge — instead, every avatar is always rendered. For locations
+    // with multiple people, we lay them out in a sunflower spiral around the
+    // true point and reposition on every zoom so the cluster scales nicely.
+    var groupsByKey = {};
+    people.forEach(function (p) {
+      var key = p.lat.toFixed(4) + ',' + p.lng.toFixed(4);
+      if (!groupsByKey[key]) {
+        groupsByKey[key] = { lat: p.lat, lng: p.lng, members: [] };
+      }
+      groupsByKey[key].members.push(p);
+    });
+    var groups = Object.keys(groupsByKey).map(function (k) { return groupsByKey[k]; });
+
+    // Pull the country/region name out of a "City, Country" city string so we
+    // can stamp it on top of dense halos as a map-style label. Strips any
+    // trailing parenthetical like "(HQ)".
+    function deriveRegion(city) {
+      if (!city) return '';
+      var parts = city.split(',').map(function (s) { return s.trim(); });
+      return parts[parts.length - 1].replace(/\s*\(.*\)\s*$/, '').trim();
+    }
+
+    // Density "halo" + region label live in their own layers and get rebuilt
+    // on every zoom (because what counts as "dense" depends on visual
+    // overlap, which depends on zoom). Region labels stay tied to specific
+    // institution groups so the country name doesn't jump around.
+    var haloLayer = L.layerGroup().addTo(map);
+    var labelLayer = L.layerGroup().addTo(map);
+
+    // Pre-compute region labels once per original group with >=3 members.
+    // They get added/removed dynamically based on zoom (see updateLabelVisibility).
+    groups.forEach(function (g) {
+      if (g.members.length < 3) return;
+      var regionName = deriveRegion(g.members[0].city);
+      if (!regionName) return;
+      g.label = L.marker([g.lat, g.lng], {
+        icon: L.divIcon({
+          className: 'region-label-icon',
+          html: '<div class="region-label">' + escapeHtml(regionName) + '</div>',
+          iconSize: [240, 30],
+          iconAnchor: [120, 15]
+        }),
+        interactive: false,
+        keyboard: false,
+        zIndexOffset: -1000
+      });
+    });
+
+    // All markers laid out and added at the true point first; positions get
+    // refined on the next render via repositionMarkers().
+    var allEntries = []; // { marker, group, idx }
+    groups.forEach(function (g) {
+      g.members.forEach(function (p, i) {
+        var marker = L.marker([g.lat, g.lng], {
+          icon: makeIcon(p),
+          title: p.name,
+          riseOnHover: true
+        });
+        marker.bindPopup(popupHtml(p), { maxWidth: 240 });
+        marker.addTo(map);
+        allEntries.push({ marker: marker, group: g, idx: i });
+      });
+    });
+
+    // Sunflower spiral spread (golden angle) so even N=20 stays compact and
+    // visually balanced. Pixel-based, so the spread looks the same regardless
+    // of zoom. Recomputed on zoom because both pixel↔latlng AND which markers
+    // visually overlap depend on zoom.
+    var GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // ~137.508°
+    var BASE_SPREAD_PX = 24;       // distance unit between rings of the spiral
+    var COLLISION_GAP_PX = 50;     // markers closer than this get grouped & spread
+    var HALO_PADDING_PX = 32;      // how far the blob pads beyond the outermost marker
+    var HALO_SMOOTH_ITERS = 3;     // Chaikin smoothing passes (more = softer)
+
+    // Andrew's monotone chain — convex hull of a list of L.points.
+    function convexHull(points) {
+      if (points.length <= 1) return points.slice();
+      var pts = points.slice().sort(function (a, b) {
+        return a.x - b.x || a.y - b.y;
+      });
+      function cross(O, A, B) {
+        return (A.x - O.x) * (B.y - O.y) - (A.y - O.y) * (B.x - O.x);
+      }
+      var lower = [];
+      for (var i = 0; i < pts.length; i++) {
+        while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], pts[i]) <= 0) {
+          lower.pop();
+        }
+        lower.push(pts[i]);
+      }
+      var upper = [];
+      for (var j = pts.length - 1; j >= 0; j--) {
+        while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], pts[j]) <= 0) {
+          upper.pop();
+        }
+        upper.push(pts[j]);
+      }
+      lower.pop(); upper.pop();
+      return lower.concat(upper);
+    }
+
+    // Expand each hull vertex outward from the centroid by `pad` pixels, so
+    // the blob has breathing room around the avatars instead of clipping them.
+    function expandHull(hull, pad) {
+      var cx = 0, cy = 0;
+      hull.forEach(function (p) { cx += p.x; cy += p.y; });
+      cx /= hull.length; cy /= hull.length;
+      return hull.map(function (p) {
+        var dx = p.x - cx, dy = p.y - cy;
+        var d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var s = (d + pad) / d;
+        return L.point(cx + dx * s, cy + dy * s);
+      });
+    }
+
+    // Chaikin's corner-cutting algorithm — turns a polygon into a rounded blob.
+    function chaikinSmooth(points, iterations) {
+      var result = points;
+      for (var k = 0; k < iterations; k++) {
+        var next = [];
+        for (var i = 0; i < result.length; i++) {
+          var p1 = result[i];
+          var p2 = result[(i + 1) % result.length];
+          next.push(L.point(0.75 * p1.x + 0.25 * p2.x, 0.75 * p1.y + 0.25 * p2.y));
+          next.push(L.point(0.25 * p1.x + 0.75 * p2.x, 0.25 * p1.y + 0.75 * p2.y));
+        }
+        result = next;
+      }
+      return result;
+    }
+
+    // At each zoom: (1) build proximity clusters in pixel space, (2) sunflower
+    // each cluster around its anchor (the most populous original-group's true
+    // point), (3) rebuild halos for any cluster of >=3 visually overlapping
+    // people, (4) re-add/remove pre-built region labels.
+    function repositionMarkers() {
+      // Sort entries so larger original groups become cluster anchors first
+      // (HUST stays anchored at HUST instead of drifting toward UET/VinU).
+      var sorted = allEntries.slice().sort(function (a, b) {
+        var sizeDiff = b.group.members.length - a.group.members.length;
+        if (sizeDiff !== 0) return sizeDiff;
+        return a.group.lat - b.group.lat || a.group.lng - b.group.lng;
+      });
+
+      var clusters = []; // { lat, lng, anchorPt, members:[entries] }
+      sorted.forEach(function (entry) {
+        var truePt = map.latLngToLayerPoint([entry.group.lat, entry.group.lng]);
+        var assigned = null;
+        for (var k = 0; k < clusters.length; k++) {
+          if (truePt.distanceTo(clusters[k].anchorPt) < COLLISION_GAP_PX) {
+            assigned = clusters[k];
+            break;
+          }
+        }
+        if (assigned) {
+          assigned.members.push(entry);
+        } else {
+          clusters.push({
+            lat: entry.group.lat,
+            lng: entry.group.lng,
+            anchorPt: truePt,
+            members: [entry]
+          });
+        }
+      });
+
+      // Place markers: solo clusters at true point, multi clusters in a spiral.
+      clusters.forEach(function (c) {
+        if (c.members.length === 1) {
+          var e = c.members[0];
+          e.marker.setLatLng([e.group.lat, e.group.lng]);
+          return;
+        }
+        c.members.forEach(function (entry, i) {
+          var radius = BASE_SPREAD_PX * Math.sqrt(i + 0.5);
+          var angle = i * GOLDEN_ANGLE;
+          var offset = L.point(
+            c.anchorPt.x + radius * Math.cos(angle),
+            c.anchorPt.y + radius * Math.sin(angle)
+          );
+          entry.marker.setLatLng(map.layerPointToLatLng(offset));
+        });
+      });
+
+      // Rebuild halos for any visual cluster of >=3 people. Instead of a
+      // perfect circle, draw a soft gray blob that follows the actual shape
+      // of the cluster: convex hull of the marker pixel positions, padded
+      // outward, then Chaikin-smoothed into curves.
+      haloLayer.clearLayers();
+      clusters.forEach(function (c) {
+        var n = c.members.length;
+        if (n < 3) return;
+
+        // Pixel positions of every marker in this cluster (post-spread).
+        var pts = c.members.map(function (entry) {
+          return map.latLngToLayerPoint(entry.marker.getLatLng());
+        });
+
+        var hull = convexHull(pts);
+        if (hull.length < 3) return; // collinear / degenerate; skip
+        hull = expandHull(hull, HALO_PADDING_PX);
+        hull = chaikinSmooth(hull, HALO_SMOOTH_ITERS);
+
+        var latLngs = hull.map(function (p) { return map.layerPointToLatLng(p); });
+        L.polygon(latLngs, {
+          color: '#5a5a5a',
+          weight: 1,
+          opacity: 0.18,
+          fillColor: '#5a5a5a',
+          fillOpacity: Math.min(0.22, 0.08 + n * 0.010),
+          interactive: false,
+          smoothFactor: 0
+        }).addTo(haloLayer);
+      });
+    }
+
+    // Region labels only make sense when zoomed out enough that the halo is
+    // bigger than the spread of faces. Hide them as the user zooms in past
+    // city level so they don't sit on top of individual avatars.
+    function updateLabelVisibility() {
+      var show = map.getZoom() <= 6;
+      labelLayer.clearLayers();
+      if (!show) return;
+      groups.forEach(function (g) {
+        if (g.label) labelLayer.addLayer(g.label);
+      });
+    }
+
+    // Run after layout settles and on every zoom change.
+    map.on('zoomend', function () {
+      repositionMarkers();
+      updateLabelVisibility();
+    });
+    map.whenReady(function () {
+      repositionMarkers();
+      updateLabelVisibility();
+    });
+
+    if (people.length > 0) {
+      try {
+        var bounds = L.latLngBounds(people.map(function (p) { return [p.lat, p.lng]; }));
+        map.fitBounds(bounds.pad(0.15), { maxZoom: 5 });
+      } catch (e) {
+        // ignore — keep default view
+      }
+    }
+  })();
+</script>
+
+      </div>
+    </div>
+
+    <center>
+    <a href="javascript:toggleblock('notice')" style="text-align:center;font-size:70%;color:#808080">▶ viet-wics.github.io's clustrmaps 🌎</a>.
+    <div id="notice" style="display:none; font-size:0;">
+      <p style="margin:0;">
+        <a href='https://clustrmaps.com/site/1bzix'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=300&t=tt&d=e1hjFkDQQxqPF5XaNZCC4_lnVx6Ub9wKoVRc8QQJWvs&co=2d78ad&ct=ffffff'/></a>
+      </p>
+    </center>
+    </div>
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 viet-wics.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+    
+  </div>
+
+</footer>
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="http://localhost:4000/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="http://localhost:4000/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXXX', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </body>
+
+</html>

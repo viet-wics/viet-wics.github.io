@@ -1,0 +1,583 @@
+---
+layout: default
+---
+
+{% assign lang = page.lang | default: 'en' %}
+
+<link rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+
+<style>
+  /* Break out of the parent .wrapper so the map can be edge-to-edge. */
+  .map-shell {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  #viet-wics-map {
+    width: 100vw;
+    /* Fill the viewport below the site header. Tweak the offset if the header
+       height changes; 70px works for the current layout. */
+    height: calc(100vh - 70px);
+    min-height: 540px;
+    z-index: 0;
+  }
+
+  /* Floating overlays on top of the map. */
+  .map-overlay {
+    position: absolute;
+    z-index: 500;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    padding: 10px 14px;
+    pointer-events: auto;
+  }
+  .map-overlay.title-card {
+    top: 14px;
+    left: 14px;
+    padding: 8px 14px;
+  }
+  .map-overlay.title-card h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+  }
+  .map-overlay.legend-card {
+    bottom: 24px;
+    left: 14px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .map-overlay.legend-card .swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+  }
+  .map-overlay.legend-card .swatch.academic { background: #e74c3c; }
+  .map-overlay.legend-card .swatch.graduate { background: #3498db; }
+  .map-overlay.legend-card .swatch.industry { background: #2ecc71; }
+  .map-overlay.stats-card {
+    top: 14px;
+    right: 14px;
+    font-size: 13px;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .map-overlay.title-card h1 { font-size: 16px; }
+    .map-overlay.legend-card { gap: 10px; font-size: 12px; }
+  }
+
+  /* Square avatar markers. */
+  .avatar-marker {
+    background: transparent;
+    border: none;
+  }
+  .avatar-marker .avatar-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    background-color: #ddd;
+  }
+  .avatar-marker .avatar-ring img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .avatar-marker.cat-academic .avatar-ring { border-color: #e74c3c; }
+  .avatar-marker.cat-graduate .avatar-ring { border-color: #3498db; }
+  .avatar-marker.cat-industry .avatar-ring { border-color: #2ecc71; }
+
+  .avatar-popup {
+    text-align: center;
+    min-width: 180px;
+  }
+  .avatar-popup img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0;
+    object-fit: cover;
+    margin: 4px auto 8px;
+    display: block;
+    border: 3px solid #f1f1f1;
+  }
+  .avatar-popup .person-name {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+  .avatar-popup .person-name a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  .avatar-popup .person-name a:hover { text-decoration: underline; }
+  .avatar-popup .person-meta {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+  }
+  .avatar-popup .person-city {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+  }
+
+  .map-missing {
+    margin: 18px auto;
+    max-width: 760px;
+    font-size: 12px;
+    color: #999;
+    background: #fafafa;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .map-missing summary { cursor: pointer; }
+
+  /* Map-style country/region label that hovers above a dense halo. */
+  .region-label-icon { background: transparent; border: none; }
+  .region-label {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(70, 70, 70, 0.75);
+    text-shadow:
+      0 0 4px rgba(255, 255, 255, 0.95),
+      0 0 10px rgba(255, 255, 255, 0.85),
+      0 0 18px rgba(255, 255, 255, 0.6);
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
+
+<div class="map-shell">
+  <div id="viet-wics-map"></div>
+
+  <div class="map-overlay title-card">
+    <h1>{% if lang == 'vn' %}🗺️ Bản đồ{% else %}🗺️ Map{% endif %}</h1>
+  </div>
+
+  <div class="map-overlay legend-card">
+    <span><span class="swatch academic"></span>{% if lang == 'vn' %}Giáo sư{% else %}Academic{% endif %}</span>
+    <span><span class="swatch graduate"></span>{% if lang == 'vn' %}Nghiên cứu sinh{% else %}PhD Students{% endif %}</span>
+    <span><span class="swatch industry"></span>{% if lang == 'vn' %}Công nghiệp{% else %}Industry{% endif %}</span>
+  </div>
+
+  {% assign categories = "academic,graduate,industry" | split: "," %}
+  {% assign mapped_count = 0 %}
+  {% assign missing_list = "" %}
+
+  <script>
+    // Person records emitted from Liquid. Anyone whose institution is not in
+    // _data/locations.yml is dropped here and surfaced in the "missing" list
+    // below, so contributors know what coords to add.
+    window.VIETWICS_PEOPLE = [
+      {%- for cat in categories -%}
+        {%- for p in site.data.people[cat] -%}
+          {%- comment -%}
+            Per-person `location:` (in _data/people.yml) overrides the
+            institution-level lookup. Use it when someone is at a specific
+            office that differs from the company HQ, or in a remote city.
+          {%- endcomment -%}
+          {%- if p.location -%}
+            {%- assign loc = p.location -%}
+          {%- else -%}
+            {%- assign loc = site.data.locations[p.institution.en] -%}
+          {%- endif -%}
+          {%- if loc -%}
+            {%- assign mapped_count = mapped_count | plus: 1 -%}
+            {
+              "name": {{ p.name | jsonify }},
+              "url": {{ p.url | jsonify }},
+              "image": {{ p.image | jsonify }},
+              "title": {{ p.title[lang] | jsonify }},
+              "institution": {{ p.institution[lang] | jsonify }},
+              "category": {{ cat | jsonify }},
+              "lat": {{ loc.lat }},
+              "lng": {{ loc.lng }},
+              "city": {{ loc.city | jsonify }}
+            },
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    ];
+  </script>
+
+  <div class="map-overlay stats-card">
+    {% if lang == 'vn' %}
+      <strong>{{ mapped_count }}</strong> người
+    {% else %}
+      <strong>{{ mapped_count }}</strong> people
+    {% endif %}
+  </div>
+</div>
+
+{%- comment -%} Build a list of institutions we couldn't place. {%- endcomment -%}
+{% assign all_missing = "" | split: "," %}
+{% for cat in categories %}
+  {% for p in site.data.people[cat] %}
+    {% unless p.location %}
+      {% assign loc = site.data.locations[p.institution.en] %}
+      {% unless loc %}
+        {% assign all_missing = all_missing | push: p.institution.en %}
+      {% endunless %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign unique_missing = all_missing | uniq | sort %}
+
+{% if unique_missing.size > 0 %}
+  <details class="map-missing">
+    <summary>
+      {% if lang == 'vn' %}
+        ⚠️ {{ unique_missing.size }} đơn vị chưa có toạ độ (chưa hiển thị trên bản đồ)
+      {% else %}
+        ⚠️ {{ unique_missing.size }} institution(s) missing coordinates (not shown on map)
+      {% endif %}
+    </summary>
+    <ul>
+      {% for inst in unique_missing %}
+        <li><code>{{ inst }}</code></li>
+      {% endfor %}
+    </ul>
+    <p style="margin: 6px 0 0;">
+      {% if lang == 'vn' %}
+        Thêm vào <code>_data/locations.yml</code> để hiển thị các bạn này.
+      {% else %}
+        Add an entry to <code>_data/locations.yml</code> to place these on the map.
+      {% endif %}
+    </p>
+  </details>
+{% endif %}
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<script>
+  (function () {
+    var people = window.VIETWICS_PEOPLE || [];
+
+    var map = L.map('viet-wics-map', {
+      center: [20, 10],
+      zoom: 2,
+      minZoom: 2,
+      worldCopyJump: true,
+      scrollWheelZoom: true
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    function escapeHtml(str) {
+      return String(str || '').replace(/[&<>"']/g, function (c) {
+        return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+      });
+    }
+
+    function makeIcon(person) {
+      var size = 42;
+      var img = escapeHtml(person.image);
+      var cat = escapeHtml(person.category);
+      return L.divIcon({
+        className: 'avatar-marker cat-' + cat,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -size / 2],
+        html:
+          '<div class="avatar-ring">' +
+            '<img src="' + img + '" alt="" loading="lazy" ' +
+              'onerror="this.style.display=\'none\';this.parentNode.style.background=\'#ccc\';" />' +
+          '</div>'
+      });
+    }
+
+    function popupHtml(person) {
+      var name = escapeHtml(person.name);
+      var url = escapeHtml(person.url);
+      var image = escapeHtml(person.image);
+      var title = escapeHtml(person.title);
+      var inst = escapeHtml(person.institution);
+      var city = escapeHtml(person.city);
+      return (
+        '<div class="avatar-popup">' +
+          '<img src="' + image + '" alt="" ' +
+            'onerror="this.style.display=\'none\';" />' +
+          '<div class="person-name"><a href="' + url + '" target="_blank" rel="noopener">' + name + '</a></div>' +
+          '<div class="person-meta">' + title + '<br>' + inst + '</div>' +
+          '<div class="person-city">📍 ' + city + '</div>' +
+        '</div>'
+      );
+    }
+
+    // Group people by their true lat/lng. We never collapse them into a single
+    // count badge — instead, every avatar is always rendered. For locations
+    // with multiple people, we lay them out in a sunflower spiral around the
+    // true point and reposition on every zoom so the cluster scales nicely.
+    var groupsByKey = {};
+    people.forEach(function (p) {
+      var key = p.lat.toFixed(4) + ',' + p.lng.toFixed(4);
+      if (!groupsByKey[key]) {
+        groupsByKey[key] = { lat: p.lat, lng: p.lng, members: [] };
+      }
+      groupsByKey[key].members.push(p);
+    });
+    var groups = Object.keys(groupsByKey).map(function (k) { return groupsByKey[k]; });
+
+    // Pull the country/region name out of a "City, Country" city string so we
+    // can stamp it on top of dense halos as a map-style label. Strips any
+    // trailing parenthetical like "(HQ)".
+    function deriveRegion(city) {
+      if (!city) return '';
+      var parts = city.split(',').map(function (s) { return s.trim(); });
+      return parts[parts.length - 1].replace(/\s*\(.*\)\s*$/, '').trim();
+    }
+
+    // Density "halo" + region label live in their own layers and get rebuilt
+    // on every zoom (because what counts as "dense" depends on visual
+    // overlap, which depends on zoom). Region labels stay tied to specific
+    // institution groups so the country name doesn't jump around.
+    var haloLayer = L.layerGroup().addTo(map);
+    var labelLayer = L.layerGroup().addTo(map);
+
+    // Pre-compute region labels once per original group with >=3 members.
+    // They get added/removed dynamically based on zoom (see updateLabelVisibility).
+    groups.forEach(function (g) {
+      if (g.members.length < 3) return;
+      var regionName = deriveRegion(g.members[0].city);
+      if (!regionName) return;
+      g.label = L.marker([g.lat, g.lng], {
+        icon: L.divIcon({
+          className: 'region-label-icon',
+          html: '<div class="region-label">' + escapeHtml(regionName) + '</div>',
+          iconSize: [240, 30],
+          iconAnchor: [120, 15]
+        }),
+        interactive: false,
+        keyboard: false,
+        zIndexOffset: -1000
+      });
+    });
+
+    // All markers laid out and added at the true point first; positions get
+    // refined on the next render via repositionMarkers().
+    var allEntries = []; // { marker, group, idx }
+    groups.forEach(function (g) {
+      g.members.forEach(function (p, i) {
+        var marker = L.marker([g.lat, g.lng], {
+          icon: makeIcon(p),
+          title: p.name,
+          riseOnHover: true
+        });
+        marker.bindPopup(popupHtml(p), { maxWidth: 240 });
+        marker.addTo(map);
+        allEntries.push({ marker: marker, group: g, idx: i });
+      });
+    });
+
+    // Sunflower spiral spread (golden angle) so even N=20 stays compact and
+    // visually balanced. Pixel-based, so the spread looks the same regardless
+    // of zoom. Recomputed on zoom because both pixel↔latlng AND which markers
+    // visually overlap depend on zoom.
+    var GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // ~137.508°
+    var BASE_SPREAD_PX = 24;       // distance unit between rings of the spiral
+    var COLLISION_GAP_PX = 50;     // markers closer than this get grouped & spread
+    var HALO_PADDING_PX = 32;      // how far the blob pads beyond the outermost marker
+    var HALO_SMOOTH_ITERS = 3;     // Chaikin smoothing passes (more = softer)
+
+    // Andrew's monotone chain — convex hull of a list of L.points.
+    function convexHull(points) {
+      if (points.length <= 1) return points.slice();
+      var pts = points.slice().sort(function (a, b) {
+        return a.x - b.x || a.y - b.y;
+      });
+      function cross(O, A, B) {
+        return (A.x - O.x) * (B.y - O.y) - (A.y - O.y) * (B.x - O.x);
+      }
+      var lower = [];
+      for (var i = 0; i < pts.length; i++) {
+        while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], pts[i]) <= 0) {
+          lower.pop();
+        }
+        lower.push(pts[i]);
+      }
+      var upper = [];
+      for (var j = pts.length - 1; j >= 0; j--) {
+        while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], pts[j]) <= 0) {
+          upper.pop();
+        }
+        upper.push(pts[j]);
+      }
+      lower.pop(); upper.pop();
+      return lower.concat(upper);
+    }
+
+    // Expand each hull vertex outward from the centroid by `pad` pixels, so
+    // the blob has breathing room around the avatars instead of clipping them.
+    function expandHull(hull, pad) {
+      var cx = 0, cy = 0;
+      hull.forEach(function (p) { cx += p.x; cy += p.y; });
+      cx /= hull.length; cy /= hull.length;
+      return hull.map(function (p) {
+        var dx = p.x - cx, dy = p.y - cy;
+        var d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var s = (d + pad) / d;
+        return L.point(cx + dx * s, cy + dy * s);
+      });
+    }
+
+    // Chaikin's corner-cutting algorithm — turns a polygon into a rounded blob.
+    function chaikinSmooth(points, iterations) {
+      var result = points;
+      for (var k = 0; k < iterations; k++) {
+        var next = [];
+        for (var i = 0; i < result.length; i++) {
+          var p1 = result[i];
+          var p2 = result[(i + 1) % result.length];
+          next.push(L.point(0.75 * p1.x + 0.25 * p2.x, 0.75 * p1.y + 0.25 * p2.y));
+          next.push(L.point(0.25 * p1.x + 0.75 * p2.x, 0.25 * p1.y + 0.75 * p2.y));
+        }
+        result = next;
+      }
+      return result;
+    }
+
+    // At each zoom: (1) build proximity clusters in pixel space, (2) sunflower
+    // each cluster around its anchor (the most populous original-group's true
+    // point), (3) rebuild halos for any cluster of >=3 visually overlapping
+    // people, (4) re-add/remove pre-built region labels.
+    function repositionMarkers() {
+      // Sort entries so larger original groups become cluster anchors first
+      // (HUST stays anchored at HUST instead of drifting toward UET/VinU).
+      var sorted = allEntries.slice().sort(function (a, b) {
+        var sizeDiff = b.group.members.length - a.group.members.length;
+        if (sizeDiff !== 0) return sizeDiff;
+        return a.group.lat - b.group.lat || a.group.lng - b.group.lng;
+      });
+
+      var clusters = []; // { lat, lng, anchorPt, members:[entries] }
+      sorted.forEach(function (entry) {
+        var truePt = map.latLngToLayerPoint([entry.group.lat, entry.group.lng]);
+        var assigned = null;
+        for (var k = 0; k < clusters.length; k++) {
+          if (truePt.distanceTo(clusters[k].anchorPt) < COLLISION_GAP_PX) {
+            assigned = clusters[k];
+            break;
+          }
+        }
+        if (assigned) {
+          assigned.members.push(entry);
+        } else {
+          clusters.push({
+            lat: entry.group.lat,
+            lng: entry.group.lng,
+            anchorPt: truePt,
+            members: [entry]
+          });
+        }
+      });
+
+      // Place markers: solo clusters at true point, multi clusters in a spiral.
+      clusters.forEach(function (c) {
+        if (c.members.length === 1) {
+          var e = c.members[0];
+          e.marker.setLatLng([e.group.lat, e.group.lng]);
+          return;
+        }
+        c.members.forEach(function (entry, i) {
+          var radius = BASE_SPREAD_PX * Math.sqrt(i + 0.5);
+          var angle = i * GOLDEN_ANGLE;
+          var offset = L.point(
+            c.anchorPt.x + radius * Math.cos(angle),
+            c.anchorPt.y + radius * Math.sin(angle)
+          );
+          entry.marker.setLatLng(map.layerPointToLatLng(offset));
+        });
+      });
+
+      // Rebuild halos for any visual cluster of >=3 people. Instead of a
+      // perfect circle, draw a soft gray blob that follows the actual shape
+      // of the cluster: convex hull of the marker pixel positions, padded
+      // outward, then Chaikin-smoothed into curves.
+      haloLayer.clearLayers();
+      clusters.forEach(function (c) {
+        var n = c.members.length;
+        if (n < 3) return;
+
+        // Pixel positions of every marker in this cluster (post-spread).
+        var pts = c.members.map(function (entry) {
+          return map.latLngToLayerPoint(entry.marker.getLatLng());
+        });
+
+        var hull = convexHull(pts);
+        if (hull.length < 3) return; // collinear / degenerate; skip
+        hull = expandHull(hull, HALO_PADDING_PX);
+        hull = chaikinSmooth(hull, HALO_SMOOTH_ITERS);
+
+        var latLngs = hull.map(function (p) { return map.layerPointToLatLng(p); });
+        L.polygon(latLngs, {
+          color: '#5a5a5a',
+          weight: 1,
+          opacity: 0.18,
+          fillColor: '#5a5a5a',
+          fillOpacity: Math.min(0.22, 0.08 + n * 0.010),
+          interactive: false,
+          smoothFactor: 0
+        }).addTo(haloLayer);
+      });
+    }
+
+    // Region labels only make sense when zoomed out enough that the halo is
+    // bigger than the spread of faces. Hide them as the user zooms in past
+    // city level so they don't sit on top of individual avatars.
+    function updateLabelVisibility() {
+      var show = map.getZoom() <= 6;
+      labelLayer.clearLayers();
+      if (!show) return;
+      groups.forEach(function (g) {
+        if (g.label) labelLayer.addLayer(g.label);
+      });
+    }
+
+    // Run after layout settles and on every zoom change.
+    map.on('zoomend', function () {
+      repositionMarkers();
+      updateLabelVisibility();
+    });
+    map.whenReady(function () {
+      repositionMarkers();
+      updateLabelVisibility();
+    });
+
+    if (people.length > 0) {
+      try {
+        var bounds = L.latLngBounds(people.map(function (p) { return [p.lat, p.lng]; }));
+        map.fitBounds(bounds.pad(0.15), { maxZoom: 5 });
+      } catch (e) {
+        // ignore — keep default view
+      }
+    }
+  })();
+</script>

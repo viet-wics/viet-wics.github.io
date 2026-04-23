@@ -516,7 +516,7 @@ graduate:
 
   - name: Duong Tran
     url: https://www.linkedin.com/in/dgtr/
-    image: ../profile-images/duong-tran.jpeg
+    image: /profile-images/duong-tran.jpeg
     title:
       en: PhD Student
       vn: Nghiên cứu sinh Tiến sỹ
@@ -564,6 +564,10 @@ industry:
     institution:
       en: Meta
       vn: Meta
+    location:
+      lat: 51.5345
+      lng: -0.1245
+      city: "London, United Kingdom"
 
   - name: Anh N. Thai
     url: https://anhthai1997.com/
@@ -577,7 +581,7 @@ industry:
 
   - name: Tam Nguyen
     url: https://www.linkedin.com/in/tam-nguyen-945b50135/
-    image: ../profile-images/tam-nguyen-virginia-tech.jpeg
+    image: /profile-images/tam-nguyen-virginia-tech.jpeg
     title:
       en: Data Scientist
       vn: Data Scientist
@@ -594,10 +598,14 @@ industry:
     institution:
       en: "Intel Labs"
       vn: "Intel Labs"
+    location:
+      lat: 45.5152
+      lng: -122.6784
+      city: "Portland, OR, USA"
 
   - name: Thu Le
     url: https://www.amazon.science/author/dieu-thu-le
-    image: ../profile-images/thu-le-amz.webp
+    image: /profile-images/thu-le-amz.webp
     title:
       en: Applied Scientist
       vn: Applied Scientist
@@ -607,7 +615,7 @@ industry:
 
   - name: Lan Vu
     url: https://www.linkedin.com/in/lanvu/
-    image: ../profile-images/lan-vu.webp
+    image: /profile-images/lan-vu.webp
     title:
       en: Principal Software Engineer
       vn: Principal Software Engineer

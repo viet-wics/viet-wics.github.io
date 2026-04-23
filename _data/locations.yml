@@ -1,0 +1,225 @@
+# Institution → geographic coordinates lookup for /map/
+#
+# Keys MUST exactly match the `institution.en` value used in _data/people.yml.
+# For companies, `lat`/`lng` point to the headquarters unless we know the
+# specific office location.
+#
+# To add a new institution: add a block below. To find coordinates, search
+# the place on Google Maps, right-click → first row shows "lat, lng".
+
+# ─── Academic / Universities ────────────────────────────────────────────────
+"Arizona State University":
+  lat: 33.4242
+  lng: -111.9281
+  city: "Tempe, AZ, USA"
+
+"University of Florida":
+  lat: 29.6436
+  lng: -82.3549
+  city: "Gainesville, FL, USA"
+
+"University of Montana":
+  lat: 46.8625
+  lng: -113.9858
+  city: "Missoula, MT, USA"
+
+"University of California, San Diego":
+  lat: 32.8801
+  lng: -117.2340
+  city: "La Jolla, CA, USA"
+
+"University of Oregon":
+  lat: 44.0448
+  lng: -123.0726
+  city: "Eugene, OR, USA"
+
+"Monash University":
+  lat: -37.9105
+  lng: 145.1362
+  city: "Melbourne, Australia"
+
+"University of Monash":
+  lat: -37.9105
+  lng: 145.1362
+  city: "Melbourne, Australia"
+
+"University of Albany":
+  lat: 42.6864
+  lng: -73.8237
+  city: "Albany, NY, USA"
+
+"Gachon University":
+  lat: 37.4503
+  lng: 127.1294
+  city: "Seongnam, South Korea"
+
+"Haverford College":
+  lat: 40.0090
+  lng: -75.3083
+  city: "Haverford, PA, USA"
+
+"University of Pennsylvania":
+  lat: 39.9522
+  lng: -75.1932
+  city: "Philadelphia, PA, USA"
+
+"University of Wisconsin-Whitewater":
+  lat: 42.8359
+  lng: -88.7378
+  city: "Whitewater, WI, USA"
+
+"University of Arkansas":
+  lat: 36.0682
+  lng: -94.1719
+  city: "Fayetteville, AR, USA"
+
+"Hanoi University of Science and Technology":
+  lat: 21.0072
+  lng: 105.8429
+  city: "Hà Nội, Việt Nam"
+
+"University of Engineering and Technology, VNU":
+  lat: 21.0383
+  lng: 105.7825
+  city: "Hà Nội, Việt Nam"
+
+"Oxford Robotics Institute":
+  lat: 51.7548
+  lng: -1.2544
+  city: "Oxford, UK"
+
+"Harvard University":
+  lat: 42.3770
+  lng: -71.1167
+  city: "Cambridge, MA, USA"
+
+"University of Edinburgh":
+  lat: 55.9445
+  lng: -3.1892
+  city: "Edinburgh, UK"
+
+"University of Wisconsin-Madison":
+  lat: 43.0766
+  lng: -89.4125
+  city: "Madison, WI, USA"
+
+"Norwegian University of Science and Technology":
+  lat: 63.4197
+  lng: 10.4023
+  city: "Trondheim, Norway"
+
+"UCLouvain":
+  lat: 50.6691
+  lng: 4.6118
+  city: "Louvain-la-Neuve, Belgium"
+
+"Singapore Management University":
+  lat: 1.2966
+  lng: 103.8497
+  city: "Singapore"
+
+"Rice University":
+  lat: 29.7172
+  lng: -95.4012
+  city: "Houston, TX, USA"
+
+"Stanford University":
+  lat: 37.4275
+  lng: -122.1697
+  city: "Stanford, CA, USA"
+
+"University of Maryland, College Park":
+  lat: 38.9869
+  lng: -76.9426
+  city: "College Park, MD, USA"
+
+"Max Planck Institutes":
+  lat: 48.5216
+  lng: 9.0576
+  city: "Tübingen, Germany"
+
+"University of Illinois Chicago":
+  lat: 41.8709
+  lng: -87.6494
+  city: "Chicago, IL, USA"
+
+"Vanderbilt University":
+  lat: 36.1486
+  lng: -86.8050
+  city: "Nashville, TN, USA"
+
+"Virginia Tech":
+  lat: 37.2284
+  lng: -80.4234
+  city: "Blacksburg, VA, USA"
+
+"University of Illinois Urbana-Champaign":
+  lat: 40.1106
+  lng: -88.2073
+  city: "Urbana, IL, USA"
+
+"VinUniversity":
+  lat: 20.9989
+  lng: 105.8970
+  city: "Hà Nội, Việt Nam"
+
+"Carnegie Mellon University":
+  lat: 40.4433
+  lng: -79.9436
+  city: "Pittsburgh, PA, USA"
+
+"The University of Texas at Austin":
+  lat: 30.2849
+  lng: -97.7341
+  city: "Austin, TX, USA"
+
+"New York University":
+  lat: 40.7295
+  lng: -73.9965
+  city: "New York, NY, USA"
+
+"RMIT University":
+  lat: -37.8083
+  lng: 144.9633
+  city: "Melbourne, Australia"
+
+# ─── Industry / Companies (HQ unless noted) ─────────────────────────────────
+"Meta":
+  lat: 37.4848
+  lng: -122.1484
+  city: "Menlo Park, CA, USA (HQ)"
+
+"Dolby Laboratories":
+  lat: 37.7740
+  lng: -122.4015
+  city: "San Francisco, CA, USA (HQ)"
+
+"Intel Labs":
+  lat: 37.3875
+  lng: -121.9636
+  city: "Santa Clara, CA, USA (HQ)"
+
+"Amazon Science":
+  lat: 47.6228
+  lng: -122.3360
+  city: "Seattle, WA, USA (HQ)"
+
+"Broadcom":
+  lat: 37.4129
+  lng: -121.9290
+  city: "San Jose, CA, USA (HQ)"
+
+"Anthropic":
+  lat: 37.7894
+  lng: -122.4096
+  city: "San Francisco, CA, USA (HQ)"
+
+"Ensemble Health Partners":
+  lat: 39.1031
+  lng: -84.5120
+  city: "Cincinnati, OH, USA (HQ)"
+
+"Bosch Center for AI":
+  lat: 48.7647
+  lng: 8.9404
+  city: "Renningen, Germany"

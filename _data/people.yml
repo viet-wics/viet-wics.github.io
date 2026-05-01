@@ -574,6 +574,16 @@ graduate:
       en: The University of Sydney
       vn: The University of Sydney
 
+  - name: Hong-Hanh Nguyen-Le
+    url: https://honghanh2104.github.io/
+    image: /profile-images/hong-hanh-nguyen-le.jpg
+    title:
+      en: PhD Student
+      vn: NCS Tiến sỹ
+    institution:
+      en: University College Dublin
+      vn: University College Dublin
+
 industry:
   - name: Thu Nguyen-Phuoc
     url: https://www.monkeyoverflow.com/about

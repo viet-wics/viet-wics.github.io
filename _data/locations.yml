@@ -98,6 +98,11 @@
   lng: -3.1892
   city: "Edinburgh, UK"
 
+"University College Dublin":
+  lat: 53.3065
+  lng: -6.2255
+  city: "Dublin, Ireland"
+
 "University of Wisconsin-Madison":
   lat: 43.0766
   lng: -89.4125

@@ -18,7 +18,7 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 - [A Decade-Long Journey in Computer Science as a Vietnamese Woman](/blogs/stereotype/) (bài viết, NCS. Thao Nguyen)
 <!-- *todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)* ++ project "cái bàn" -->
 - [Chuyện của tôi, một người phụ nữ trong AI](/vn/bai-viet/chuyen-cua-toi-mot-nguoi-phu-nu-trong-AI/) (bài dịch, Prof. Devi Parikh)
-- [Từ nguòi nông dân Lâm Đồng đến Post-doc Harvard](https://www.facebook.com/trinh.vuong.507/posts/pfbid02BZoyYXC6iub7C775WhRFbS5qRsSgFXHenrWJderR9GqZp7PqRgBfC5T8qf5EjRirl) (facebook post, TS. Trinh Vương)
+- [Từ người nông dân Lâm Đồng đến Post-doc Harvard](https://www.facebook.com/trinh.vuong.507/posts/pfbid02BZoyYXC6iub7C775WhRFbS5qRsSgFXHenrWJderR9GqZp7PqRgBfC5T8qf5EjRirl) (facebook post, TS. Trinh Vương)
 <!-- - Một số thống kê và các đường dẫn hữu ích (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/why/)* -->
 

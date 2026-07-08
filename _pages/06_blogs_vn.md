@@ -9,8 +9,8 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 
 #### 📝 Nghiên cứu Khoa học và học Tiến sĩ
 
-- [Nghiên cứu khoa học là gì? Minh họa về học Tiến sĩ (bài dịch)](/vn/bai-viet/nghien-cuu-khoa-hoc-la-gi/)
-- [Ba phẩm chất của một nghiên cứu sinh thành công (bài dịch)](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/)
+- [Nghiên cứu khoa học là gì? Minh họa về học Tiến sĩ](/vn/bai-viet/nghien-cuu-khoa-hoc-la-gi/) (bài dịch)
+- [Ba phẩm chất của một nghiên cứu sinh thành công](/vn/bai-viet/ba-pham-chat-cua-nghien-cuu-sinh-thanh-cong/) (bài dịch)
 
 #### 👩🏻 Phụ nữ làm Nghiên cứu Khoa học
 
@@ -18,7 +18,7 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 - [A Decade-Long Journey in Computer Science as a Vietnamese Woman](/blogs/stereotype/) (bài viết)
 <!-- *todo: translate from [this](https://viet-wics.github.io/blogs/stereotype/)* ++ project "cái bàn" -->
 - [Chuyện của tôi, một người phụ nữ trong AI (bài dịch)](/vn/bai-viet/chuyen-cua-toi-mot-nguoi-phu-nu-trong-AI/)  
-
+- [Từ nguòi nông dân Lâm Đồng đến Post-doc Harvard](https://www.facebook.com/trinh.vuong.507/posts/pfbid02BZoyYXC6iub7C775WhRFbS5qRsSgFXHenrWJderR9GqZp7PqRgBfC5T8qf5EjRirl) (facebook post, TS. Trinh Vương)
 <!-- - Một số thống kê và các đường dẫn hữu ích (bài viết)  
 *todo: translate from [this](https://viet-wics.github.io/why/)* -->
 
@@ -38,8 +38,8 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 - Cẩm nang: Nộp Tiến sĩ ngành STEM ở Mỹ *(bài sẽ dịch [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)*)
 
 ##### Chung chung các ngành
-- [Academic 101: Những điều cần biết về nghiên cứu học thuật](https://thepresentwriter.com/academic-research-101/) (TS. Chi Nguyễn)
-- [Văn hoá nhắn tin](https://www.facebook.com/PresentWriter/posts/pfbid0cuvy1p3irGMA7y6AkrUKYtYvojVUHfBBoghwev46mH6ZcUswFEMQ3twiWWRJ8RoAl) (TS. Chi Nguyễn)
+- [Academic 101: Những điều cần biết về nghiên cứu học thuật](https://thepresentwriter.com/academic-research-101/) (blog post, TS. Chi Nguyễn)
+- [Văn hoá nhắn tin](https://www.facebook.com/PresentWriter/posts/pfbid0cuvy1p3irGMA7y6AkrUKYtYvojVUHfBBoghwev46mH6ZcUswFEMQ3twiWWRJ8RoAl) (blog post, TS. Chi Nguyễn)
 
 #### 📎🇺🇸 Links đến những bài viết, tài liệu hay (tiếng Anh)
 

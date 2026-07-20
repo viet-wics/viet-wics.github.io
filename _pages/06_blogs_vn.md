@@ -35,11 +35,13 @@ description: Các bài viết/ bài dịch về chủ đề nghiên cứu khoa h
 ##### STEM
 - [Con đường học PhD của tôi](https://machinelearningcoban.com/lifesofar2/) (TS. Vũ Hữu Tiệp, Penn State)
 - [Kinh nghiệm học Tiến sĩ](https://docs.google.com/document/d/1EZwDxa4_201rejxHU5GHG_x1YTnU7z1ztD7FVy3RrKk/edit?tab=t.0#heading=h.jftd3n1wkhkw) (TS. Nguyễn Đức Minh Khôi, Oregon State)
+- [Youtube Nam Nguyễn - Research Talk(s)](https://www.youtube.com/@NamNguyen.ee2) (NCS TS, U of Central Florida)
 - Cẩm nang: Nộp Tiến sĩ ngành STEM ở Mỹ *(bài sẽ dịch [HOWTO: Get into grad school for STEM](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)*)
 
 ##### Chung chung các ngành
 - [Academic 101: Những điều cần biết về nghiên cứu học thuật](https://thepresentwriter.com/academic-research-101/) (blog post, TS. Chi Nguyễn)
 - [Văn hoá nhắn tin](https://www.facebook.com/PresentWriter/posts/pfbid0cuvy1p3irGMA7y6AkrUKYtYvojVUHfBBoghwev46mH6ZcUswFEMQ3twiWWRJ8RoAl) (blog post, TS. Chi Nguyễn)
+- Các hội/ nhóm Facebook hữu ích: [VietPhD.org](https://www.facebook.com/groups/14115377990), [Viet Tech](https://www.facebook.com/groups/viettechgroup), [Vietnamese PhD mums](https://www.facebook.com/groups/439500907112966).
 
 #### 📎🇺🇸 Links đến những bài viết, tài liệu hay (tiếng Anh)
 

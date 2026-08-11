@@ -331,6 +331,16 @@ academic:
       vn: Harvard University
 
 graduate:
+  - name: Thi Xuan May Le
+    url: https://sites.google.com/view/xuanmay2701
+    image: /profile-images/thi-xuan-may-le.jpg
+    title:
+      en: PhD Student
+      vn: NCS Tiến sỹ
+    institution:
+      en: The University of Melbourne
+      vn: The University of Melbourne
+
   - name: Mai Hoang Dao
     url: https://maihoangdao.github.io/
     image: https://avatars.githubusercontent.com/u/42550670?v=4

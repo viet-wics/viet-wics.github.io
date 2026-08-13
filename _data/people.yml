@@ -330,6 +330,16 @@ academic:
       en: Harvard University
       vn: Harvard University
 
+  - name: Van-Anh Nguyen
+    url: https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en
+    image: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4
+    title:
+      en: Postdoc
+      vn: Postdoc
+    institution:
+      en: Singapore-MIT Alliance for Research and Technology (SMART)
+      vn: Singapore-MIT Alliance for Research and Technology (SMART)
+
 graduate:
   - name: Thi Xuan May Le
     url: https://sites.google.com/view/xuanmay2701
@@ -412,16 +422,6 @@ graduate:
     institution:
       en: Singapore Management University
       vn: Singapore Management University
-
-  - name: Van-Anh Nguyen
-    url: https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en
-    image: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4
-    title:
-      en: PhD Student
-      vn: NCS Tiến sỹ
-    institution:
-      en: University of Monash
-      vn: University of Monash
 
   - name: Minh Tam Nguyen
     url: https://tamnguyen9520.github.io/

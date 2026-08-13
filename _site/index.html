@@ -2,6 +2,16 @@
 <html>
 
   <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK0G8YWNPM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KK0G8YWNPM');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +19,16 @@
   <title>viet-wics</title>
   <meta name="description" content="A collections of Vietnamese women working in Computer Science, focusing on higher-education.
 ">
-  <meta property="og:image" content="/assets/img/avatar.jpeg">
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar.jpeg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="/">
+  <meta property="og:url" content="http://localhost:4000/">
   <meta property="og:title" content="viet-wics">
-  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
 </head>
 
@@ -29,7 +39,7 @@
 
   <div class="wrapper">
 
-    <a href="/">
+    <a href="http://localhost:4000/">
     <span class="site-title">
         
         <strong>viet-wics</strong> viet-wics
@@ -65,7 +75,7 @@
             
               
                 
-                  <a class="page-link" href="/map/">🗺️ Map</a>
+                  <a class="page-link" href="http://localhost:4000/map/">🗺️ Map</a>
                 
               
             
@@ -95,7 +105,7 @@
             
               
                 
-                  <a class="page-link" href="/why/">Statistics & Resources</a>
+                  <a class="page-link" href="http://localhost:4000/why/">Statistics & Resources</a>
                 
               
             
@@ -108,7 +118,7 @@
           
             
               
-                <a class="page-link" href="/faq/">FAQ</a>
+                <a class="page-link" href="http://localhost:4000/faq/">FAQ</a>
               
             
           
@@ -116,7 +126,7 @@
           
             
               
-                <a class="page-link" href="/aboutme/">About me</a>
+                <a class="page-link" href="http://localhost:4000/aboutme/">About me</a>
               
             
           
@@ -153,7 +163,7 @@
 
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+        <!-- <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">vitae</a> -->
 
       </div>
     </nav>
@@ -210,80 +220,8 @@
 
     <br>
 
-    <!-- Tab Navigation -->
-    <style>
-      .tab-container {
-        margin: 20px 0;
-      }
-      .tab-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        border-bottom: 2px solid #e0e0e0;
-        margin-bottom: 30px;
-      }
-      .tab-button {
-        padding: 10px 20px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        border-bottom: 3px solid transparent;
-        color: #888;
-        position: relative;
-        border-radius: 8px 8px 0 0;
-      }
-      .tab-button:hover {
-        color: #333;
-        background-color: #f8f9fa;
-        transform: translateY(-2px);
-      }
-      .tab-button.active {
-        color: #000;
-        border-bottom-color: #007bff;
-        font-weight: 600;
-        background-color: #f8f9fa;
-      }
-      .tab-content {
-        display: none;
-        animation: fadeOut 0.3s ease-out;
-      }
-      .tab-content.active {
-        display: block;
-        animation: fadeIn 0.5s ease-in;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-        }
-        to {
-          opacity: 0;
-        }
-      }
-    </style>
-
-    <div class="tab-container">
-      <div class="tab-buttons">
-        <button class="tab-button active" onclick="switchTab('graduate')">🎓 PhD Students (25)</button>
-        <button class="tab-button" onclick="switchTab('industry')">💼 Industrial Positions (8)</button>
-        <button class="tab-button" onclick="switchTab('academic')">🏛️ Academic Positions (32)</button>
-      </div>
-
-      <!-- Graduate Students Tab Content -->
-      <div id="graduate-tab" class="tab-content active">
-        <!-- Graduate Students Section -->
-        <h3 id="Graduate-Students">🎓 PhD Students</h3>
+    <!-- Industrial Positions Section -->
+    <h3 id="Industrial-Positions">💼 Industrial Positions</h3>
 
     <table style="width:100%;margin:0 auto;">
       
@@ -292,507 +230,70 @@
         
           <tr>
         
-        
-        <td style="text-align:center">
-          <img src="https://avatars.githubusercontent.com/u/42550670?v=4" height="150">
-          <br>
-          <a href="https://maihoangdao.github.io/">Mai Hoang Dao</a>
-          
-          <br>PhD Student,<br>University of Edinburgh
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/assets/img/thao.png" height="150">
-          <br>
-          <a href="https://thaoshibe.github.io/">Thao Nguyen</a>
-          
-            <br><image src="/assets/img/favicon.ico" height="20"></image>
-          
-          <br>PhD Student,<br>University of Wisconsin-Madison
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/ha-thu-nguyen.jpg" height="150">
-          <br>
-          <a href="https://scholar.google.com/citations?user=I2qs4EUAAAAJ&hl=en">Ha Thu Nguyen</a>
-          
-          <br>PhD Student,<br>Norwegian University of Science and Technology
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://huonghld.github.io/huong-hoang/assets/img/profile-img.png" height="150">
-          <br>
-          <a href="https://huonghld.github.io/huong-hoang/">Huong LD Hoang</a>
-          
-          <br>PhD Student,<br>University of California, San Diego
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=18549&s=300" height="150">
-          <br>
-          <a href="https://ece.illinois.edu/about/directory/grad-students/huyentn2">Huyen Thi Ngoc Nguyen</a>
-          
-          <br>PhD Student,<br>University of Illinois Urbana-Champaign
-        </td>
-        
-        
-        
-        
-          </tr>
-        
-      
-        
-        
-          <tr>
-        
-        
-        <td style="text-align:center">
-          <img src="https://scholarships.vinuni.edu.vn/wp-content/uploads/2020/06/Doan-Thi-Van-Thao-400x761.jpg" height="150">
-          <br>
-          <a href="https://scholar.google.co.uk/citations?user=H5zZgaIAAAAJ&hl=en">Doan Van Thao</a>
-          
-          <br>PhD Student,<br>UCLouvain
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://scholarships.vinuni.edu.vn/wp-content/uploads/2023/03/LeThiPhuong-400x473.jpg" height="150">
-          <br>
-          <a href="https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg">Thi Phuong Le</a>
-          
-          <br>PhD Student,<br>Singapore Management University
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4" height="150">
-          <br>
-          <a href="https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en">Van-Anh Nguyen</a>
-          
-          <br>PhD Student,<br>University of Monash
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://tamnguyen9520.github.io/tam_profile.jpeg" height="150">
-          <br>
-          <a href="https://tamnguyen9520.github.io/">Minh Tam Nguyen</a>
-          
-          <br>PhD Student,<br>Rice University
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/trang-nguyen.jpeg" height="150">
-          <br>
-          <a href="https://www.linkedin.com/in/trangnnp/">Trang Nguyen</a>
-          
-          <br>PhD Student,<br>Stanford University
-        </td>
-        
-        
-        
-        
-          </tr>
-        
-      
-        
-        
-          <tr>
-        
-        
-        <td style="text-align:center">
-          <img src="https://qqphung.github.io/img/avatar_350x350.png" height="150">
-          <br>
-          <a href="https://qqphung.github.io/">Quynh Phung</a>
-          
-          <br>PhD Student,<br>University of Maryland, College Park
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/huyen-800.webp" height="150">
-          <br>
-          <a href="https://vothuckhanhhuyen.github.io/">Huyen Vo</a>
-          
-          <br>PhD Student,<br>Max Planck Institutes
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://raw.githubusercontent.com/tranquyenbk173/tranquyenbk173.github.io/refs/heads/main/assets/img/sky.png" height="150">
-          <br>
-          <a href="https://tranquyenbk173.github.io/">Quyen Tran</a>
-          
-          <br>PhD Student,<br>University of Illinois Chicago
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/dung-june-thai.jpg" height="150">
-          <br>
-          <a href="https://judydnguyen.github.io/">Dung (Judy) Nguyen</a>
-          
-          <br>PhD Student,<br>Vanderbilt University
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/tran-huynh.png" height="150">
-          <br>
-          <a href="https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en">Tran Huynh</a>
-          
-          <br>PhD Student,<br>Virginia Tech
-        </td>
-        
-        
-        
-        
-          </tr>
-        
-      
-        
-        
-          <tr>
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/thaonguyen-uiuc.jpg" height="150">
-          <br>
-          <a href="https://thaonguyen217.github.io/">Thao Nguyen</a>
-          
-          <br>PhD Student,<br>University of Illinois Urbana-Champaign
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://avatars.githubusercontent.com/u/137878202?v=4" height="150">
-          <br>
-          <a href="https://minhhuyenle.github.io/">Huyen Le</a>
-          
-          <br>PhD Student,<br>VinUniversity
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://nguyenvuthientrang.github.io/images/pfp_vinai.jpg" height="150">
-          <br>
-          <a href="https://nguyenvuthientrang.github.io/">Trang Nguyen</a>
-          
-          <br>PhD Student,<br>Carnegie Mellon University
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg" height="150">
-          <br>
-          <a href="https://phamvuhuyentrang.github.io/">Huyen Trang</a>
-          
-          <br>PhD Student,<br>The University of Texas at Austin
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/duong-tran.jpeg" height="150">
-          <br>
-          <a href="https://www.linkedin.com/in/dgtr/">Duong Tran</a>
-          
-          <br>PhD Student,<br>Bosch Center for AI
-        </td>
-        
-        
-        
-        
-          </tr>
-        
-      
-        
-        
-          <tr>
-        
-        
-        <td style="text-align:center">
-          <img src="https://chtmp223.github.io/assets/img/home.jpg" height="150">
-          <br>
-          <a href="https://chtmp223.github.io/">Chau Minh Pham</a>
-          
-          <br>PhD Student,<br>University of Maryland, College Park
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="https://raw.githubusercontent.com/iam-nhi-nguyen/iam-nhi-nguyen.github.io/main/assets/images/photo_of_nhi.jpg" height="150">
-          <br>
-          <a href="https://iam-nhi-nguyen.github.io/">Nhi Nguyen</a>
-          
-          <br>PhD Student,<br>New York University
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/minh-vuong-nguyen.jpeg" height="150">
-          <br>
-          <a href="https://scholar.google.com/citations?user=eUbbNpcAAAAJ&hl=en">Minh-Vuong Nguyen</a>
-          
-          <br>PhD Student,<br>RMIT University
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/nhu-vo.jpg" height="150">
-          <br>
-          <a href="https://scholar.google.com/citations?user=CrE42ccAAAAJ&hl=en">Nhu Vo</a>
-          
-          <br>PhD Student,<br>University of Technology Sydney
-        </td>
-        
-        
-        
-        
-      
-        
-        
-        
-        <td style="text-align:center">
-          <img src="/profile-images/trang-dang-yen.jpg" height="150">
-          <br>
-          <a href="https://www.linkedin.com/in/trang-dang-yen-511a2b250/">Trang Dang Yen</a>
-          
-          <br>PhD Student,<br>The University of Sydney
-        </td>
-        
-        
-        
-        
-          </tr>
-        
-      
-      
-      <!-- Add "This could be YOU!" placeholder -->
-      
-      
-        <tr>
-      
-      
-      <td style="text-align:center">
-        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
-        <br>
-        <a href="">This could be YOU!</a><br>
-      </td>
-      
-      
-      
-      
-        
-          <td></td>
-        
-          <td></td>
-        
-          <td></td>
-        
-          <td></td>
-        
-      
-      </tr>
-      
-      <tr><td></td><td></td><td></td><td></td><td></td></tr>
-    </table>
-      </div>
 
-      <!-- Industrial Positions Tab Content -->
-      <div id="industry-tab" class="tab-content">
-        <!-- Industrial Positions Section -->
-        <h3 id="Industrial-Positions">💼 Industrial Positions</h3>
-
-    <table style="width:100%;margin:0 auto;">
-      
-      
-        
-        
-          <tr>
-        
-        
         <td style="text-align:center">
           <img src="https://images.squarespace-cdn.com/content/v1/570a63ac5559863dc7622dd3/1460299278859-MCAX7O5X41NRVX24QZ4Y/image-asset.jpeg" height="150">
           <br>
           <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a>
           <br>Research Scientist,<br>Meta
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://anhthai1997.com/img/me.jpg" height="150">
           <br>
           <a href="https://anhthai1997.com/">Anh N. Thai</a>
           <br>AI Researcher,<br>Dolby Laboratories
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/tam-nguyen-virginia-tech.jpeg" height="150">
           <br>
           <a href="https://www.linkedin.com/in/tam-nguyen-945b50135/">Tam Nguyen</a>
           <br>Data Scientist,<br>Virginia Tech
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://vyaivo.github.io/images/Vo_square_small.jpg" height="150">
           <br>
           <a href="https://vyaivo.github.io/">Vy Ai Vo</a>
           <br>Research Scientist,<br>Intel Labs
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/thu-le-amz.webp" height="150">
           <br>
           <a href="https://www.amazon.science/author/dieu-thu-le">Thu Le</a>
           <br>Applied Scientist,<br>Amazon Science
         </td>
-        
+
         
         
         
@@ -803,57 +304,57 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/lan-vu.webp" height="150">
           <br>
           <a href="https://www.linkedin.com/in/lanvu/">Lan Vu</a>
           <br>Principal Software Engineer,<br>Broadcom
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://thaonguyen19.github.io/me3.jpg" height="150">
           <br>
           <a href="https://thaonguyen19.github.io/">Thao Nguyen</a>
           <br>Member of Technical Staff,<br>Anthropic
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/june-thai.jpg" height="150">
           <br>
           <a href="https://www.linkedin.com/in/dung-thai/">Dung (June) Thai</a>
           <br>Staff Research Scientist,<br>Ensemble Health Partners
         </td>
-        
+
         
         
         
       
-      
+
       <!-- Add "This could be YOU!" placeholder -->
       
       
-      
+
       <td style="text-align:center">
         <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
         <br>
         <a href="">This could be YOU!</a><br>
       </td>
-      
+
       
       
       
@@ -862,14 +363,11 @@
         
       
       </tr>
-      
+
       <tr><td></td><td></td><td></td><td></td><td></td></tr>
     </table>
-      </div>
 
-      <!-- Academic Positions Tab Content -->
-      <div id="academic-tab" class="tab-content">
-        <!-- Academic Positions Section -->
+    <!-- Academic Positions Section -->
     <h3 id="Academic-Positions">🏛️ Academic Positions</h3>
 
     <table style="width:100%;margin:0 auto;">
@@ -879,7 +377,7 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="https://nitrieu.github.io/images/profile.png" height="150">
           <br>
@@ -887,14 +385,14 @@
           
           <br>Professor,<br>Arizona State University
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://www.cise.ufl.edu/~mythai/images/thai.png" height="150">
           <br>
@@ -902,14 +400,14 @@
           
           <br>Professor,<br>University of Florida
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://mcyphi.org/anhnguyen/images/avatar/AN_Headshot_2.jpg" height="150">
           <br>
@@ -917,14 +415,14 @@
           
           <br>Professor,<br>University of Montana
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/thuy-duong-june-vuong.jpg" height="150">
           <br>
@@ -932,14 +430,14 @@
           
           <br>Professor,<br>University of California, San Diego
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/thanh-h-nguyen.jpg" height="150">
           <br>
@@ -947,7 +445,7 @@
           
           <br>Professor,<br>University of Oregon
         </td>
-        
+
         
         
         
@@ -958,7 +456,7 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="https://raw.githubusercontent.com/trangvu/trangvu.github.io/refs/heads/master/assets/img/prof_pic.jpg" height="150">
           <br>
@@ -966,14 +464,14 @@
           
           <br>Lecturer,<br>Monash University
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2024-04/image001_20240424112255.jpg?h=052569ad&itok=RnKvO7Zh" height="150">
           <br>
@@ -981,14 +479,14 @@
           
           <br>Professor,<br>University of Albany
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://nhungcnc.com/IMAGE.jpg" height="150">
           <br>
@@ -996,14 +494,14 @@
           
           <br>Professor,<br>Gachon University
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://thao-nguyen-ai.github.io/images/thao.jpg" height="150">
           <br>
@@ -1011,14 +509,14 @@
           
           <br>Professor,<br>Haverford College
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://www.cis.upenn.edu/~linhphan/pics/linh.jpg" height="150">
           <br>
@@ -1026,7 +524,7 @@
           
           <br>Professor,<br>University of Pennsylvania
         </td>
-        
+
         
         
         
@@ -1037,7 +535,7 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="https://blogs.uww.edu/nguyenh/files/2016/05/hienpic.jpg" height="150">
           <br>
@@ -1045,14 +543,14 @@
           
           <br>Professor,<br>University of Wisconsin-Whitewater
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/ngan_le_aicv.jpg" height="150">
           <br>
@@ -1060,14 +558,14 @@
           
           <br>Professor,<br>University of Arkansas
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/Phi-Le-Nguyen.avif" height="150">
           <br>
@@ -1075,14 +573,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/huynh-thi-thanh-binh.jpg" height="150">
           <br>
@@ -1090,14 +588,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/V%C5%A9-Tuy%E1%BA%BFt-Trinh.jpg" height="150">
           <br>
@@ -1105,7 +603,7 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
@@ -1116,7 +614,7 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/08/Nguy%E1%BB%85n-Th%E1%BB%8B-Thanh-Nga.jpg" height="150">
           <br>
@@ -1124,14 +622,14 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/DinhThiHaLy-3.jpg" height="150">
           <br>
@@ -1139,14 +637,14 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5878.jpg" height="150">
           <br>
@@ -1154,14 +652,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5536.jpg" height="150">
           <br>
@@ -1169,14 +667,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5783.jpg" height="150">
           <br>
@@ -1184,7 +682,7 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
@@ -1195,7 +693,7 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/Nguy%E1%BB%85n-Th%E1%BB%8B-Kim-Anh.jpg" height="150">
           <br>
@@ -1203,14 +701,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/PGS.TS-Nguy%E1%BB%85n-Th%E1%BB%8B-Ho%C3%A0ng-Lan.jpg" height="150">
           <br>
@@ -1218,14 +716,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/B%C3%B9i-Th%E1%BB%8B-Mai-Anh.jpg" height="150">
           <br>
@@ -1233,14 +731,14 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/Nguynthithutrang.png" height="150">
           <br>
@@ -1248,14 +746,14 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2017/03/DHP_5231.jpg" height="150">
           <br>
@@ -1263,7 +761,7 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
@@ -1274,7 +772,7 @@
         
           <tr>
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5827.jpg" height="150">
           <br>
@@ -1282,14 +780,14 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/06/DHP_5526.jpg" height="150">
           <br>
@@ -1297,14 +795,14 @@
           
           <br>Professor,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://soict.hust.edu.vn/wp-content/uploads/2019/08/V%C5%A9-Th%E1%BB%8B-H%C6%B0%C6%A1ng-Giang.jpg" height="150">
           <br>
@@ -1312,14 +810,14 @@
           
           <br>Lecturer,<br>Hanoi University of Science and Technology
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="/profile-images/Thanh-Nguyen-278.webp" height="150">
           <br>
@@ -1327,22 +825,22 @@
           
           <br>Lecturer,<br>University of Engineering and Technology, VNU
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
-          <img src="https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000" height="150">
+          <img src="/profile-images/cam-van-thi-nguyen.jpg" height="150">
           <br>
-          <a href="https://ori.ox.ac.uk/people/kim-tien-ly/">Kim Tien Ly</a>
+          <a href="https://scholar.google.com/citations?user=4KiBC1YAAAAJ&hl=en">Cam-Van Thi Nguyen</a>
           
-          <br>Postdoc,<br>Oxford Robotics Institute
+          <br>Lecturer,<br>University of Engineering and Technology, VNU
         </td>
-        
+
         
         
         
@@ -1353,7 +851,22 @@
         
           <tr>
         
+
+        <td style="text-align:center">
+          <img src="https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000" height="150">
+          <br>
+          <a href="https://ori.ox.ac.uk/people/kim-tien-ly/">Kim Tien Ly</a>
+          
+          <br>Postdoc,<br>Oxford Robotics Institute
+        </td>
+
         
+        
+        
+      
+        
+        
+
         <td style="text-align:center">
           <img src="/profile-images/trinhvuong-korea.jpeg" height="150">
           <br>
@@ -1361,14 +874,14 @@
           
           <br>Postdoc,<br>Harvard University
         </td>
-        
+
         
         
         
       
         
         
-        
+
         <td style="text-align:center">
           <img src="https://huyennguyen.com/assets/img/huyen.jpg" height="150">
           <br>
@@ -1376,25 +889,481 @@
           
           <br>Postdoc,<br>Harvard University
         </td>
-        
+
         
         
         
       
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4" height="150">
+          <br>
+          <a href="https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en">Van-Anh Nguyen</a>
+          
+          <br>Postdoc,<br>Singapore-MIT Alliance for Research and Technology (SMART)
+        </td>
+
+        
+        
+        
       
+
       <!-- Add "This could be YOU!" placeholder -->
       
       
-      
+
       <td style="text-align:center">
         <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
         <br>
         <a href="">This could be YOU!</a><br>
       </td>
+
       
       
       
+      </tr>
+
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- Graduate Students Section -->
+    <h3 id="Graduate-Students">🎓 PhD Students</h3>
+
+    <table style="width:100%;margin:0 auto;">
       
+      
+        
+        
+          <tr>
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/thi-xuan-may-le.jpg" height="150">
+          <br>
+          <a href="https://sites.google.com/view/xuanmay2701">Thi Xuan May Le</a>
+          
+          <br>PhD Student,<br>The University of Melbourne
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://avatars.githubusercontent.com/u/42550670?v=4" height="150">
+          <br>
+          <a href="https://maihoangdao.github.io/">Mai Hoang Dao</a>
+          
+          <br>PhD Student,<br>University of Edinburgh
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/assets/img/thao.png" height="150">
+          <br>
+          <a href="https://thaoshibe.github.io/">Thao Nguyen</a>
+          
+            <br><image src="/assets/img/favicon.ico" height="20"></image>
+          
+          <br>PhD Student,<br>University of Wisconsin-Madison
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/ha-thu-nguyen.jpg" height="150">
+          <br>
+          <a href="https://scholar.google.com/citations?user=I2qs4EUAAAAJ&hl=en">Ha Thu Nguyen</a>
+          
+          <br>PhD Student,<br>Norwegian University of Science and Technology
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://huonghld.github.io/huong-hoang/assets/img/profile-img.png" height="150">
+          <br>
+          <a href="https://huonghld.github.io/huong-hoang/">Huong LD Hoang</a>
+          
+          <br>PhD Student,<br>University of California, San Diego
+        </td>
+
+        
+        
+        
+          </tr>
+        
+      
+        
+        
+          <tr>
+        
+
+        <td style="text-align:center">
+          <img src="https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=18549&s=300" height="150">
+          <br>
+          <a href="https://ece.illinois.edu/about/directory/grad-students/huyentn2">Huyen Thi Ngoc Nguyen</a>
+          
+          <br>PhD Student,<br>University of Illinois Urbana-Champaign
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://scholarships.vinuni.edu.vn/wp-content/uploads/2020/06/Doan-Thi-Van-Thao-400x761.jpg" height="150">
+          <br>
+          <a href="https://scholar.google.co.uk/citations?user=H5zZgaIAAAAJ&hl=en">Doan Van Thao</a>
+          
+          <br>PhD Student,<br>UCLouvain
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://scholarships.vinuni.edu.vn/wp-content/uploads/2023/03/LeThiPhuong-400x473.jpg" height="150">
+          <br>
+          <a href="https://www.linkedin.com/in/phuonglt26/?originalSubdomain=sg">Thi Phuong Le</a>
+          
+          <br>PhD Student,<br>Singapore Management University
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://tamnguyen9520.github.io/tam_profile.jpeg" height="150">
+          <br>
+          <a href="https://tamnguyen9520.github.io/">Minh Tam Nguyen</a>
+          
+          <br>PhD Student,<br>Rice University
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/trang-nguyen.jpeg" height="150">
+          <br>
+          <a href="https://www.linkedin.com/in/trangnnp/">Trang Nguyen</a>
+          
+          <br>PhD Student,<br>Stanford University
+        </td>
+
+        
+        
+        
+          </tr>
+        
+      
+        
+        
+          <tr>
+        
+
+        <td style="text-align:center">
+          <img src="https://qqphung.github.io/img/avatar_350x350.png" height="150">
+          <br>
+          <a href="https://qqphung.github.io/">Quynh Phung</a>
+          
+          <br>PhD Student,<br>University of Maryland, College Park
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/huyen-800.webp" height="150">
+          <br>
+          <a href="https://vothuckhanhhuyen.github.io/">Huyen Vo</a>
+          
+          <br>PhD Student,<br>Max Planck Institutes
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://raw.githubusercontent.com/tranquyenbk173/tranquyenbk173.github.io/refs/heads/main/assets/img/sky.png" height="150">
+          <br>
+          <a href="https://tranquyenbk173.github.io/">Quyen Tran</a>
+          
+          <br>PhD Student,<br>University of Illinois Chicago
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/dung-june-thai.jpg" height="150">
+          <br>
+          <a href="https://judydnguyen.github.io/">Dung (Judy) Nguyen</a>
+          
+          <br>PhD Student,<br>Vanderbilt University
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/tran-huynh.png" height="150">
+          <br>
+          <a href="https://scholar.google.com/citations?user=Tje4PQMAAAAJ&hl=en">Tran Huynh</a>
+          
+          <br>PhD Student,<br>Virginia Tech
+        </td>
+
+        
+        
+        
+          </tr>
+        
+      
+        
+        
+          <tr>
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/thaonguyen-uiuc.jpg" height="150">
+          <br>
+          <a href="https://thaonguyen217.github.io/">Thao Nguyen</a>
+          
+          <br>PhD Student,<br>University of Illinois Urbana-Champaign
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://avatars.githubusercontent.com/u/137878202?v=4" height="150">
+          <br>
+          <a href="https://minhhuyenle.github.io/">Huyen Le</a>
+          
+          <br>PhD Student,<br>VinUniversity
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://nguyenvuthientrang.github.io/images/pfp_vinai.jpg" height="150">
+          <br>
+          <a href="https://nguyenvuthientrang.github.io/">Trang Nguyen</a>
+          
+          <br>PhD Student,<br>Carnegie Mellon University
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://phamvuhuyentrang.github.io/images/huyentrang0811.jpg" height="150">
+          <br>
+          <a href="https://phamvuhuyentrang.github.io/">Huyen Trang</a>
+          
+          <br>PhD Student,<br>The University of Texas at Austin
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/duong-tran.jpeg" height="150">
+          <br>
+          <a href="https://www.linkedin.com/in/dgtr/">Duong Tran</a>
+          
+          <br>PhD Student,<br>Bosch Center for AI
+        </td>
+
+        
+        
+        
+          </tr>
+        
+      
+        
+        
+          <tr>
+        
+
+        <td style="text-align:center">
+          <img src="https://chtmp223.github.io/assets/img/home.jpg" height="150">
+          <br>
+          <a href="https://chtmp223.github.io/">Chau Minh Pham</a>
+          
+          <br>PhD Student,<br>University of Maryland, College Park
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="https://raw.githubusercontent.com/iam-nhi-nguyen/iam-nhi-nguyen.github.io/main/assets/images/photo_of_nhi.jpg" height="150">
+          <br>
+          <a href="https://iam-nhi-nguyen.github.io/">Nhi Nguyen</a>
+          
+          <br>PhD Student,<br>New York University
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/minh-vuong-nguyen.jpeg" height="150">
+          <br>
+          <a href="https://scholar.google.com/citations?user=eUbbNpcAAAAJ&hl=en">Minh-Vuong Nguyen</a>
+          
+          <br>PhD Student,<br>RMIT University
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/nhu-vo.jpg" height="150">
+          <br>
+          <a href="https://scholar.google.com/citations?user=CrE42ccAAAAJ&hl=en">Nhu Vo</a>
+          
+          <br>PhD Student,<br>University of Technology Sydney
+        </td>
+
+        
+        
+        
+      
+        
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/trang-dang-yen.jpg" height="150">
+          <br>
+          <a href="https://www.linkedin.com/in/trang-dang-yen-511a2b250/">Trang Dang Yen</a>
+          
+          <br>PhD Student,<br>The University of Sydney
+        </td>
+
+        
+        
+        
+          </tr>
+        
+      
+        
+        
+          <tr>
+        
+
+        <td style="text-align:center">
+          <img src="/profile-images/hong-hanh-nguyen-le.jpg" height="150">
+          <br>
+          <a href="https://honghanh2104.github.io/">Hong-Hanh Nguyen-Le</a>
+          
+          <br>PhD Student,<br>University College Dublin
+        </td>
+
+        
+        
+        
+      
+
+      <!-- Add "This could be YOU!" placeholder -->
+      
+      
+
+      <td style="text-align:center">
+        <img src="https://t4.ftcdn.net/jpg/04/43/94/65/360_F_443946501_mBC4G0NvO4jposAshKZ4eaQj0qrDCLzf.jpg" height="150">
+        <br>
+        <a href="">This could be YOU!</a><br>
+      </td>
+
+      
+      
+      
+        
+          <td></td>
         
           <td></td>
         
@@ -1402,33 +1371,9 @@
         
       
       </tr>
-      
+
       <tr><td></td><td></td><td></td><td></td><td></td></tr>
     </table>
-      </div>
-    </div>
-
-    <script>
-      function switchTab(tabName) {
-        // Hide all tab contents
-        const tabContents = document.querySelectorAll('.tab-content');
-        tabContents.forEach(content => {
-          content.classList.remove('active');
-        });
-
-        // Remove active class from all buttons
-        const tabButtons = document.querySelectorAll('.tab-button');
-        tabButtons.forEach(button => {
-          button.classList.remove('active');
-        });
-
-        // Show selected tab content
-        document.getElementById(tabName + '-tab').classList.add('active');
-
-        // Add active class to clicked button
-        event.target.classList.add('active');
-      }
-    </script>
 
     <!-- Footer Message -->
     <div style="line-height:60%;"><br></div>
@@ -1466,20 +1411,20 @@
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
 <!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
+<script src="http://localhost:4000/assets/js/common.js"></script>
 
 
 <!-- Load KaTeX -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-<script src="/assets/js/katex.js"></script>
+<script src="http://localhost:4000/assets/js/katex.js"></script>
 
 
 
 
 <!-- Include custom icon fonts -->
-<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="/assets/css/academicons.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.min.css">
 
 <!-- Google Analytics -->
 <script>

@@ -2,6 +2,16 @@
 <html>
 
   <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK0G8YWNPM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KK0G8YWNPM');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +19,16 @@
   <title>viet-wics | 🗺️ Map</title>
   <meta name="description" content="A collections of Vietnamese women working in Computer Science, focusing on higher-education.
 ">
-  <meta property="og:image" content="/assets/img/avatar.jpeg">
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar.jpeg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="/map/">
+  <meta property="og:url" content="http://localhost:4000/map/">
   <meta property="og:title" content="🗺️ Map">
-  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/map/">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/map/">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
 </head>
 
@@ -29,7 +39,7 @@
 
   <div class="wrapper">
 
-    <a href="/">
+    <a href="http://localhost:4000/">
     <span class="site-title">
         
         <strong>viet-wics</strong> viet-wics
@@ -65,7 +75,7 @@
             
               
                 
-                  <a class="page-link" href="/map/">🗺️ Map</a>
+                  <a class="page-link" href="http://localhost:4000/map/">🗺️ Map</a>
                 
               
             
@@ -95,7 +105,7 @@
             
               
                 
-                  <a class="page-link" href="/why/">Statistics & Resources</a>
+                  <a class="page-link" href="http://localhost:4000/why/">Statistics & Resources</a>
                 
               
             
@@ -108,7 +118,7 @@
           
             
               
-                <a class="page-link" href="/faq/">FAQ</a>
+                <a class="page-link" href="http://localhost:4000/faq/">FAQ</a>
               
             
           
@@ -116,7 +126,7 @@
           
             
               
-                <a class="page-link" href="/aboutme/">About me</a>
+                <a class="page-link" href="http://localhost:4000/aboutme/">About me</a>
               
             
           
@@ -153,7 +163,7 @@
 
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+        <!-- <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">vitae</a> -->
 
       </div>
     </nav>
@@ -669,6 +679,16 @@
               "lng": 105.7825,
               "city": "Hà Nội, Việt Nam"
             },{
+              "name": "Cam-Van Thi Nguyen",
+              "url": "https://scholar.google.com/citations?user=4KiBC1YAAAAJ&hl=en",
+              "image": "/profile-images/cam-van-thi-nguyen.jpg",
+              "title": "Lecturer",
+              "institution": "University of Engineering and Technology, VNU",
+              "category": "academic",
+              "lat": 21.0383,
+              "lng": 105.7825,
+              "city": "Hà Nội, Việt Nam"
+            },{
               "name": "Kim Tien Ly",
               "url": "https://ori.ox.ac.uk/people/kim-tien-ly/",
               "image": "https://ori.ox.ac.uk/media/10232/kim-tien-ly.jpeg?width=250&height=250&rnd=133386331862670000",
@@ -768,16 +788,6 @@
               "lat": 1.2966,
               "lng": 103.8497,
               "city": "Singapore"
-            },{
-              "name": "Van-Anh Nguyen",
-              "url": "https://scholar.google.com/citations?user=I5kuXKsAAAAJ&hl=en",
-              "image": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I5kuXKsAAAAJ&citpid=4",
-              "title": "PhD Student",
-              "institution": "University of Monash",
-              "category": "graduate",
-              "lat": -37.9105,
-              "lng": 145.1362,
-              "city": "Melbourne, Australia"
             },{
               "name": "Minh Tam Nguyen",
               "url": "https://tamnguyen9520.github.io/",
@@ -929,6 +939,16 @@
               "lng": 144.9633,
               "city": "Melbourne, Australia"
             },{
+              "name": "Hong-Hanh Nguyen-Le",
+              "url": "https://honghanh2104.github.io/",
+              "image": "/profile-images/hong-hanh-nguyen-le.jpg",
+              "title": "PhD Student",
+              "institution": "University College Dublin",
+              "category": "graduate",
+              "lat": 53.3065,
+              "lng": -6.2255,
+              "city": "Dublin, Ireland"
+            },{
               "name": "Thu Nguyen-Phuoc",
               "url": "https://www.monkeyoverflow.com/about",
               "image": "https://images.squarespace-cdn.com/content/v1/570a63ac5559863dc7622dd3/1460299278859-MCAX7O5X41NRVX24QZ4Y/image-asset.jpeg",
@@ -1019,10 +1039,14 @@
   <details class="map-missing">
     <summary>
       
-        ⚠️ 2 institution(s) missing coordinates (not shown on map)
+        ⚠️ 4 institution(s) missing coordinates (not shown on map)
       
     </summary>
     <ul>
+      
+        <li><code>Singapore-MIT Alliance for Research and Technology (SMART)</code></li>
+      
+        <li><code>The University of Melbourne</code></li>
       
         <li><code>The University of Sydney</code></li>
       
@@ -1480,20 +1504,20 @@
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
 <!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
+<script src="http://localhost:4000/assets/js/common.js"></script>
 
 
 <!-- Load KaTeX -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-<script src="/assets/js/katex.js"></script>
+<script src="http://localhost:4000/assets/js/katex.js"></script>
 
 
 
 
 <!-- Include custom icon fonts -->
-<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="/assets/css/academicons.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.min.css">
 
 <!-- Google Analytics -->
 <script>

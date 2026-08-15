@@ -604,6 +604,16 @@ graduate:
       en: University College Dublin
       vn: University College Dublin
 
+  - name: Mia Huong Nguyen
+    url: https://iammia0o.github.io/
+    image: https://iammia0o.github.io/assets/img/IMG_2087.jpg
+    title:
+      en: PhD Student
+      vn: NCS Tiến sỹ
+    institution:
+      en: National University of Singapore
+      vn: National University of Singapore
+
 industry:
   - name: Thu Nguyen-Phuoc
     url: https://www.monkeyoverflow.com/about

@@ -102,7 +102,7 @@ academic:
 
   - name: Hien Nguyen
     url: https://blogs.uww.edu/nguyenh/
-    image: https://blogs.uww.edu/nguyenh/files/2016/05/hienpic.jpg
+    image: https://i1.rgstatic.net/ii/profile.image/584206761615360-1516297154266_Q512/Hien-Nguyen-87.jpg
     title:
       en: Professor
       vn: Giáo sư
@@ -340,7 +340,27 @@ academic:
       en: Singapore-MIT Alliance for Research and Technology (SMART)
       vn: Singapore-MIT Alliance for Research and Technology (SMART)
 
+  - name: Tiffany D. Do
+    url: https://zyrcant.github.io/
+    image: https://zyrcant.github.io/authors/admin/avatar_hufb6bb054339788fce68249343291e86e_366264_270x270_fill_q75_lanczos_center.jpg
+    title:
+      en: Assistant Professor
+      vn: Giáo sư
+    institution:
+      en: Drexel University
+      vn: Drexel University
+
 graduate:
+  - name: Phuong-Anh Nguyen-Le
+    url: https://kemnguyenle.github.io/
+    image: https://kemnguyenle.github.io/img/headshot_kem.jpg
+    title:
+      en: PhD Student
+      vn: NCS Tiến sỹ
+    institution:
+      en: University of Maryland
+      vn: University of Maryland
+
   - name: Thi Xuan May Le
     url: https://sites.google.com/view/xuanmay2701
     image: /profile-images/thi-xuan-may-le.jpg
@@ -615,6 +635,16 @@ graduate:
       vn: National University of Singapore
 
 industry:
+  - name: Ngan Vu
+    url: https://scholar.google.com/citations?user=59NSQYcAAAAJ&hl=en
+    image: https://cdn.prod.website-files.com/62a10970901ba8d4f58ed5e2/67ba32a3407cf55ed10bf645_ngan-vu-deepmind%20copy.jpeg
+    title:
+      en: Product Manager
+      vn: Product Manager
+    institution:
+      en: DeepMind
+      vn: DeepMind
+
   - name: Thu Nguyen-Phuoc
     url: https://www.monkeyoverflow.com/about
     image: https://images.squarespace-cdn.com/content/v1/570a63ac5559863dc7622dd3/1460299278859-MCAX7O5X41NRVX24QZ4Y/image-asset.jpeg
@@ -628,6 +658,16 @@ industry:
       lat: 51.5345
       lng: -0.1245
       city: "London, United Kingdom"
+
+  - name: Thao Nguyen
+    url: https://thaonguyen19.github.io/
+    image: https://thaonguyen19.github.io/me2.jpg
+    title:
+      en: Member of Technical Staff
+      vn: Member of Technical Staff
+    institution:
+      en: Anthropic
+      vn: Anthropic
 
   - name: Anh N. Thai
     url: https://anhthai1997.com/
@@ -683,16 +723,6 @@ industry:
       en: Broadcom
       vn: Broadcom
 
-  - name: Thao Nguyen
-    url: https://thaonguyen19.github.io/
-    image: https://thaonguyen19.github.io/me3.jpg
-    title:
-      en: Member of Technical Staff
-      vn: Member of Technical Staff
-    institution:
-      en: Anthropic
-      vn: Anthropic
-
   - name: Dung (June) Thai
     url: https://www.linkedin.com/in/dung-thai/
     image: /profile-images/june-thai.jpg
@@ -702,4 +732,14 @@ industry:
     institution:
       en: Ensemble Health Partners
       vn: Ensemble Health Partners
+
+  - name: Chip Huyen
+    url: https://huyenchip.com/
+    image: https://huyenchip.com/assets/profile.jpeg
+    title:
+      en: Writer and Computer Scientist
+      vn: Writer and Computer Scientist
+    institution:
+      en: ""
+      vn: ""
 

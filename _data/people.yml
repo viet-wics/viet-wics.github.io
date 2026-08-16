@@ -2,6 +2,16 @@
 # All people data in one place - easy to maintain!
 
 academic:
+  - name: Thi-Mai-Trang Nguyen
+    url: https://www-l2ti.univ-paris13.fr/~thimaitrang.nguyen/
+    image: https://www-l2ti.univ-paris13.fr/~thimaitrang.nguyen/maitrang.png
+    title:
+      en: Professor
+      vn: Giáo sư
+    institution:
+      en: Sorbonne Paris Nord University
+      vn: Sorbonne Paris Nord University
+
   - name: Ni Trieu
     url: https://nitrieu.github.io/
     image: https://nitrieu.github.io/images/profile.png
@@ -351,6 +361,16 @@ academic:
       vn: Drexel University
 
 graduate:
+  - name: Chau Vu
+    url: https://www.vuhachau.com/
+    image: https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=p8y2BQIAAAAJ&citpid=5
+    title:
+      en: PhD Student
+      vn: NCS Tiến sỹ
+    institution:
+      en: Harvard University
+      vn: Harvard University
+
   - name: Phuong-Anh Nguyen-Le
     url: https://kemnguyenle.github.io/
     image: https://kemnguyenle.github.io/img/headshot_kem.jpg
